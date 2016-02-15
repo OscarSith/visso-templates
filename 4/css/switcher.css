@@ -5,7 +5,7 @@
 	top: 222px;
 	z-index: 99999;
 	border-radius: 0 0 3px 0;
-	left: -163px; 
+	left: -163px;
 	border: 1px solid #e4e4e4;
 	border-left: 0;
 	border-top: 0;
@@ -52,7 +52,7 @@
 	border-radius: 0 3px 3px 0;
 	line-height: 46px;
 	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
-}	
+}
 
 #style-switcher ul {
     list-style:none;
@@ -80,3 +80,185 @@
     background:#FFA500;
 }
 
+#products {
+	text-align: center;
+}
+.item {
+    width: 100%;
+    height: 260px;
+    display: block;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 30px;
+    z-index: 5;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.item-1 {
+    background-image: url(../img/Integra_2.jpg);
+}
+.item-2 {
+    background-image: url(../img/confort_2.jpg);
+}
+.item-3 {
+    background-image: url(../img/gerencial_dukon_0003_prv.jpg);
+}
+.item-4 {
+    background-image: url(../img/Almacenero_puertas_batientes.jpg);
+}
+.item-5 {
+    background-image: url(../img/Almaceneros_puertas_corredizas.jpg);
+}
+.item-6 {
+    background-image: url(../img/Credenza_porta_documentos.jpg);
+}
+.item-7 {
+    background-image: url(../img/Credenza_mixta_larga.jpg);
+}
+.item-8 {
+    background-image: url(../img/Almaceneros_puertas_corredizas.jpg);
+}
+.item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+.item:hover .item-content {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.item:hover .item-add-content {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+.item-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    -webkit-transform: translate(0,100%);
+    -ms-transform: translate(0,100%);
+    transform: translate(0,100%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.item-content {
+    background: rgba(255,255,255,.85);
+}
+.item-top-content {
+    position: relative;
+}
+.item-add-content {
+    font-weight: 400;
+    color: #808080;
+}
+.item-top-content-inner {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 15px 10px 15px;
+    background: rgba(255,255,255,.95);
+    width: 100%;
+}
+.item-product {
+    width: 70%;
+    float: left;
+}
+.item-product-price {
+    font-size: 1em;
+    font-weight: 700;
+    position: relative;
+	width: 30%;
+	float: right;
+	text-align: right;
+}
+.item-top-title {
+    text-align: left;
+}
+.item-top-title h5 {
+    color: #404040;
+    font-weight: 700;
+}
+.subdescription {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7d7d7d;
+}
+.green-text {
+    color: #34d293;
+}
+.item-product-price .subdescription {
+    color: #808080;
+}
+.old-price {
+    border: 0 solid #808080;
+    border-bottom-width: 1px;
+    margin-top: -11px;
+    width: 30px;
+    position: absolute;
+    right: -2px;
+    bottom: 10px;
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+.item-add-content {
+    font-weight: 400;
+    color: #808080;
+	padding: 0 15px 15px 15px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.item-add-content-inner {
+    border: 0px solid #dadada;
+    border-top-width: 1px;
+    padding-top: 10px;
+}
+.item-add-content .section {
+    margin-bottom: 10px;
+}
+.item-add-content p {
+    font-size: 14PX;
+}
+.item-add-content .section:last-of-type {
+    margin-bottom: 0;
+}
+.custom-button {
+    display: inline-block !important;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 13px 35px 13px 35px;
+    border-radius: 4px;
+    margin: 10px;
+    border: none;
+}
+.red-btn, .green-btn, .blue-btn, .yellow-btn {
+    color: #FFF;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.red-btn {
+	background: #e96656;
+}
+.green-btn {
+	background: #20AA73;
+}
+.blue-btn {
+	background: #3ab0e2;
+}
+.yellow-btn {
+	background: #E7AC44;
+}

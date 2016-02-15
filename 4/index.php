@@ -35,7 +35,9 @@
 				<div id="projects-container" class="row">
 					<article class="col-xs-12 col-sm-6 col-md-4">
 						<div class="img-box">
-							<img class="img-responsive project-image" src="img/product1.jpg" alt="">
+							<a href="productos.php">
+								<img class="img-responsive project-image" src="img/product1.jpg" alt="">
+							</a>
 						</div>
 						<div class="product-info col-md-12">
 							<div>
@@ -46,7 +48,9 @@
 
 					<article class="col-xs-12 col-sm-6 col-md-4">
 						<div class="img-box">
-							<img class="img-responsive project-image" src="img/product2.jpg" alt="">
+							<a href="productos.php">
+								<img class="img-responsive project-image" src="img/product2.jpg" alt="">
+							</a>
 						</div>
 						<div class="product-info col-md-12">
 							<div>
@@ -57,7 +61,9 @@
 
 					<article class="col-xs-12 col-sm-6 col-md-4">
 						<div class="img-box">
-							<img class="img-responsive project-image" src="img/product3.jpg" alt="">
+							<a href="productos.php">
+								<img class="img-responsive project-image" src="img/product3.jpg" alt="">
+							</a>
 						</div>
 						<div class="product-info col-md-12">
 							<div>
