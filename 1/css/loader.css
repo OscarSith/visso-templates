@@ -1,0 +1,102 @@
+.loading-wrap {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:9999;
+	background-color: #fff;
+	z-index: 99999;
+}
+	.loading {
+	  text-transform:uppercase;  
+	  width:150px;
+	  text-align:center;
+	  line-height:50px;  
+	  position:absolute;
+	  left:0;
+	  right:0;
+	  top:50%;
+	  margin:auto;
+	  -webkit-transform:translateY(-50%);
+	  -moz-transform:translateY(-50%);
+	  transform:translateY(-50%);
+	}
+		.loading span {
+		  position:relative;
+		  z-index:999;
+		  color:#fff;
+		}
+		.loading:before {
+		  content:'';
+		  background:#ad7c55;
+		  width:128px;
+		  height:36px;
+		  display:block;
+		  position:absolute;
+		  top:0;
+		  left:0;
+		  right:0;
+		  bottom:0;
+		  margin:auto;	  
+		  -webkit-animation:2s loadingBefore infinite ease-in-out;
+		     -moz-animation:2s loadingBefore infinite ease-in-out;
+		          animation:2s loadingBefore infinite ease-in-out;
+		}
+		@-webkit-keyframes loadingBefore {
+		  0%   {transform:translateX(-14px);}
+		  50%  {transform:translateX(14px);}
+		  100% {transform:translateX(-14px);}
+		}
+		@-moz-keyframes loadingBefore {
+		  0%   {transform:translateX(-14px);}
+		  50%  {transform:translateX(14px);}
+		  100% {transform:translateX(-14px);}
+		}
+		@-o-keyframes loadingBefore {
+		  0%   {transform:translateX(-14px);}
+		  50%  {transform:translateX(14px);}
+		  100% {transform:translateX(-14px);}
+		}
+		@keyframes loadingBefore {
+		  0%   {transform:translateX(-14px);}
+		  50%  {transform:translateX(14px);}
+		  100% {transform:translateX(-14px);}
+		}
+		.loading:after {
+		  content:'';
+		  background:#925d25;
+		  width:14px;
+		  height:60px;
+		  display:block;
+		  position:absolute;
+		  top:0;
+		  left:0;
+		  right:0;
+		  bottom:0;
+		  margin:auto;
+		  opacity:.5;  
+		  -webkit-animation:2s loadingAfter infinite ease-in-out;
+		     -moz-animation:2s loadingAfter infinite ease-in-out;
+		          animation:2s loadingAfter infinite ease-in-out;
+		}
+		@-webkit-keyframes loadingAfter {
+		  0%   {transform:translateX(-50px);}
+		  50%  {transform:translateX(50px);}
+		  100% {transform:translateX(-50px);}
+		}
+		@-moz-keyframes loadingAfter {
+		  0%   {transform:translateX(-50px);}
+		  50%  {transform:translateX(50px);}
+		  100% {transform:translateX(-50px);}
+		}
+		@-o-keyframes loadingAfter {
+		  0%   {transform:translateX(-50px);}
+		  50%  {transform:translateX(50px);}
+		  100% {transform:translateX(-50px);}
+		}
+		@keyframes loadingAfter {
+		  0%   {transform:translateX(-50px);}
+		  50%  {transform:translateX(50px);}
+		  100% {transform:translateX(-50px);}
+		}
