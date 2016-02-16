@@ -1,13 +1,14 @@
 <?php include "tpl/header.tpl.html" ?>
-<section style="padding-top: 98px;background: rgba(39,144,176, 0.96);">
+<section style="padding-top: 98px;background-color:#fdc800;">
 	<div class="container">
 		<header class="section-header text-center wow fadeInUp animated">
-			<h2 style="color: #fff">Listado de Productos</h2>
+			<h2>Listado de Productos</h2>
 		</header>
 		<div class="row" id="products">
+			<hr>
 			<div class="row wow fadeInLeft animated animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 				<div class="col-md-3">
-					<div class="item item-1">
+					<a href="detalle-producto.php" class="item item-1">
 						<div class="item-overlay">
 						</div>
 						<div class="item-content">
@@ -16,9 +17,7 @@
 									<div class="item-product">
 										<div class="item-top-title">
 											<h5>One Light</h5>  <!-- PRODUCT TITLE-->
-											<p class="subdescription">
-												 WordPress Theme
-											</p> <!-- PRODUCT DESCRIPTION-->
+											<p class="subdescription">Alguna descripcion</p>
 										</div>
 									</div>
 									<div class="item-product-price">
@@ -33,27 +32,12 @@
 									</div>
 								</div>
 							</div>
-
-							<!-- ITEM HOVER CONTENT-->
-							<div class="item-add-content">
-								<div class="item-add-content-inner">
-									<div class="section">
-										<p>
-											Creative WordPress Theme
-										</p>
-									</div>
-									<div class="section">
-										<a href="#" class="btn btn-primary custom-button red-btn">Demo</a><br>
-										<a href="#" class="btn btn-primary custom-button green-btn">Buy</a>
-									</div>
-								</div>
-							</div>
 						</div>
-					</div>
+					</a>
 				</div> <!-- / END FIRST ITEM -->
 
 				<div class="col-md-3">
-					<div class="item item-2">
+					<a href="detalle-producto.php" class="item item-2">
 						<div class="item-overlay">
 						</div>
 						<div class="item-content">
@@ -63,39 +47,23 @@
 										<div class="item-top-title">
 											<h5>Telfez</h5>
 											<p class="subdescription">
-												 WordPress Theme
+												Alguna descripcion
 											</p>
 										</div>
 									</div>
 									<div class="item-product-price">
 										<span class="price-num green-text">$17</span>
-										<p class="subdescription">
-											 $36
-										</p>
-										<div class="old-price">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item-add-content">
-								<div class="item-add-content-inner">
-									<div class="section">
-										<p>
-											Creative WordPress Theme
-										</p>
-									</div>
-									<div class="section">
-										<a href="#" class="btn btn-primary custom-button red-btn">Demo</a><br>
-										<a href="#" class="btn btn-primary custom-button green-btn">Buy</a>
+										<p class="subdescription">$36</p>
+										<div class="old-price"></div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-md-3">
-					<div class="item item-3">
+					<a href="detalle-producto.php" class="item item-3">
 						<div class="item-overlay">
 						</div>
 						<div class="item-content">
@@ -114,30 +82,16 @@
 										<p class="subdescription">
 											 $15
 										</p>
-										<div class="old-price">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item-add-content">
-								<div class="item-add-content-inner">
-									<div class="section">
-										<p>
-											Beautiful Calender Widget
-										</p>
-									</div>
-									<div class="section">
-										<a href="#" class="btn btn-primary custom-button red-btn">Demo</a><br>
-										<a href="#" class="btn btn-primary custom-button green-btn">Buy</a>
+										<div class="old-price"></div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-md-3">
-					<div class="item item-4">
+					<a href="detalle-producto.php" class="item item-4">
 						<div class="item-overlay">
 						</div>
 						<div class="item-content">
@@ -153,30 +107,16 @@
 									</div>
 									<div class="item-product-price">
 										<span class="price-num green-text">$11</span>
-
-									</div>
-								</div>
-							</div>
-							<div class="item-add-content">
-								<div class="item-add-content-inner">
-									<div class="section">
-										<p>
-											Beautiful Toolbar with Icons
-										</p>
-									</div>
-									<div class="section">
-										<a href="#" class="btn btn-primary custom-button red-btn">Demo</a><br>
-										<a href="#" class="btn btn-primary custom-button green-btn">Buy</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 			</div>
 			<div class="row wow fadeInRight animated animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 				<div class="col-md-3">
-					<div class="item item-5">
+					<a href="detalle-producto.php" class="item item-5">
 						<div class="item-overlay">
 						</div>
 						<div class="item-content">
@@ -200,25 +140,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="item-add-content">
-								<div class="item-add-content-inner">
-									<div class="section">
-										<p>
-											Creative Radio PSD
-										</p>
-									</div>
-									<div class="section">
-										<a href="#" class="btn btn-primary custom-button red-btn">Demo</a><br>
-										<a href="#" class="btn btn-primary custom-button green-btn">Buy</a>
-									</div>
-								</div>
-							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-md-3">
-					<div class="item item-6">
+					<a href="detalle-producto.php" class="item item-6">
 						<div class="item-overlay">
 						</div>
 						<div class="item-content">
@@ -227,9 +154,6 @@
 									<div class="item-product">
 										<div class="item-top-title">
 											<h5>Health Care</h5>
-											<p class="subdescription">
-												 One Page Template
-											</p>
 										</div>
 									</div>
 									<div class="item-product-price">
@@ -242,25 +166,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="item-add-content">
-								<div class="item-add-content-inner">
-									<div class="section">
-										<p>
-											Responsive One Page Template
-										</p>
-									</div>
-									<div class="section">
-										<a href="#" class="btn btn-primary custom-button red-btn">Demo</a><br>
-										<a href="#" class="btn btn-primary custom-button green-btn">Buy</a>
-									</div>
-								</div>
-							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-md-3">
-					<div class="item item-7">
+					<a href="detalle-producto.php" class="item item-7">
 						<div class="item-overlay">
 						</div>
 						<div class="item-content">
@@ -276,30 +187,15 @@
 									</div>
 									<div class="item-product-price">
 										<span class="price-num green-text">$10</span>
-
-
-									</div>
-								</div>
-							</div>
-							<div class="item-add-content">
-								<div class="item-add-content-inner">
-									<div class="section">
-										<p>
-											Creative WordPress Theme
-										</p>
-									</div>
-									<div class="section">
-										<a href="#" class="btn btn-primary custom-button red-btn">Demo</a><br>
-										<a href="#" class="btn btn-primary custom-button green-btn">Buy</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-md-3">
-					<div class="item item-8">
+					<a href="detalle-producto.php" class="item item-8">
 						<div class="item-overlay">
 						</div>
 						<div class="item-content">
@@ -323,23 +219,11 @@
 									</div>
 								</div>
 							</div>
-							<div class="item-add-content">
-								<div class="item-add-content-inner">
-									<div class="section">
-										<p>
-											Creative UI Element
-										</p>
-									</div>
-									<div class="section">
-										<a href="#" class="btn btn-primary custom-button red-btn">Demo</a><br>
-										<a href="#" class="btn btn-primary custom-button green-btn">Buy</a>
-									</div>
-								</div>
-							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 			</div>
+			<hr>
 		</div>
 	</div>
 </section>

@@ -45,7 +45,7 @@ h3.center {
 	background-color: #f2f2f2;
 }
 .color-bg{
-	background-color:#23A657;
+	background-color:#fdc800;
 }
 .dark-bg {
 	background-color: #323A42;
@@ -117,7 +117,7 @@ h3.center {
 
 
 .dark-bg a {
-	color: #23A657;
+	color: #fdc800;
 }
 .light-typo {
 	color: #fff;
@@ -148,7 +148,7 @@ footer {
 	float: left;
 	margin-right: 10px;
 	font-size: 21px;
-	color: #23A657;
+	color: #fdc800;
 	margin-top: 3px;
 }
 .navbar-brand {
@@ -178,7 +178,7 @@ footer {
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-	color: #23A657;
+	color: #fdc800;
 	background-color: transparent;
 }
 
@@ -189,12 +189,12 @@ footer {
 .navbar-inverse .navbar-nav>li>a.active,
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus {
-	color: #23A657;
+	color: #fdc800;
 	background-color: transparent;
 }
 
 .navbar-btn {
-	background-color: #23A657;
+	background-color: #fdc800;
 	border: 0;
 	color: #FFF;
 	font-weight: 300;
@@ -204,7 +204,7 @@ footer {
 	padding-top: 13px;
 }
 .dropdown-toggle{
-	background-color: #23A657;
+	background-color: #fdc800;
 	color: #FFF;
 	border: 0;
 	font-weight: 300;
@@ -224,7 +224,7 @@ footer {
 	font-weight: 300;
 }
 .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus{
-	background-color: #23A657;
+	background-color: #fdc800;
 	color: #FFF;
 }
 .navbar-toggle {
@@ -258,7 +258,7 @@ footer {
 	font-weight: 300;
 	outline: none;
 	position: relative;
-	background: #23A657;
+	background: #fdc800;
 	color: #fff;
 	border-radius: 5px;
 	-webkit-transition:all .3s ease-out;
@@ -271,15 +271,15 @@ footer {
 	color: #fff;
 	top: 0;
 	text-decoration: none;
-	background-color: #15C56A;
+	background-color: #F1BF05;
 	box-shadow: none;
 }
 .btn-store.outline {
 	background: transparent;
-	border:2px solid #23A657;
+	border:2px solid #fdc800;
 	box-shadow: none;
 
-	color: #23A657;
+	color: #fdc800;
 	text-decoration: none;
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
@@ -317,7 +317,7 @@ footer {
 .btn-store.outline:hover,
 .btn-store.outline:focus,
 .btn-store.outline:active {
-	background: #23A657;
+	background: #fdc800;
 	color:#FFF;
 	top:0;
 	text-decoration: none;
@@ -332,7 +332,7 @@ footer {
 	border: none;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background-color: #23A657;
+	background-color: #fdc800;
 }
 .ico {
 	display: inline-block;
@@ -413,7 +413,7 @@ table {
 	width: 13px;
 	height: 13px;
 	 margin: 0 5px;
-	background-color: #23A657;
+	background-color: #fdc800;
 	opacity: 1;
 }
 
@@ -484,9 +484,8 @@ table {
 	border-bottom-right-radius: 5px;
 }
 .product-info div h4{
-	font-weight: 400;
+	font-weight: bold;
 	margin: 0;
-	color: #23A657;
 	line-height: 24px;
 }
 .product-info div p{
@@ -505,7 +504,7 @@ table {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #23A657;
+	background: #fdc800;
 	opacity: 0;
 	display: block;
 	-o-transition:1s;-ms-transition:1s;-moz-transition:1s;-webkit-transition:1s;transition:1s;
@@ -609,7 +608,7 @@ table {
 }
 #project-modal .close:hover{
 	opacity: 1;
-	color: #23A657;
+	color: #fdc800;
 }
 .modal-body {
 	margin:0;
@@ -688,7 +687,7 @@ body.modal-open {
 }
 #sdbr-title {
 	margin-top: 0;
-	color: #23A657;
+	color: #fdc800;
 	/* font-weight: 600; */
 	margin-bottom: 0;
 
@@ -845,7 +844,7 @@ address {
 #order-form .form-control:focus,
 .input-group .form-control:focus {
 	outline:none;
-	border: 2px solid #23A657;
+	border: 2px solid #fdc800;
 }
 #order-form .inputError,
 #order-form textarea.form-control.inputError,
@@ -963,9 +962,9 @@ form p {
 }
 .social-links li a:hover {
 	color:#FFF;
-	background:#23A657;
+	background:#fdc800;
 	text-decoration: none;
-	border-color: #23A657;
+	border-color: #fdc800;
 }
 
 /* ------------------------------ Media -------------------------- */

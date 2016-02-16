@@ -50,14 +50,14 @@
 }
 .slides-navigation a.next {
   right: 15px;
-  
+
 }
 .slides-navigation a.next:hover,
 .slides-navigation a.prev:hover {
   color:#FFF;
-  background:#23A657;
+  background:#fdc800;
   text-decoration: none;
-  border-color: #23A657;
+  border-color: #fdc800;
 }
 
 .slides-pagination {
@@ -88,6 +88,6 @@
   cursor: pointer;
 }
 .slides-pagination a.current {
-  background: #23A657;
+  background: #fdc800;
   opacity: 1;
 }

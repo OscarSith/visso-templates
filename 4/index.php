@@ -4,14 +4,11 @@
 			<div class="container welcome-content">
 				<div class="row">
 					<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 text-center wow fadeInUp">
-						<img id="logo" src="img/logo-green.png" class="img-responsive text-center" alt="shop logo" width="300">
-						<h2>If you have 1-3  or more products for sale microStore is perfect template for you! MicroStore is a simple modern One page 100% responsive template.</h2>
-						<ul class="social-links text-center">
+						<img id="logo" src="img/logo.png" class="img-responsive text-center" alt="Logo">
+						<!-- <ul class="social-links text-center">
 							<li><a href="#link"><i class="icon-twitter"></i></a></li>
 							<li><a href="#link"><i class="icon-facebook"></i></a></li>
-							<li><a href="#link"><i class="icon-vimeo"></i></a></li>
-						</ul>
-						<a class="btn btn-store smooth-scroll" href="#products">browse the goods</a>
+						</ul> -->
 					</div>
 				</div>
 			</div>
@@ -36,7 +33,7 @@
 					<article class="col-xs-12 col-sm-6 col-md-4">
 						<div class="img-box">
 							<a href="productos.php">
-								<img class="img-responsive project-image" src="img/product1.jpg" alt="">
+								<img class="img-responsive project-image" src="img/Credenza_de_puertas_corredizas.jpg" alt="">
 							</a>
 						</div>
 						<div class="product-info col-md-12">
@@ -49,7 +46,7 @@
 					<article class="col-xs-12 col-sm-6 col-md-4">
 						<div class="img-box">
 							<a href="productos.php">
-								<img class="img-responsive project-image" src="img/product2.jpg" alt="">
+								<img class="img-responsive project-image" src="img/Quadra_multiple_recto.jpg" alt="">
 							</a>
 						</div>
 						<div class="product-info col-md-12">
@@ -62,7 +59,7 @@
 					<article class="col-xs-12 col-sm-6 col-md-4">
 						<div class="img-box">
 							<a href="productos.php">
-								<img class="img-responsive project-image" src="img/product3.jpg" alt="">
+								<img class="img-responsive project-image" src="img/Paneles_de_1.74_m.jpg" alt="">
 							</a>
 						</div>
 						<div class="product-info col-md-12">
