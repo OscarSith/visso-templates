@@ -340,10 +340,10 @@ h6 { font-size: 16px; }
 		text-transform: uppercase;
 		text-align: center;
 	}
-		.section-area h2 span {
+		/*.section-area h2 span {
 			padding-bottom: 10px;
 			border-bottom: 2px solid #DC263F;
-		}
+		}*/
 	.section-area.inverse h2 {
 		color: #fff;
 	}
@@ -1013,4 +1013,181 @@ h6 { font-size: 16px; }
 }
 .products > .rotate-box-1 {
 	top: -60px;
+}
+
+.heading-title{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.heading-title h2{
+    display: inline;
+    padding: 10px 0 8px;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f89406;
+}
+
+.heading-title h2 span{
+    font-weight: 700;
+}
+
+#product-single .carousel-control {
+    position: absolute;
+    top: 15px;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #aaa;
+    text-align: center;
+    text-shadow: none;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+         -o-border-radius: 4px;
+            border-radius: 4px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#product-single .carousel-control:hover,
+#product-single .carousel-control:focus {
+    color: #999;
+    text-decoration: none;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+#product-single .carousel-control.left {
+    right: 50px;
+    background: #fff;
+    border: 1px solid #cecece;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=1);
+}
+
+#product-single .carousel-control.right {
+    right: 15px;
+    background: #fff;
+    border: 1px solid #cecece;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=1);
+}
+
+#product-single .home-product-item{
+    padding: 10px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+#product-single .home-product-item:hover{
+    border: 1px solid #e6e6e6;
+}
+
+.product-single{
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+
+.product-single img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.single-desc table tr td{
+    padding: 3px 5px 3px 0;
+}
+
+.single-desc .price,
+.single-desc .price-old{
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.single-desc .price{
+    color: #f89406;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 25px;
+}
+
+.single-desc .price-old{
+    text-decoration: line-through;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    padding-right: 10px;
+}
+
+.single-desc .btn{
+    margin-top: 20px;
+}
+
+.content-detail{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.content-detail .nav-tabs{
+    border-bottom-color: #f1f1f1;
+}
+
+.content-detail .nav-tabs > li > a {
+    margin-right: 2px;
+    border: 1px solid #FDC72E;
+    background: #FDC72E;
+    border-radius: 0;
+    color: #fff;
+}
+
+.content-detail .nav-tabs > .active > a,
+.content-detail .nav-tabs > .active > a:hover,
+.content-detail .nav-tabs > .active > a:focus {
+    background: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    color: #333;
+}
+
+.content-detail .tab-content{
+    padding: 20px;
+    background: #f1f1f1;
+}
+.product-item{
+    position: relative;
+}
+
+.product-item .caption h5{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    border-top: 2px solid #333;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.product-item .caption .product-item-price{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+.single-desc .btn {
+    margin-top: 20px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #515151;
+    border-color: #444;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #333;
+    border-color: #222;
 }

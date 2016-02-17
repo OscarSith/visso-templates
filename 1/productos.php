@@ -1,8 +1,15 @@
 <?php include 'tpl/header.tpl.html'; ?>
 <section id="products" class="products section-area">
-	<div class="rotate-box-1"></div>
 	<!-- Nested Container Starts -->
 	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ol class="breadcrumb">
+					<li><a href="index.php">Nosotros</a></li>
+					<li class="active">Productos</li>
+				</ol>
+			</div>
+		</div>
 		<h2><span>Products</span></h2>
 	<!-- Product Carousel Starts -->
 		<div id="product-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -17,7 +24,7 @@
 							<div class="thumbnail">
 							<!-- Product Image #1 Starts -->
 								<img src="images/Almacenero_puertas_batientes.jpg" alt="Product Image" class="img-responsive">
-							<!-- Zoom Starts -->1
+							<!-- Zoom Starts -->
 								<a href="images/Almacenero_puertas_batientes.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
 								</a>
@@ -35,8 +42,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -70,8 +77,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -106,8 +113,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -142,8 +149,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -178,8 +185,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -213,8 +220,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -254,8 +261,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -290,8 +297,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -326,8 +333,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -362,8 +369,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -397,8 +404,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
@@ -432,8 +439,8 @@
 									<!-- Product Name & Price Ends -->
 									<!-- Product Buttons Starts -->
 										<div class="clearfix">
-											<a href="#" class="btn btn-default pull-left">Learn More</a>
-											<a href="#" class="btn btn-secondary pull-right">Buy Now</a>
+											<a href="detalle-producto.php" class="btn btn-default pull-left">Ver Detalle</a>
+											<a href="#" class="btn btn-secondary pull-right">Cotizar</a>
 										</div>
 									<!-- Product Buttons Ends -->
 									</div>
