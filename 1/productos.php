@@ -16,24 +16,9 @@
 						<!-- Thumbnail Starts -->
 							<div class="thumbnail">
 							<!-- Product Image #1 Starts -->
-								<img src="images/product-imgs/product-img1.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #1 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
-							<!-- Zoom Starts -->
-								<a href="images/product-imgs/product-img1.jpg" class="product-zoom">
+								<img src="images/Almacenero_puertas_batientes.jpg" alt="Product Image" class="img-responsive">
+							<!-- Zoom Starts -->1
+								<a href="images/Almacenero_puertas_batientes.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
 								</a>
 							<!-- Zoom Ends -->
@@ -66,24 +51,9 @@
 						<!-- Thumbnail Starts -->
 							<div class="thumbnail">
 							<!-- Product Image #2 Starts -->
-								<img src="images/product-imgs/product-img2.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #2 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
+								<img src="images/Almaceneros_puertas_corredizas.jpg" alt="Product Image" class="img-responsive">
 							<!-- Zoom Starts -->
-								<a href="images/product-imgs/product-img2.jpg" class="product-zoom">
+								<a href="images/Almaceneros_puertas_corredizas.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
 								</a>
 							<!-- Zoom Ends -->
@@ -116,24 +86,9 @@
 						<!-- Thumbnail Starts -->
 							<div class="thumbnail">
 							<!-- Product Image #3 Starts -->
-								<img src="images/product-imgs/product-img3.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #3 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
+								<img src="images/confort_2.jpg" alt="Product Image" class="img-responsive">
 							<!-- Zoom Starts -->
-								<a href="images/product-imgs/product-img3.jpg" class="product-zoom">
+								<a href="images/confort_2.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
 								</a>
 							<!-- Zoom Ends -->
@@ -167,24 +122,9 @@
 						<!-- Thumbnail Starts -->
 							<div class="thumbnail">
 							<!-- Product Image #4 Starts -->
-								<img src="images/product-imgs/product-img4.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #4 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
+								<img src="images/Credenza_de_puertas_corredizas.jpg" alt="Product Image" class="img-responsive">
 							<!-- Zoom Starts -->
-								<a href="images/product-imgs/product-img4.jpg" class="product-zoom">
+								<a href="images/Credenza_de_puertas_corredizas.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
 								</a>
 							<!-- Zoom Ends -->
@@ -218,24 +158,9 @@
 						<!-- Thumbnail Starts -->
 							<div class="thumbnail">
 							<!-- Product Image #5 Starts -->
-								<img src="images/product-imgs/product-img5.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #5 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
+								<img src="images/Credenza_mixta_larga.jpg" alt="Product Image" class="img-responsive">
 							<!-- Zoom Starts -->
-								<a href="images/product-imgs/product-img5.jpg" class="product-zoom">
+								<a href="images/Credenza_mixta_larga.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
 								</a>
 							<!-- Zoom Ends -->
@@ -269,24 +194,9 @@
 						<!-- Thumbnail Starts -->
 							<div class="thumbnail">
 							<!-- Product Image #6 Starts -->
-								<img src="images/product-imgs/product-img6.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #6 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
+								<img src="images/Credenza_porta_documentos.jpg" alt="Product Image" class="img-responsive">
 							<!-- Zoom Starts -->
-								<a href="images/product-imgs/product-img6.jpg" class="product-zoom">
+								<a href="images/Credenza_porta_documentos.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
 								</a>
 							<!-- Zoom Ends -->
@@ -325,24 +235,9 @@
 						<!-- Thumbnail Starts -->
 							<div class="thumbnail">
 							<!-- Product Image #7 Starts -->
-								<img src="images/product-imgs/product-img6.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #7 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
+								<img src="images/gerencial_dukon_0003_prv.jpg" alt="Product Image" class="img-responsive">
 							<!-- Zoom Starts -->
-								<a href="images/product-imgs/product-img6.jpg" class="product-zoom">
+								<a href="images/gerencial_dukon_0003_prv.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
 								</a>
 							<!-- Zoom Ends -->
@@ -375,24 +270,9 @@
 						<!-- Thumbnail Starts -->
 							<div class="thumbnail">
 							<!-- Product Image #8 Starts -->
-								<img src="images/product-imgs/product-img5.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #8 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
+								<img src="images/Integra_2.jpg" alt="Product Image" class="img-responsive">
 							<!-- Zoom Starts -->
-								<a href="images/product-imgs/product-img5.jpg" class="product-zoom">
+								<a href="images/Integra_2.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
 								</a>
 							<!-- Zoom Ends -->
@@ -426,24 +306,9 @@
 						<!-- Thumbnail Starts -->
 							<div class="thumbnail">
 							<!-- Product Image #9 Starts -->
-								<img src="images/product-imgs/product-img4.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #9 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
+								<img src="images/Paneles_de_1.74_m.jpg" alt="Product Image" class="img-responsive">
 							<!-- Zoom Starts -->
-								<a href="images/product-imgs/product-img4.jpg" class="product-zoom">
+								<a href="images/Paneles_de_1.74_m.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
 								</a>
 							<!-- Zoom Ends -->
@@ -478,21 +343,6 @@
 							<div class="thumbnail">
 							<!-- Product Image #10 Starts -->
 								<img src="images/product-imgs/product-img3.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #10 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
 							<!-- Zoom Starts -->
 								<a href="images/product-imgs/product-img3.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
@@ -529,21 +379,6 @@
 							<div class="thumbnail">
 							<!-- Product Image #11 Starts -->
 								<img src="images/product-imgs/product-img2.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #11 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
 							<!-- Zoom Starts -->
 								<a href="images/product-imgs/product-img2.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>
@@ -579,21 +414,6 @@
 							<div class="thumbnail">
 							<!-- Product Image #12 Starts -->
 								<img src="images/product-imgs/product-img1.jpg" alt="Product Image" class="img-responsive">
-							<!-- Product Image #12 Ends -->
-							<!-- Buttons Starts -->
-								<ul class="list-unstyled btn-list">
-									<li>
-										<a href="#" class="btn btn-secondary">
-											<i class="fa fa-shopping-cart"></i>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default">
-											<i class="fa fa-share-alt"></i>
-										</a>
-									</li>
-								</ul>
-							<!-- Buttons Ends -->
 							<!-- Zoom Starts -->
 								<a href="images/product-imgs/product-img1.jpg" class="product-zoom">
 									<i class="fa fa-search-plus"></i>

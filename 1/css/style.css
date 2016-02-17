@@ -14,7 +14,7 @@ body, html{
 a { color: #DC263F; }
 a:hover,
 a:focus {
-	color: #8f6334;
+	color: #C51E35;
 }
 a:focus { outline: none; }
 
@@ -87,7 +87,7 @@ h6 { font-size: 16px; }
 .btn-transparent {
 	padding: 10px 25px !important;
 	background-color: rgba(255, 255, 255, 0) !important;
-	border: 1px solid #fff !important;
+	border: 1px solid #DC263F !important;
 	font-family: 'Roboto Condensed', sans-serif !important;
 }
 .btn-transparent:hover,
@@ -301,11 +301,11 @@ h6 { font-size: 16px; }
 	}
 		#camera_wrap_1 .camera_caption > div {
 			background:none;
+			color: #DC263F;
 		}
 		#camera_wrap_1 .camera_caption h1 {
-			color: #c1c1c1;
 			text-transform: uppercase;
-			font-weight: 300;
+			font-weight: bold;
 			line-height: 58px;
 		}
 		#camera_wrap_1 .camera_caption hr {
@@ -316,6 +316,7 @@ h6 { font-size: 16px; }
 		#camera_wrap_1 .camera_caption .btn-transparent {
 			margin-top: 30px;
 			font-size: 24px;
+			color: #DC263F
 		}
 	#camera_wrap_1 .camera_prev,
 	#camera_wrap_1 .camera_next {
@@ -957,6 +958,7 @@ h6 { font-size: 16px; }
 	-webkit-transition: all 0.5s ease-in;
 	   -moz-transition: all 0.5s ease-in;
 	        transition: all 0.5s ease-in;
+	height: 320px
 }
 #product-carousel .thumbnail .product-zoom,
 #product-carousel .thumbnail .caption {
