@@ -34,7 +34,7 @@
 									<div class="product-details">
 									<!-- Product Name & Price Starts -->
 										<div class="clearfix">
-											<h5 class="product-heading">Double seat Sofa</h5>
+											<h5 class="product-heading">Credenzas</h5>
 											<h4 class="price">
 												<span class="price-new">$399</span>
 											</h4>
@@ -69,7 +69,7 @@
 									<div class="product-details">
 									<!-- Product Name & Price Starts -->
 										<div class="clearfix">
-											<h5 class="product-heading">Double seat Sofa</h5>
+											<h5 class="product-heading">Ducon</h5>
 											<h4 class="price">
 												<span class="price-new">$399</span>
 											</h4>
@@ -104,7 +104,7 @@
 									<div class="product-details">
 									<!-- Product Name & Price Starts -->
 										<div class="clearfix">
-											<h5 class="product-heading">Double seat Sofa</h5>
+											<h5 class="product-heading">Confort</h5>
 											<h4 class="price">
 												<span class="price-old">$425</span>
 												<span class="price-new">$399</span>
@@ -140,7 +140,7 @@
 									<div class="product-details">
 									<!-- Product Name & Price Starts -->
 										<div class="clearfix">
-											<h5 class="product-heading">Double seat Sofa</h5>
+											<h5 class="product-heading">Linea Abaco</h5>
 											<h4 class="price">
 												<span class="price-old">$425</span>
 												<span class="price-new">$399</span>
@@ -176,7 +176,7 @@
 									<div class="product-details">
 									<!-- Product Name & Price Starts -->
 										<div class="clearfix">
-											<h5 class="product-heading">Double seat Sofa</h5>
+											<h5 class="product-heading">Linea Aster</h5>
 											<h4 class="price">
 												<span class="price-old">$425</span>
 												<span class="price-new">$399</span>
@@ -212,7 +212,7 @@
 									<div class="product-details">
 									<!-- Product Name & Price Starts -->
 										<div class="clearfix">
-											<h5 class="product-heading">Double seat Sofa</h5>
+											<h5 class="product-heading">Linea Quadra</h5>
 											<h4 class="price">
 												<span class="price-new">$399</span>
 											</h4>
@@ -253,7 +253,7 @@
 									<div class="product-details">
 									<!-- Product Name & Price Starts -->
 										<div class="clearfix">
-											<h5 class="product-heading">Double seat Sofa</h5>
+											<h5 class="product-heading">Linea Quadra</h5>
 											<h4 class="price">
 												<span class="price-new">$399</span>
 											</h4>
@@ -288,7 +288,7 @@
 									<div class="product-details">
 									<!-- Product Name & Price Starts -->
 										<div class="clearfix">
-											<h5 class="product-heading">Double seat Sofa</h5>
+											<h5 class="product-heading">Paneles</h5>
 											<h4 class="price">
 												<span class="price-old">$425</span>
 												<span class="price-new">$399</span>
@@ -324,7 +324,7 @@
 									<div class="product-details">
 									<!-- Product Name & Price Starts -->
 										<div class="clearfix">
-											<h5 class="product-heading">Double seat Sofa</h5>
+											<h5 class="product-heading">Credenzas</h5>
 											<h4 class="price">
 												<span class="price-old">$425</span>
 												<span class="price-new">$399</span>

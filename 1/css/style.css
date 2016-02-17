@@ -301,7 +301,8 @@ h6 { font-size: 16px; }
 	}
 		#camera_wrap_1 .camera_caption > div {
 			background:none;
-			color: #DC263F;
+			color: #FEC800;
+			text-shadow: 2px -1px 1px #000000;
 		}
 		#camera_wrap_1 .camera_caption h1 {
 			text-transform: uppercase;
