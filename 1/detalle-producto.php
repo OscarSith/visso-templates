@@ -68,7 +68,7 @@
 					              <td>In Stock</td>
 					          </tr>
 					          <tr>
-					              <td colspan="3"><span class="price-old">$32.91</span> <span class="price">$21.42</span></td>
+					              <td colspan="3"><span class="price-old"></span> <span class="price"></span></td>
 					          </tr>
 					          <tr>
 					              <td><strong>Quantity</strong></td>
@@ -123,7 +123,7 @@
 					        <a href="#"><img alt="" src="images/Credenza_de_puertas_corredizas.jpg"></a>
 					        <div class="caption">
 					          <h5>Pants</h5>
-					          <p>$54.00</p>
+					          <p></p>
 					          <p>Available</p>
 					        </div>
 					      </div>
@@ -133,7 +133,7 @@
 					        <a href="#"><img alt="" src="images/Credenza_mixta_larga.jpg"></a>
 					        <div class="caption">
 					          <h5>Pants</h5>
-					          <p>$54.00</p>
+					          <p></p>
 					          <p>Available</p>
 					        </div>
 					      </div>
@@ -143,7 +143,7 @@
 					        <a href="#"><img alt="" src="images/Credenza_porta_documentos.jpg"></a>
 					        <div class="caption">
 					          <h5>Pants</h5>
-					          <p>$54.00</p>
+					          <p></p>
 					          <p>Available</p>
 					        </div>
 					      </div>
@@ -153,7 +153,7 @@
 					        <a href="#"><img alt="" src="images/Paneles_de_1.74_m.jpg"></a>
 					        <div class="caption">
 					          <h5>Pants</h5>
-					          <p>$54.00</p>
+					          <p></p>
 					          <p>Available</p>
 					        </div>
 					      </div>

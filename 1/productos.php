@@ -36,7 +36,7 @@
 										<div class="clearfix">
 											<h5 class="product-heading">Credenzas</h5>
 											<h4 class="price">
-												<span class="price-new">$399</span>
+												<span class="price-new"></span>
 											</h4>
 										</div>
 									<!-- Product Name & Price Ends -->
@@ -71,7 +71,7 @@
 										<div class="clearfix">
 											<h5 class="product-heading">Ducon</h5>
 											<h4 class="price">
-												<span class="price-new">$399</span>
+												<span class="price-new"></span>
 											</h4>
 										</div>
 									<!-- Product Name & Price Ends -->
@@ -106,8 +106,8 @@
 										<div class="clearfix">
 											<h5 class="product-heading">Confort</h5>
 											<h4 class="price">
-												<span class="price-old">$425</span>
-												<span class="price-new">$399</span>
+												<span class="price-old"></span>
+												<span class="price-new"></span>
 											</h4>
 										</div>
 									<!-- Product Name & Price Ends -->
@@ -142,8 +142,8 @@
 										<div class="clearfix">
 											<h5 class="product-heading">Linea Abaco</h5>
 											<h4 class="price">
-												<span class="price-old">$425</span>
-												<span class="price-new">$399</span>
+												<span class="price-old"></span>
+												<span class="price-new"></span>
 											</h4>
 										</div>
 									<!-- Product Name & Price Ends -->
@@ -178,8 +178,8 @@
 										<div class="clearfix">
 											<h5 class="product-heading">Linea Aster</h5>
 											<h4 class="price">
-												<span class="price-old">$425</span>
-												<span class="price-new">$399</span>
+												<span class="price-old"></span>
+												<span class="price-new"></span>
 											</h4>
 										</div>
 									<!-- Product Name & Price Ends -->
@@ -214,7 +214,7 @@
 										<div class="clearfix">
 											<h5 class="product-heading">Linea Quadra</h5>
 											<h4 class="price">
-												<span class="price-new">$399</span>
+												<span class="price-new"></span>
 											</h4>
 										</div>
 									<!-- Product Name & Price Ends -->
@@ -255,7 +255,7 @@
 										<div class="clearfix">
 											<h5 class="product-heading">Linea Quadra</h5>
 											<h4 class="price">
-												<span class="price-new">$399</span>
+												<span class="price-new"></span>
 											</h4>
 										</div>
 									<!-- Product Name & Price Ends -->
@@ -290,8 +290,8 @@
 										<div class="clearfix">
 											<h5 class="product-heading">Paneles</h5>
 											<h4 class="price">
-												<span class="price-old">$425</span>
-												<span class="price-new">$399</span>
+												<span class="price-old"></span>
+												<span class="price-new"></span>
 											</h4>
 										</div>
 									<!-- Product Name & Price Ends -->
@@ -326,8 +326,8 @@
 										<div class="clearfix">
 											<h5 class="product-heading">Credenzas</h5>
 											<h4 class="price">
-												<span class="price-old">$425</span>
-												<span class="price-new">$399</span>
+												<span class="price-old"></span>
+												<span class="price-new"></span>
 											</h4>
 										</div>
 									<!-- Product Name & Price Ends -->

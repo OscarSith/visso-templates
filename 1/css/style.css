@@ -239,14 +239,14 @@ h6 { font-size: 16px; }
 		position: fixed;
 		top: 0;
 		width: 100%;
-		background-color: #DC263F;
+		background-color: #000000;
 	}
 	#main-menu-wrap .navbar {
 		margin-bottom: 0;
 	}
 	#nav.navbar-default {
 		padding: 0 20px;
-		background-color: #DC263F;
+		background-color: #000000;
 		border: none;
 		text-transform: uppercase;
 	}
