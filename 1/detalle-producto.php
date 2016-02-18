@@ -120,17 +120,21 @@
 					  <div class="row product-container">
 					    <div class="col-md-3 col-sm-6 col-xs-6">
 					      <div class="thumbnail product-item">
-					        <a href="#"><img alt="" src="images/Credenza_de_puertas_corredizas.jpg"></a>
-					        <div class="caption">
-					          <h5>Pants</h5>
-					          <p></p>
-					          <p>Available</p>
-					        </div>
+						        <a href="#">
+						        	<img alt="" src="images/Credenza_de_puertas_corredizas.jpg">
+						        </a>
+						        <div class="caption">
+						          <h5>Pants</h5>
+						          <p></p>
+						          <p>Available</p>
+						        </div>
 					      </div>
 					    </div>
 					    <div class="col-md-3 col-sm-6 col-xs-6">
 					      <div class="thumbnail product-item">
-					        <a href="#"><img alt="" src="images/Credenza_mixta_larga.jpg"></a>
+					        <a href="#">
+					        	<img alt="" src="images/Credenza_mixta_larga.jpg">
+					        </a>
 					        <div class="caption">
 					          <h5>Pants</h5>
 					          <p></p>

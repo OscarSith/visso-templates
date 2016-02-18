@@ -41,19 +41,25 @@
 			<div class="row about-banners">
             	<div class="col-md-4 col-sm-6 col-xs-12">
 					<a href="productos.php">
-						<img src="images/Almacenero_puertas_batientes.jpg" alt="Banner 1" class="img-responsive center-block">
+						<div>
+							<img src="images/Almacenero_puertas_batientes.jpg" alt="Banner 1" class="img-responsive center-block">
+						</div>
 						<h4 class="text-center">VISSO</h4>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<a href="productos.php">
-						<img src="images/confort_2.jpg" alt="Banner 2" class="img-responsive center-block">
+						<div>
+							<img src="images/confort_2.jpg" alt="Banner 2" class="img-responsive center-block">
+						</div>
 						<h4 class="text-center">QUADRIFOGLIO</h4>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<a href="productos.php">
-						<img src="images/Credenza_porta_documentos.jpg" alt="Banner 3" class="img-responsive center-block">
+						<div>
+							<img src="images/Credenza_porta_documentos.jpg" alt="Banner 3" class="img-responsive center-block">
+						</div>
 						<h4 class="text-center">NOVEDADES</h4>
 					</a>
 				</div>
