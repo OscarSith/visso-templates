@@ -20,16 +20,6 @@
 											<p class="subdescription">Alguna descripcion</p>
 										</div>
 									</div>
-									<div class="item-product-price">
-										<!-- PRICE -->
-										<span class="price-num green-text">$17</span>
-										<!-- OLD PRICE START -->
-										<p class="subdescription">
-											 $36
-										</p>
-										<div class="old-price">
-										</div> <!-- END OLD PRICE -->
-									</div>
 								</div>
 							</div>
 						</div>
@@ -51,11 +41,6 @@
 											</p>
 										</div>
 									</div>
-									<div class="item-product-price">
-										<span class="price-num green-text">$17</span>
-										<p class="subdescription">$36</p>
-										<div class="old-price"></div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -76,13 +61,6 @@
 												 Widget
 											</p>
 										</div>
-									</div>
-									<div class="item-product-price">
-										<span class="price-num green-text">$9</span>
-										<p class="subdescription">
-											 $15
-										</p>
-										<div class="old-price"></div>
 									</div>
 								</div>
 							</div>
@@ -106,7 +84,6 @@
 										</div>
 									</div>
 									<div class="item-product-price">
-										<span class="price-num green-text">$11</span>
 									</div>
 								</div>
 							</div>
@@ -130,14 +107,6 @@
 											</p>
 										</div>
 									</div>
-									<div class="item-product-price">
-										<span class="price-num green-text">$15</span>
-										<p class="subdescription">
-											 $23
-										</p>
-										<div class="old-price">
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -154,14 +123,6 @@
 									<div class="item-product">
 										<div class="item-top-title">
 											<h5>Health Care</h5>
-										</div>
-									</div>
-									<div class="item-product-price">
-										<span class="price-num green-text">$18</span>
-										<p class="subdescription">
-											 $30
-										</p>
-										<div class="old-price">
 										</div>
 									</div>
 								</div>
@@ -185,9 +146,6 @@
 											</p>
 										</div>
 									</div>
-									<div class="item-product-price">
-										<span class="price-num green-text">$10</span>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -207,14 +165,6 @@
 											<p class="subdescription">
 												 UI Element
 											</p>
-										</div>
-									</div>
-									<div class="item-product-price">
-										<span class="price-num green-text">$17</span>
-										<p class="subdescription">
-											 $36
-										</p>
-										<div class="old-price">
 										</div>
 									</div>
 								</div>
