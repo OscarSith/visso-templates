@@ -39,12 +39,6 @@
 						<div class="well product-short-detail">
 							<div class="row">
 								<div class="the-list">
-									<h3 class="col-xs-12">
-										<!-- <span class="price-old">$169</span> -->
-										$17.00
-									</h3>
-								</div>
-								<div class="the-list">
 									<div class="col-xs-4">Availability</div>
 									<div class="col-xs-8">
 										<!-- <span class="red">OUT OF STOCK</span> -->
