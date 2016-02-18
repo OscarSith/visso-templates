@@ -1,6 +1,12 @@
 <?php include "tpl/header.tpl.html" ?>
 	<div id="slider" class="slider clearfix">
 		<div id="camera_wrap_1" class="camera_wrap camera_white_skin camera_emboss pattern_10 text-center">
+			<div data-src="images/banners/BANNER.jpg">
+				<div class="camera_caption moveFromLeft hidden-xs">
+					
+					<!-- <a href="#" class="btn btn-transparent">Shop Now</a> -->
+				</div>
+			</div>
 			<div data-src="images/banners/27ac5-sillas-visso.jpg">
 				<div class="camera_caption moveFromLeft hidden-xs">
 					<h1>
