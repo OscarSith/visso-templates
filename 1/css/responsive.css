@@ -3,15 +3,15 @@
 @media (min-width: 1200px) {
 
 /* Footer Top Area Styles Starts */
-	
-	.newsletter-block .form-control, 
+
+	.newsletter-block .form-control,
 	.newsletter-block .btn-secondary {
 		padding: 10px 20px;
-	}	
+	}
 	.social-media-block ul.sm-links li + li {
 		margin-left: 10px;
 	}
-	
+
 }
 
 /* Medium Devices Styles Starts */
@@ -24,17 +24,17 @@
 		padding-left: 2px;
 		padding-right: 2px;
 	}
-	
+
 /* Navigation Styles Starts */
 
-	#main-menu-wrap { 
+	#main-menu-wrap {
 		top: 70px;
-	}	
+	}
 
 /* Slider Styles Starts */
 
 	#camera_wrap_1 .camera_caption {
-		bottom: 10%;
+		bottom: 35%;
 		left: 13%;
 	}
 		#camera_wrap_1 .camera_caption h1 {
@@ -60,8 +60,8 @@
 		}
 
 /* Footer Top Area Styles Starts */
-	
-	.newsletter-block .form-control, 
+
+	.newsletter-block .form-control,
 	.newsletter-block .btn-secondary {
 		padding: 10px 13px;
 	}
@@ -81,10 +81,10 @@
 		padding-left: 2px;
 		padding-right: 2px;
 	}
-	
+
 /* Navigation Styles Starts */
 
-	#main-menu-wrap { 
+	#main-menu-wrap {
 		top: 60px;
 	}
 		#nav.navbar-default {
@@ -96,7 +96,7 @@
 				padding-right: 10px;
 				font-size: 15px;
 			}
-			
+
 /* Brand Logo Styles Starts */
 
 	#nav .navbar-header {
@@ -123,7 +123,7 @@
 				font-family: 'Roboto', sans-serif;
 				font-weight: 300;
 				font-style: italic;
-			}			
+			}
 
 /* Slider Styles Starts */
 
@@ -159,29 +159,29 @@
 	.newsletter-block {
 		margin-bottom: 25px;
 	}
-		.newsletter-block .form-control, 
+		.newsletter-block .form-control,
 		.newsletter-block .btn-secondary {
 			padding: 10px 13px;
 		}
-		.newsletter-block h4, 
+		.newsletter-block h4,
 		.social-media-block h4 {
 			margin-bottom: 15px;
 		}
-		.newsletter-block h4, 
-		.social-media-block h4, 
+		.newsletter-block h4,
+		.social-media-block h4,
 		.social-media-block ul.sm-links {
 			text-align: center;
 		}
 		.social-media-block ul.sm-links li + li {
 			margin-left: 8px;
 		}
-	
+
 /* Footer Styles Starts */
 
 	.footer-boxes > div {
 		min-height: 250px;
 	}
-	
+
 }
 
 /* Extra Small Devices Styles Starts */
@@ -199,35 +199,35 @@
 	.header-links {
 	}
 
-/* Currency & Languages Drop Down Styles Starts */	
-	
+/* Currency & Languages Drop Down Styles Starts */
+
 	.top-bar .btn-group {
 		float: right;
 	}
-	
+
 /* Search Styles Starts */
 
 	.search {
 		margin-top: 10px;
-	}	
+	}
 
-/* Cart Style Starts */	
+/* Cart Style Starts */
 
 	#cart .btn-default {
 		margin-top: 10px;
 	}
-	
+
 /* Navigation Styles Starts */
 
-	#main-menu-wrap { 
+	#main-menu-wrap {
 		top: 50px;
-	}	
+	}
 		#nav.navbar-default {
 			border-radius: 5px;
 		}
-		#nav .navbar-nav > li > a { 
+		#nav .navbar-nav > li > a {
 			padding-top: 10px;
-		}		
+		}
 		#nav.navbar-default .navbar-toggle {
 			margin-top: 26px;
 			border-color: #fff;
@@ -247,10 +247,10 @@
 			margin-top: 10px;
 			border-color: #ffdfdb;
 		}
-		
+
 /* Slider Styles Starts */
 
-	#camera_wrap_1 .camera_prev, 
+	#camera_wrap_1 .camera_prev,
 	#camera_wrap_1 .camera_next {
 		top: 240px;
 	}
@@ -281,13 +281,13 @@
 		}
 
 /* Recent Articles Section Styles Starts */
-	
+
 	.recent-articles .content-box {
 		text-align: center;
 	}
 		.recent-articles .content-box .img-responsive {
 			margin-left: auto;
-			margin-right: auto;	
+			margin-right: auto;
 		}
 		.recent-articles .content-box > .row .img-responsive {
 			margin-top: 30px;
@@ -296,7 +296,7 @@
 			margin-top: 0;
 			margin-bottom: 30px;
 		}
-		
+
 /* Clearance Sale Section Styles Starts */
 
 	.clearance h4 {
@@ -320,16 +320,16 @@
 	.newsletter-block {
 		margin-bottom: 25px;
 	}
-		.newsletter-block .form-control, 
+		.newsletter-block .form-control,
 		.newsletter-block .btn-secondary {
 			padding: 10px 12px;
 		}
-		.newsletter-block h4, 
+		.newsletter-block h4,
 		.social-media-block h4 {
 			margin-bottom: 15px;
 		}
-		.newsletter-block h4, 
-		.social-media-block h4, 
+		.newsletter-block h4,
+		.social-media-block h4,
 		.social-media-block ul.sm-links {
 			text-align: center;
 		}
@@ -339,7 +339,7 @@
 
 /* Footer Styles Starts */
 
-	.footer-boxes {	
+	.footer-boxes {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -352,9 +352,9 @@
 	.copyright .pull-right {
 		margin-top: 10px;
 	}
-	.copyright .pull-left, 
+	.copyright .pull-left,
 	.copyright .pull-right {
 		float: none !important;
 	}
-	
+
 }

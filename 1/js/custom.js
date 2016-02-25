@@ -21,7 +21,10 @@ $(function() {
 		height: '50%',
 		playPause: true,
 		pagination: false,
-		imagePath: 'plugins/camera/images/'
+		imagePath: 'plugins/camera/images/',
+		onEndTransition: function() {
+			$('div.camera_caption').css('left', '0px');
+		}
 	});
 
 	// STICKY NAV

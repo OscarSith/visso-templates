@@ -233,35 +233,40 @@ h6 { font-size: 16px; }
 		position: relative;
 		z-index: 1000;
 	}
-	#main-menu-wrap.static-nav {
-	}
 	#main-menu-wrap.sticky-nav {
 		position: fixed;
 		top: 0;
 		width: 100%;
-		background-color: #000000;
+		background-color: #252424;
 	}
 	#main-menu-wrap .navbar {
 		margin-bottom: 0;
 	}
 	#nav.navbar-default {
 		padding: 0 20px;
-		background-color: #000000;
+		background-color: #252424;
 		border: none;
 		text-transform: uppercase;
 	}
-		#nav .navbar-nav > li > a {
-			padding-top: 34px;
-			color: #fff;
-			font-size: 16px;
-		}
-		#nav .navbar-nav > li > a:hover,
-		#nav .navbar-nav > li.current > a {
-			color: #ffead4;
-		}
+	#nav .navbar-nav > li > a {
+		padding-top: 22px;
+		color: #fff;
+		font-size: 16px;
+	}
+	#nav .navbar-nav > li > a:hover,
+	#nav .navbar-nav > li.current > a {
+		color: #FEC800;
+	}
+	.links-socials {
+		font-size: 12px;
+		margin-left: 20px;
+		margin-top: 15px;
+	}
+	.links-socials a, .links-socials .fa-inverse {
+		color: #FEC800
+	}
 
 /* Brand Logo Styles Starts */
-
 	#nav .navbar-header {
 		position: relative;
 	}
@@ -289,16 +294,16 @@ h6 { font-size: 16px; }
 			}
 
 /* Slider Styles Starts */
-
 #slider {
 	position: relative;
 	overflow: hidden;
-	margin-top: 85px;
+	margin-top: 58px;
 }
 	#camera_wrap_1 .camera_caption {
 		bottom: 40%;
 		left: 15%;
-		width: 70%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, .5);
 	}
 		#camera_wrap_1 .camera_caption > div {
 			background:none;
@@ -359,16 +364,23 @@ h6 { font-size: 16px; }
 	background-color: #f7f7f7;
 	color: #6e6e6e;
 }
-	.about .content {
-		padding-left: 15%;
-		padding-right: 15%;
-	}
-	.about-banners {
-		margin-top: 30px;
-	}
-		.about-banners .img-responsive {
-			margin-top: 10px;
-		}
+.about .content {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.about-banners {
+	margin-top: 30px;
+}
+.about-banners .img-responsive {
+	margin-top: 10px;
+	max-height: 280px;
+}
+.about-banners a {
+	text-decoration: none;
+}
+.about-banners h4 {
+	color: #333
+}
 
 /* Products Section Styles Starts */
 
@@ -430,6 +442,7 @@ h6 { font-size: 16px; }
 					#product-carousel .thumbnail .caption .product-details {
 						padding: 15px 20px;
 						text-transform: uppercase;
+						border-top: 1px solid #e3e3e3;
 					}
 					#product-carousel .thumbnail .caption .product-details .product-heading {
 						margin: 4px 0 0;
@@ -961,7 +974,8 @@ h6 { font-size: 16px; }
 	-webkit-transition: all 0.5s ease-in;
 	   -moz-transition: all 0.5s ease-in;
 	        transition: all 0.5s ease-in;
-	height: 320px
+	height: 320px;
+	border: 2px solid #FEC800;
 }
 #product-carousel .thumbnail .product-zoom,
 #product-carousel .thumbnail .caption {
@@ -1032,7 +1046,7 @@ h6 { font-size: 16px; }
     line-height: 24px;
     font-weight: 300;
     text-transform: uppercase;
-    border-bottom: 1px solid #f89406;
+    border-bottom: 1px solid #FEC800;
 }
 
 .heading-title h2 span{
@@ -1194,12 +1208,44 @@ h6 { font-size: 16px; }
     background-color: #333;
     border-color: #222;
 }
-.about-banners a div {
-	height: 340px;
+.about-banners a>div {
+	border: 3px solid #FEC800;
+	height: 270px;
 	overflow: hidden;
+	position: relative;
+	width: 230px;
+}
+.about-banners a>div:hover .product-hover{
+	display: block !important;
+}
+.product-hover {
+	background-color: rgba(0, 0, 0, 0.45);
+	color: #fff;
+	left: 0;
+	padding: 12px 0;
+	position: absolute;
+	right: 0;
+	top: 40%;
+}
+.middle-info {
+	background-color: #E4E4E4;
+	margin-top: 40px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.middle-info h2 {
+	font-size: 3em;
+	background: url('../images/equis.png') no-repeat left top;
+	margin-left: 9%;
+	padding-left: 41px;
+	text-align: left;
+	margin-bottom: 0
 }
 .product-item a {
 	display: inline-block;
 	height: 170px;
 	overflow: hidden;
+}
+.thumbnail {
+	border: 2px solid #FEC800
 }
