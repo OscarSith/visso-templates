@@ -16,7 +16,7 @@ $(function() {
 		mobileAutoAdvance: true,
 		barDirection: 'leftToRight',
 		barPosition: 'bottom',
-		loader: 'bar',
+		loader: false,
 		cols: 12,
 		height: '50%',
 		playPause: true,
