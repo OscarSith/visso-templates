@@ -15,12 +15,13 @@ $(function() {
 		autoAdvance: true,
 		mobileAutoAdvance: true,
 		barDirection: 'leftToRight',
-		barPosition: 'bottom',
+		// barPosition: 'bottom',
 		loader: false,
 		cols: 12,
 		height: '50%',
-		playPause: true,
-		pagination: false,
+		playPause: false,
+		pagination: true,
+		navigation: false,
 		imagePath: 'plugins/camera/images/',
 		onEndTransition: function() {
 			$('div.camera_caption').css('left', '0px');
