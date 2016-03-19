@@ -47,8 +47,8 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-								<a href="index.php" class="navbar-brand">
-									<img src="images/logo_p2.png">
+								<a href="{{ url('/') }}" class="navbar-brand">
+									<img src="{{ asset('images/logo_p2.png') }}">
 								</a>
 								<div class="links-socials pull-left">
 									<a href="#">
@@ -74,7 +74,7 @@
 							<div class="navbar-collapse collapse">
 								<ul class="nav navbar-nav navbar-right">
 									<li><a href="{{ url('/') }}">NOSOTROS</a></li>
-									<li><a href="{{ url('productos') }}">PRODUCTOS</a></li>
+									<li><a href="{{ route('categorias') }}">PRODUCTOS</a></li>
 									<li><a href="#">PROYECTOS</a></li>
 									<li><a href="{{ url('contacto') }}">CONTACTO</a></li>
 								</ul>

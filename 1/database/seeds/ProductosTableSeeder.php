@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Producto;
 
-class DatabaseSeeder extends Seeder
+class ProductosTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(UserTableSeeder::class);
-        $this->call(CategoriaTableSeeder::class);
+        $productos[] = ['cat_id' => 1, ''];
     }
 }

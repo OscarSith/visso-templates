@@ -6,17 +6,18 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="{{ url('/') }}">Inicio</a></li>
-				<li class="active">Productos</li>
+				<li><a href="{{ route('categorias') }}">Productos</a></li>
+				<li class="active">{{ $categoriaNombre }}</li>
 			</ol>
 		</div>
 		<div class="row visso-list">
 			@foreach($categorias as $categoria)
 			<div class="col-md-3 col-sm-4">
 				<div class="thumbnail">
-					<img src="{{ asset('images/categorias/'. $categoria->cat_imagen) }}" alt="{{ strtolower($categoria->cat_nombre) }}" class="img-responsive">
+					<img src="{{ asset('images/categorias/' . $categoria->cat_imagen) }}" alt="{{ strtolower($categoria->cat_nombre) }}" class="img-responsive">
 					<div class="caption">
 						<div class="product-details">
-							<a href="{{ route('catByProduct', [str_slug($categoria->cat_nombre), $categoria->cat_parent]) }}">
+							<a href="{{ route('productsByCatID', [$categoriaNombre, str_slug($categoria->cat_nombre), $categoria->id]) }}">
 								<div class="clearfix">
 									<img src="{{ asset('images/equis.png') }}" style="height: 27px;" class="center-block">
 								</div>
