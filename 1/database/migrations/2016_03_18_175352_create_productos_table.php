@@ -18,7 +18,6 @@ class CreateProductosTable extends Migration
             $table->string('pro_nombre');
             $table->text('pro_descripcion');
             $table->string('pro_imagen_default');
-            $table->integer('pro_galeria_id')->unsigned();
             $table->tinyInteger('pro_estado')->default(1);
             $table->timestamps();
 

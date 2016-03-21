@@ -19,6 +19,8 @@ class CreateGaleriasTable extends Migration
             $table->string('gal_imagen_thumb');
             $table->tinyInteger('gal_estado')->default(1);
             $table->timestamps();
+
+            $table->foreign('producto_id')->references('id')->on('productos');
         });
     }
 

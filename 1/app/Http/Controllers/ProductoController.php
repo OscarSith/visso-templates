@@ -14,10 +14,10 @@ class ProductoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($catName, $cat_name_sub, $id)
+    public function index($catName, $parent_cat_id, $cat_name_sub, $id)
     {
         $productos = Producto::getByCatID($id);
-        return view('');
+        return view('listado-productos', compact('productos', 'catName', 'cat_name_sub', 'parent_cat_id'));
     }
 
     /**

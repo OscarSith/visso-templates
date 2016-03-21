@@ -22,7 +22,7 @@ class CategoriaController extends Controller
     public function subIndex($name, $catSub)
     {
         $categorias = Categoria::getBySub($catSub);
-        return view('productos-por-categoria', ['categorias' => $categorias, 'categoriaNombre' => $name]);
+        return view('productos-por-categoria', ['categorias' => $categorias, 'categoriaNombre' => $name, 'parent_cat_id' => $catSub]);
     }
 
     /**

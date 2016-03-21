@@ -53,15 +53,15 @@ class CategoriaTableSeeder extends Seeder
         	['cat_nombre' => 'PANELES', 'cat_imagen' => 'paneles_paneles.jpg', 'cat_sub' => 6, 'cat_parent' => 0],
 
         	// RECEPCION
-        	['cat_nombre' => 'COUNTERS', 'cat_imagen' => 'counters_armarios.jpg', 'cat_sub' => 7, 'cat_parent' => 0],
-        	['cat_nombre' => 'MESAS DE RECEPCIÓN', 'cat_imagen' => 'mesas_cajorenas.jpg', 'cat_sub' => 7, 'cat_parent' => 0],
-        	['cat_nombre' => 'MUEBLES DE RECEPCIÓN', 'cat_imagen' => 'muebles_credenzas.jpg', 'cat_sub' => 7, 'cat_parent' => 0],
+        	['cat_nombre' => 'COUNTERS', 'cat_imagen' => 'recep_counters.jpg', 'cat_sub' => 7, 'cat_parent' => 0],
+        	['cat_nombre' => 'MESAS DE RECEPCIÓN', 'cat_imagen' => 'recep_mesas_recepcion.jpg', 'cat_sub' => 7, 'cat_parent' => 0],
+        	['cat_nombre' => 'MUEBLES DE RECEPCIÓN', 'cat_imagen' => 'recep_muebles_recepcion.jpg', 'cat_sub' => 7, 'cat_parent' => 0],
 
         	// ACCESORIOS
-        	['cat_nombre' => 'PANELES', 'cat_imagen' => 'paneles_paneles.jpg', 'cat_sub' => 6, 'cat_parent' => 0],
+        	['cat_nombre' => 'PORTA MONITORES', 'cat_imagen' => 'acce_porta_monitores.jpg', 'cat_sub' => 8, 'cat_parent' => 0],
 
         	// OTROS
-        	['cat_nombre' => 'OTROS', 'cat_imagen' => 'otros_paneles.jpg', 'cat_sub' => 9, 'cat_parent' => 0],
+        	['cat_nombre' => 'OTROS', 'cat_imagen' => 'otros_otros.jpg', 'cat_sub' => 9, 'cat_parent' => 0],
         ];
 
         foreach ($categorias as $key => $value) {
