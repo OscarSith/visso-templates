@@ -5,7 +5,10 @@ body {
 	font: 14px/26px 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-/*a { color: #fdc800; }*/
+#sliders {
+	overflow: hidden;
+	max-height: 570px
+}
 a:hover,
 a:focus {
 	color: #fdc800;

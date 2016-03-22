@@ -1,3 +1,6 @@
+<?php
+$currentUri = \Route::current()->uri();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -30,11 +33,6 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div class="loading-wrap">
-			<div class="loading">
-				<span>Cargando...</span>
-			</div>
-		</div>
 		<header id="main-header" class="main-header">
 			<div id="main-menu-wrap" class="sticky-nav">
 				<div id="main-menu">
@@ -73,10 +71,11 @@
 							</div>
 							<div class="navbar-collapse collapse">
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="{{ url('/') }}">NOSOTROS</a></li>
-									<li><a href="{{ route('categorias') }}">PRODUCTOS</a></li>
+									<li {{ $currentUri == '/' ? "class=current" : ''}}><a href="{{ url('/') }}">INICIO</a></li>
+									<li {{ $currentUri == 'nosotros' ? "class=current" : ''}}><a href="#">NOSOTROS</a></li>
+									<li {{ $currentUri == 'productos' ? "class=current" : ''}}><a href="{{ route('categorias') }}">PRODUCTOS</a></li>
 									<li><a href="#">PROYECTOS</a></li>
-									<li><a href="{{ url('contacto') }}">CONTACTO</a></li>
+									<li {{ $currentUri == 'contacto' ? "class=current" : ''}}><a href="{{ url('contacto') }}">CONTACTO</a></li>
 								</ul>
 							</div>
 						</nav>

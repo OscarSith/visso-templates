@@ -13,19 +13,8 @@ $(function() {
 		}, 800);
 		setTimeout(function(){
 			$("#sliders-03").slick(sets);
-			$(".loading-wrap").fadeOut(400);
 		}, 1600);
-	} else {
-		// PreLoader
-		$(window).load(function() {
-			$(".loading-wrap").fadeOut(400);
-		});
 	}
-
-	// TOOLTIP
-	$(".tool-tip").tooltip({
-		placement: "bottom"
-	});
 
 	//AJAX CONTACT FORM
 	$(".contact-form").submit(function() {
