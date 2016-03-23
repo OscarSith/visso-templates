@@ -14,14 +14,10 @@ $currentUri = \Route::current()->uri();
 		<title>Venta de muebles de oficina / VISSO</title>
 		<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
-		<!-- Google Web Fonts -->
-		<!-- <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700" rel="stylesheet" type="text/css"> -->
-		<!-- <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css"> -->
-		<!-- <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"> -->
-		<!-- <link href="http://fonts.googleapis.com/css?family=Rochester" rel="stylesheet" type="text/css"> -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 
 		<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('css/animate.css') }}" rel="stylesheet">
 		<link href="{{ asset('css/loader.css') }}" rel="stylesheet">
 		<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 		<link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
@@ -93,6 +89,7 @@ $currentUri = \Route::current()->uri();
 		<script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
 		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 		<script src="{{ asset('js/slick.min.js') }}"></script>
+		<script src="{{ asset('js/wow.min.js') }}"></script>
 		@yield('contact')
 		<script src="{{ asset('js/custom.js') }}"></script>
 	</body>

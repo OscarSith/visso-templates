@@ -3,6 +3,7 @@ $(function() {
 	$( 'a[href="#"]' ).click( function(e) {
 		e.preventDefault();
 	});
+	new WOW().init();
 
 	var $slider = $("#sliders-01");
 	if ($slider.length) {

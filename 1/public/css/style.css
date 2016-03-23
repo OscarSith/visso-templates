@@ -341,7 +341,6 @@ h6 { font-size: 16px; }
 }
 
 /* Products Section Styles Starts */
-
 .products {
 	overflow: hidden;
 }
@@ -349,11 +348,6 @@ h6 { font-size: 16px; }
 	padding: 0;
 	position: relative;
 	overflow: hidden;
-}
-.visso-list .thumbnail:hover {
-	-webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
-	   -moz-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
-	        box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
 }
 	.visso-list .thumbnail ul.btn-list {
 		position: absolute;
@@ -667,6 +661,7 @@ text-shadow: none;
 	   -moz-transition: all 0.5s ease-in;
 	        transition: all 0.5s ease-in;
 	border: 1px solid #FEC800;
+	visibility: hidden;
 }
 .visso-list .thumbnail .product-zoom,
 .visso-list .thumbnail .caption {

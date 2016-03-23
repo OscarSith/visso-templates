@@ -12,9 +12,9 @@
 			</ol>
 		</div>
 		<div class="row visso-list">
-			@foreach($productos as $producto)
+			@foreach($productos as $n => $producto)
 			<div class="col-md-3 col-sm-4">
-				<div class="thumbnail">
+				<div class="thumbnail wow fadeInUp" data-wow-delay="{{ $n/4 }}s">
 					<img src="{{ asset('images/categorias/' . $producto->pro_imagen_default) }}" alt="{{ $producto->pro_nombre }}" class="img-responsive">
 					<div class="caption">
 						<div class="product-details">
