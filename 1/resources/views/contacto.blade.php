@@ -45,6 +45,7 @@
 		</div>
 	</div>
 </section>
+<hr>
 <div class="map"></div>
 @endsection
 

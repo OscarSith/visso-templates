@@ -1,5 +1,37 @@
 <?php
 $currentUri = \Route::current()->uri();
+function getBrowser()
+{
+    $u_agent = $_SERVER['HTTP_USER_AGENT'];
+    $bname = 'Unknown';
+    // Next get the name of the useragent yes seperately and for good reason
+    if(preg_match('/MSIE/i',$u_agent) && !preg_match('/Opera/i',$u_agent))
+    {
+        $bname = 'Internet Explorer';
+    }
+    elseif(preg_match('/Firefox/i',$u_agent))
+    {
+        $bname = 'Mozilla Firefox';
+    }
+    elseif(preg_match('/Chrome/i',$u_agent))
+    {
+        $bname = 'Google Chrome';
+    }
+    elseif(preg_match('/Safari/i',$u_agent))
+    {
+        $bname = 'Safari';
+    }
+    elseif(preg_match('/Opera/i',$u_agent))
+    {
+        $bname = 'Opera';
+    }
+    elseif(preg_match('/Netscape/i',$u_agent))
+    {
+        $bname = 'Netscape';
+    }
+
+    return $bname;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,21 +44,23 @@ $currentUri = \Route::current()->uri();
 		<meta name="author" content="">
 
 		<title>Venta de muebles de oficina / VISSO</title>
-		<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 
-		<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
-		<link href="{{ asset('css/animate.css') }}" rel="stylesheet">
-		<link href="{{ asset('css/loader.css') }}" rel="stylesheet">
-		<link href="{{ asset('css/style.css') }}" rel="stylesheet">
-		<link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
-		<link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+		<link href="{{ asset('css/style.min.css') }}" rel="stylesheet">
 
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		@if(getBrowser() != 'Safari')
+		<style type="text/css">
+			.visso-list .thumbnail .caption {
+				-webkit-transform: translateY(150px);
+					-moz-transform: translateY(150px);
+						transform: translateY(150px);
+			}
+		</style>
+		@endif
 	</head>
 	<body>
 		<header id="main-header" class="main-header">
