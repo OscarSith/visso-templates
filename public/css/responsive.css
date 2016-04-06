@@ -1,3 +1,11 @@
+@media (max-width: 1199px ) {
+	.logo-marca {
+		position: static;
+	}
+	.breadcrumb {
+		margin-bottom: 0;
+	}
+}
 @media (min-width: 992px) and (max-width: 1199px) {
 	.header-links li {
 		padding-left: 2px;
@@ -76,7 +84,6 @@
 		right: -30px;
 	}
 }
-
 /* Extra Small Devices Styles Starts */
 @media (max-width: 767px) {
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Categoria;
+use App\Marca;
 
 class CategoriaController extends Controller
 {
@@ -13,10 +14,17 @@ class CategoriaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($marca = 'visso')
     {
-        $categorias = Categoria::getBySub();
-        return view('productos', compact('categorias'));
+        $marca_id = Marca::where('nombre', strtoupper($marca))->pluck('id')->first();
+        if ($marca_id > 0) {
+            $categorias = Categoria::getBySub($marca_id);
+            // View, es el nivel de subcategoria que tiene una categoria ejem: view = 2 o 3 ...
+            $view = 1;
+            return view('productos-visso', compact('categorias', 'marca', 'view'));
+        }
+
+        return abort(404);
     }
 
     public function subIndex($name, $catSub)

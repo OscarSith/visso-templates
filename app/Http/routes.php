@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('index');
 });
-Route::get('productos', 'CategoriaController@index')->name('categorias');
+Route::get('productos-{marca}', 'CategoriaController@index')->name('categorias');
 Route::get('productos/{cat_name}-{id}', 'CategoriaController@subIndex')->name('catByProduct');
 Route::get('productos/{cat_name}-{parent_cat_id}/{cat_name_sub}-{id}', 'ProductoController@index')->name('productsByCatID');
 Route::get('detalle-producto', function () {

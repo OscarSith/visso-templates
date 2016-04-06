@@ -9,12 +9,8 @@ $(function() {
 	if ($slider.length) {
 		var sets = {fade: true, arrows: false, autoplay: true, speed: 1500, autoplaySpeed: 5000, pauseOnHover: false};
 		$slider.slick(sets);
-		setTimeout(function(){
-			$("#sliders-02").slick(sets);
-		}, 800);
-		setTimeout(function(){
-			$("#sliders-03").slick(sets);
-		}, 1600);
+		$("#sliders-02").slick(sets);
+		$("#sliders-03").slick(sets);
 	}
 
 	//AJAX CONTACT FORM

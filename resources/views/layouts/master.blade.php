@@ -44,15 +44,13 @@ function getBrowser()
 		<meta name="author" content="">
 
 		<title>Venta de muebles de oficina / VISSO</title>
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-
 		<link href="{{ asset('css/style.min.css') }}" rel="stylesheet">
 
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		@if(getBrowser() != 'Safari')
+		@if (getBrowser() != 'Safari')
 		<style type="text/css">
 			.visso-list .thumbnail .caption {
 				-webkit-transform: translateY(150px);
@@ -103,7 +101,7 @@ function getBrowser()
 								<ul class="nav navbar-nav navbar-right">
 									<li {{ $currentUri == '/' ? "class=current" : ''}}><a href="{{ url('/') }}">INICIO</a></li>
 									<li {{ $currentUri == 'nosotros' ? "class=current" : ''}}><a href="#">NOSOTROS</a></li>
-									<li {{ $currentUri == 'productos' ? "class=current" : ''}}><a href="{{ route('categorias') }}">PRODUCTOS</a></li>
+									<li {{ $currentUri == 'productos' ? "class=current" : ''}}><a href="{{ route('categorias', 'visso') }}">PRODUCTOS</a></li>
 									<li><a href="#">PROYECTOS</a></li>
 									<li {{ $currentUri == 'contacto' ? "class=current" : ''}}><a href="{{ url('contacto') }}">CONTACTO</a></li>
 								</ul>
@@ -117,7 +115,7 @@ function getBrowser()
 		@show
 		<footer class="main-footer">
 			<div class="container">
-				<img src="{{ asset('images/partners.jpg') }}" class="center-block">
+				<img src="{{ asset('images/partners.png') }}" class="center-block" id="img-partners">
 			</div>
 		</footer>
 		<script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>

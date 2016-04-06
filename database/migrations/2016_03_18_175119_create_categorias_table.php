@@ -14,6 +14,7 @@ class CreateCategoriasTable extends Migration
     {
         Schema::create('categorias', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('marca_id')->unsigned();
             $table->string('cat_nombre');
             $table->string('cat_imagen');
             $table->tinyInteger('cat_estado')->default(1);
