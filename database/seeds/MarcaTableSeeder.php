@@ -15,7 +15,7 @@ class MarcaTableSeeder extends Seeder
         $arrs = [
         	['nombre' => 'ARESLINE'],
         	['nombre' => 'QUADRIFOGLIO'],
-        	['nombre' => 'VISSO']
+        	['nombre' => 'VISSO'],
         ];
 
         foreach ($arrs as $key) {
