@@ -92,8 +92,8 @@ class CategoriaTableSeeder extends Seeder
 
 
             // QUADRIFOGLIO
-            ['marca_id' => 2, 'cat_nombre' => 'MOBILIARIO', 'cat_imagen' => 'quadri-mobiliario.jpg', 'cat_sub' => 1, 'cat_parent' => 2],
-            ['marca_id' => 2, 'cat_nombre' => 'SILLAS', 'cat_imagen' => 'quadri-sillas.jpg', 'cat_sub' => 1, 'cat_parent' => 3],
+            ['marca_id' => 2, 'cat_nombre' => 'MOBILIARIO', 'cat_imagen' => 'quadri-mobiliario.jpg', 'cat_sub' => 1, 'cat_parent' => 0],
+            ['marca_id' => 2, 'cat_nombre' => 'SILLAS', 'cat_imagen' => 'quadri-sillas.jpg', 'cat_sub' => 1, 'cat_parent' => 0],
 
         ];
 

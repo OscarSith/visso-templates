@@ -32,7 +32,7 @@
 						</div>
 					</div>
 					<div class="col-sm-12 about-banners">
-						<span>OTROS ACCESORIOS</span>
+						<span class="txt-others">OTROS ACCESORIOS</span>
 						<div class="others-products">
 							@foreach($productosPorCategoria as $rec)
 							<div class="item-products">

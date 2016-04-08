@@ -330,15 +330,14 @@ h6 { font-size: 16px; }
 		position: absolute;
 		background: rgba(0, 0, 0, 0.5);
 	}
-		.visso-list .thumbnail .caption .product-details {
-			padding: 25px 20px;
-			text-transform: uppercase;
-		}
-		.visso-list .thumbnail .caption .product-details .product-heading {
-			margin: 4px 0 0;
-			float: left;
-			color: #111;
-		}
+	.visso-list .thumbnail .caption .product-details {
+		padding: 6px 0px;
+		text-transform: uppercase;
+	}
+
+	#quadrifoglio .visso-list .thumbnail .caption {
+		background: rgba(53, 86, 32, 0.68);
+	}
 
 	/* Contact Section Styles Starts */
 	.contact .status {
@@ -395,11 +394,6 @@ h6 { font-size: 16px; }
 .visso-list .thumbnail {
 	visibility: hidden;
 }
-.visso-list .thumbnail .caption {
-	-webkit-transition: all 0.2s;
-	   -moz-transition: all 0.2s;
-	        transition: all 0.2s;
-}
 
 /* Starts */
 .about,
@@ -439,7 +433,7 @@ h6 { font-size: 16px; }
     font-weight: 700;
 }
 
-#product-single .home-product-item{
+/*#product-single .home-product-item{
     padding: 10px;
     border: 1px solid transparent;
     overflow: hidden;
@@ -460,7 +454,7 @@ h6 { font-size: 16px; }
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+}*/
 .content-detail{
     margin-bottom: 20px;
     margin-top: 20px;
@@ -555,7 +549,12 @@ h6 { font-size: 16px; }
 }
 .product-details strong {
 	color: #fff;
-	font-size: 1.4em;
+	display: inline-block;
+	font-size: 1.1em;
+	padding-left: 26px;
+}
+#quadrifoglio .product-details strong {
+	background: url('../images/logotipo-quadri.png') no-repeat 0px 0px;
 }
 #sliders .col-sm-4, .visso-list .col-sm-4 {
 	padding: 0 8px;
@@ -584,6 +583,9 @@ h2.product-title {
 	font-size: 1.5em;
 	font-weight: 100;
 	margin: 0 0 20px;
+}
+h2.product-title div {
+	display: inline-block;
 	padding: 10px 0;
 }
 #visso h2.product-title {
@@ -601,8 +603,13 @@ h2.product-title {
 	background: url('../images/logotipo-aresline-alt.png') no-repeat -1px -2px;
 	padding-left: 40px;
 }
-h2.product-title div {
-	display: inline-block;
+
+#quadrifoglio h2.product-title, #quadrifoglio .btn-visso {
+	background-color: rgba(53, 86, 32, 0.68);
+}
+#quadrifoglio h2.product-title > div {
+	background: url('../images/logotipo-quadri-alt.png') no-repeat 0px 5px;
+	padding-left: 40px;
 }
 .btn-visso {
 	background-color: rgba(255,182,0,0.78);
@@ -641,11 +648,21 @@ h2.product-title div {
 	background-image: url('../images/logotipo-aresline.png');
 	background-position: 18px 9px;
 }
+#quadrifoglio .cat-name > div {
+	background-image: url('../images/logotipo-quadri.png');
+	background-position: 21px 7px;
+}
 .mb10 {
 	margin-bottom: 10px
 }
-.no-float .col-sm-4 {
+.no-float .col-sm-4, .center-blocks {
 	float: none;
 	display: inline-block;
 }
-.
+.txt-others {
+	font-family: helvetica;
+	font-weight: bold;
+}
+#quadrifoglio .txt-others  {
+	color: #355620;
+}

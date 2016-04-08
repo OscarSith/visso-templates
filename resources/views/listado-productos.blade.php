@@ -14,17 +14,24 @@
 		<div class="row visso-list text-center">
 			<div class="{{ $flag ? 'no-float' : ''}}">
 				@foreach($productos as $n => $producto)
-				@if ($total == 4 && $n == 2)
-					<div>
+				@if (($total == 4 && $n == 2) || ($total == 7 && $n == 3))
+					<div class="clearfix">
 				@endif
-				<div class="col-md-3 col-sm-4">
-					<div class="thumbnail wow fadeInUp" data-wow-delay="{{ $n/4 }}s">
-						<a href="{{ route('detalleProducto', [$marca, str_slug($cat_name), $producto->id, str_slug($producto->pro_nombre)]) }}">
-							<img src="{{ asset('images/product-imgs/' . $producto->pro_imagen_default) }}" alt="{{ $producto->pro_nombre }}" class="img-responsive">
-						</a>
+					<div class="col-md-3 col-sm-4 {{ ($total == 7 && $n < 4) ? 'center-blocks' : '' }}">
+						<div class="thumbnail wow fadeInUp" data-wow-delay="{{ $n/4 }}s">
+							<a href="{{ route('detalleProducto', [$marca, str_slug($cat_name), $producto->id, str_slug($producto->pro_nombre)]) }}">
+								<img src="{{ asset('images/product-imgs/' . $producto->pro_imagen_default) }}" alt="{{ $producto->pro_nombre }}" class="img-responsive">
+								<div class="caption">
+									<div class="product-details">
+										<div class="clearfix text-center">
+											<strong>{{ $producto->pro_nombre }}</strong>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				@if ($total == 4 && $n == 3)
+				@if (($total == 4 && $n == 3) || ($total == 7 && $n == 6))
 					</div>
 				@endif
 				@endforeach
