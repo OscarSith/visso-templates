@@ -45,4 +45,13 @@ $(function() {
 		google.maps.event.addDomListener(window, 'load', initialize);
 	}
 
+	var $othersProducts = $('div.others-products');
+	if ($othersProducts.length) {
+		$othersProducts.slick({
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			dots: true
+		});
+	}
 });

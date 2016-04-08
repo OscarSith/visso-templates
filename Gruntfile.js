@@ -7,10 +7,11 @@ module.exports = function(grunt) {
 						'public/css/bootstrap.min.css',
 						'public/css/font-awesome.min.css',
 						'public/css/loader.css',
-						'public/css/style.css',
 						'public/css/responsive.css',
 						'bower_components/wow/css/libs/animate.css',
 						'public/css/slick.css',
+						'public/css/slick-theme.css',
+						'public/css/style.css',
 					]
 				}
 			}

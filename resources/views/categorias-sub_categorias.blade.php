@@ -3,12 +3,7 @@
 @section('content')
 <section id="products" class="products section-area">
 	<div class="container">
-		<div class="row">
-			<ol class="breadcrumb">
-				<li><a href="{{ url('/') }}">Inicio</a></li>
-				<li class="active">Productos {{ $marca }}</li>
-			</ol>
-		</div>
+		@include('layouts.breadcrumb')
 		<div class="row logo-marca">
 			<div class="col-sm-12">
 				<img src="{{ asset('images/logo-' . $marca . '-productos.png') }}" alt="" class="img-responsive center-block" style="width: 164px;">
@@ -21,7 +16,11 @@
 						@foreach($categorias as $n => $categoria)
 						<div class="col-sm-4">
 							<div class="thumbnail wow fadeInUp" data-wow-delay="{{ $n/4 }}s">
+								@if ($categoria->cat_parent == 0)
+								<a href="{{ route('catByProduct', [str_slug($marca), str_slug($categoria->cat_nombre)])}}">
+								@else
 								<a href="#">
+								@endif
 									<img src="{{ asset('images/categorias/'. $categoria->cat_imagen) }}" alt="{{ strtolower($categoria->cat_nombre) }}" class="img-responsive">
 								</a>
 								<!-- <div class="caption">

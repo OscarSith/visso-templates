@@ -21,7 +21,7 @@ class CategoriaController extends Controller
             $categorias = Categoria::getBySub($marca_id);
             // View, es el nivel de subcategoria que tiene una categoria ejem: view = 2 o 3 ...
             $view = 1;
-            return view('productos-visso', compact('categorias', 'marca', 'view'));
+            return view('categorias-sub_categorias', compact('categorias', 'marca', 'view'));
         }
 
         return abort(404);

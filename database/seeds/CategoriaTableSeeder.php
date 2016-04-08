@@ -83,17 +83,18 @@ class CategoriaTableSeeder extends Seeder
 
 
             // ARESLINE
-            ['marca_id' => 1, 'cat_nombre' => 'AMADEUS', 'cat_imagen' => 'aresline-amadeus.jpg', 'cat_sub' => 1, 'cat_parent' => 2],
-            ['marca_id' => 1, 'cat_nombre' => 'LINK XPLUS', 'cat_imagen' => 'aresline-link-axus.jpg', 'cat_sub' => 1, 'cat_parent' => 3],
-            ['marca_id' => 1, 'cat_nombre' => 'PARLAMENT', 'cat_imagen' => 'aresline-parlament.jpg', 'cat_sub' => 1, 'cat_parent' => 4],
-            ['marca_id' => 1, 'cat_nombre' => 'PF3', 'cat_imagen' => 'aresline-pf3.jpg', 'cat_sub' => 1, 'cat_parent' => 5],
-            ['marca_id' => 1, 'cat_nombre' => 'TRENDY FIRST CLASS', 'cat_imagen' => 'aresline-trendy-fc.jpg', 'cat_sub' => 1, 'cat_parent' => 6],
-            ['marca_id' => 1, 'cat_nombre' => 'XTEN', 'cat_imagen' => 'aresline-xten.jpg', 'cat_sub' => 1, 'cat_parent' => 7],
+            ['marca_id' => 1, 'cat_nombre' => 'AMADEUS', 'cat_imagen' => 'aresline-amadeus.jpg', 'cat_sub' => 1, 'cat_parent' => 0],
+            ['marca_id' => 1, 'cat_nombre' => 'LINK XPLUS', 'cat_imagen' => 'aresline-link-axus.jpg', 'cat_sub' => 1, 'cat_parent' => 0],
+            ['marca_id' => 1, 'cat_nombre' => 'PARLAMENT', 'cat_imagen' => 'aresline-parlament.jpg', 'cat_sub' => 1, 'cat_parent' => 0],
+            ['marca_id' => 1, 'cat_nombre' => 'PF3', 'cat_imagen' => 'aresline-pf3.jpg', 'cat_sub' => 1, 'cat_parent' => 0],
+            ['marca_id' => 1, 'cat_nombre' => 'TRENDY FIRST CLASS', 'cat_imagen' => 'aresline-trendy-fc.jpg', 'cat_sub' => 1, 'cat_parent' => 0],
+            ['marca_id' => 1, 'cat_nombre' => 'XTEN', 'cat_imagen' => 'aresline-xten.jpg', 'cat_sub' => 1, 'cat_parent' => 0],
 
 
             // QUADRIFOGLIO
             ['marca_id' => 2, 'cat_nombre' => 'MOBILIARIO', 'cat_imagen' => 'quadri-mobiliario.jpg', 'cat_sub' => 1, 'cat_parent' => 2],
             ['marca_id' => 2, 'cat_nombre' => 'SILLAS', 'cat_imagen' => 'quadri-sillas.jpg', 'cat_sub' => 1, 'cat_parent' => 3],
+
         ];
 
         foreach ($categorias as $key => $value) {

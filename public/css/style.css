@@ -20,6 +20,9 @@ a {
 .breadcrumb a {
 	font-weight: bold
 }
+.breadcrumb li {
+	text-transform: capitalize;
+}
 
 #sliders {
 	overflow: hidden;
@@ -262,6 +265,7 @@ h6 { font-size: 16px; }
 		height: auto;
 		padding-top: 8px;
 		padding-bottom: 0;
+		padding-left: 0;
 	}
 	#nav .navbar-brand span.mid {
 		padding-left: 2px;
@@ -575,3 +579,73 @@ h6 { font-size: 16px; }
 	float: none;
 	display: inline-block;
 }
+h2.product-title {
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 100;
+	margin: 0 0 20px;
+	padding: 10px 0;
+}
+#visso h2.product-title {
+	background-color: rgba(255, 198, 9, 0.75);
+}
+#visso h2.product-title > div {
+	background: url('../images/logotipo-visso.png') no-repeat -2px -2px;
+	padding-left: 30px;
+}
+
+#aresline h2.product-title {
+	background-color: rgba(0, 0, 0, 0.68);
+}
+#aresline h2.product-title > div {
+	background: url('../images/logotipo-aresline-alt.png') no-repeat -1px -2px;
+	padding-left: 40px;
+}
+h2.product-title div {
+	display: inline-block;
+}
+.btn-visso {
+	background-color: rgba(255,182,0,0.78);
+	border-radius: 0;
+	color: #fff;
+	font-family: helvetica;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+.product-desc {
+	color: #000000;
+	font-weight: 600;
+	line-height: 1.6em;
+}
+.img-size {
+	background-color: #fff;
+	min-height: 500px;
+}
+.pright-0 {
+	padding-right: 0;
+}
+.item-products {
+	padding: 5px;
+}
+.cat-name {
+	margin-bottom: 15px;
+}
+.cat-name > div {
+	background: rgba(0, 0, 0, 0.68) url('../images/logotipo-visso-alt.png') no-repeat 26px 9px;
+	color: #fff;
+	display: inline-block;
+	padding: 6px 70px 6px 50px;
+	text-transform: uppercase;
+}
+#aresline .cat-name > div {
+	background-image: url('../images/logotipo-aresline.png');
+	background-position: 18px 9px;
+}
+.mb10 {
+	margin-bottom: 10px
+}
+.no-float .col-sm-4 {
+	float: none;
+	display: inline-block;
+}
+.

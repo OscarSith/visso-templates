@@ -65,48 +65,50 @@ function getBrowser()
 			<div id="main-menu-wrap" class="sticky-nav">
 				<div id="main-menu">
 					<div class="container">
-						<nav id="nav" class="navbar navbar-default row">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a href="{{ url('/') }}" class="navbar-brand">
-									<img src="{{ asset('images/logo_p2.png') }}">
-								</a>
-								<div class="links-socials pull-left">
-									<a href="#">
-										<span class="fa-stack fa-lg">
-											<i class="fa fa-circle-thin fa-stack-2x"></i>
-											<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-										</span>
+						<div class="row">
+							<nav id="nav" class="navbar navbar-default row">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a href="{{ url('/') }}" class="navbar-brand">
+										<img src="{{ asset('images/logo_p2.png') }}">
 									</a>
-									<a href="#">
-										<span class="fa-stack fa-lg">
-											<i class="fa fa-circle-thin fa-stack-2x"></i>
-											<i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
-									<a href="#">
-										<span class="fa-stack fa-lg">
-											<i class="fa fa-circle-thin fa-stack-2x"></i>
-											<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-										</span>
-									</a>
+									<div class="links-socials pull-left">
+										<a href="#">
+											<span class="fa-stack fa-lg">
+												<i class="fa fa-circle-thin fa-stack-2x"></i>
+												<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+											</span>
+										</a>
+										<a href="#">
+											<span class="fa-stack fa-lg">
+												<i class="fa fa-circle-thin fa-stack-2x"></i>
+												<i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+											</span>
+										</a>
+										<a href="#">
+											<span class="fa-stack fa-lg">
+												<i class="fa fa-circle-thin fa-stack-2x"></i>
+												<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+											</span>
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="navbar-collapse collapse">
-								<ul class="nav navbar-nav navbar-right">
-									<li {{ $currentUri == '/' ? "class=current" : ''}}><a href="{{ url('/') }}">INICIO</a></li>
-									<li {{ $currentUri == 'nosotros' ? "class=current" : ''}}><a href="#">NOSOTROS</a></li>
-									<li {{ $currentUri == 'productos' ? "class=current" : ''}}><a href="{{ route('categorias', 'visso') }}">PRODUCTOS</a></li>
-									<li><a href="#">PROYECTOS</a></li>
-									<li {{ $currentUri == 'contacto' ? "class=current" : ''}}><a href="{{ url('contacto') }}">CONTACTO</a></li>
-								</ul>
-							</div>
-						</nav>
+								<div class="navbar-collapse collapse">
+									<ul class="nav navbar-nav navbar-right">
+										<li {{ $currentUri == '/' ? "class=current" : ''}}><a href="{{ url('/') }}">INICIO</a></li>
+										<li {{ $currentUri == 'nosotros' ? "class=current" : ''}}><a href="#">NOSOTROS</a></li>
+										<li {{ $currentUri == 'productos' ? "class=current" : ''}}><a href="{{ route('categorias', 'visso') }}">PRODUCTOS</a></li>
+										<li><a href="#">PROYECTOS</a></li>
+										<li {{ $currentUri == 'contacto' ? "class=current" : ''}}><a href="{{ url('contacto') }}">CONTACTO</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
 					</div>
 				</div>
 			</div>

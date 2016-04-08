@@ -6,18 +6,48 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Producto;
+use App\Categoria;
 
 class ProductoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index($catName, $parent_cat_id, $cat_name_sub, $id)
+    // Niveles necesarios para llegar al listado de productos,
+    // $productNivel = 1, primera lista de la categoria
+
+    public function index($marca, $cat_name)
     {
+        $cat_name = $this->strSlugInverse($cat_name);
+
+        $id = Categoria::where('cat_nombre', strtoupper($cat_name))->pluck('id')->first();
         $productos = Producto::getByCatID($id);
-        return view('listado-productos', compact('productos', 'catName', 'cat_name_sub', 'parent_cat_id'));
+        $productNivel = 1;
+
+        return view('listado-productos', compact('productos', 'marca', 'cat_name', 'productNivel'));
+    }
+
+    public function detalleProducto($marca, $cat_name, $id, $productoNombre)
+    {
+        $producto = Producto::find($id);
+        $productoNombre = $producto->pro_nombre;
+        $cat_name = $this->strSlugInverse($cat_name);
+
+        $productosPorCategoria = Producto::getByCatID( Categoria::where('cat_nombre', strtoupper($cat_name))->pluck('id')->first() );
+        return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'productoNombre', 'id'));
+    }
+
+    /**
+     * En caso de que el nombre de la categoria esté con linea en medio,
+     * agregado por la funcion str_slug()
+     * @param  string $cat_name
+     * @return string
+     */
+    private function strSlugInverse($cat_name)
+    {
+        $arr = explode('-', $cat_name);
+        if (count($arr) > 1) {
+            $cat_name = implode(' ', $arr);
+        }
+
+        return $cat_name;
     }
 
     /**
