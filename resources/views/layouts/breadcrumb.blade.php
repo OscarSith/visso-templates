@@ -12,7 +12,7 @@
 			<li><a href="{{ route('catByProduct', [$marca, $cat_name])}}">{{ $cat_name }}</a></li>
 		@endif
 		@if (isset($productoNombre))
-			<li class="active">{{ $productoNombre }}</li>
+			<li class="active" id="breadcrumbProductName">{{ $productoNombre }}</li>
 		@endif
 	</ol>
 </div>

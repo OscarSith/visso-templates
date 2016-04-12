@@ -329,6 +329,7 @@ h6 { font-size: 16px; }
 		width: 100%;
 		position: absolute;
 		background: rgba(0, 0, 0, 0.5);
+		bottom: 8px;
 	}
 	.visso-list .thumbnail .caption .product-details {
 		padding: 6px 0px;
@@ -633,6 +634,10 @@ h2.product-title div {
 }
 .item-products {
 	padding: 5px;
+	outline: none;
+}
+.item-products img {
+	cursor: pointer;
 }
 .cat-name {
 	margin-bottom: 15px;
@@ -665,4 +670,13 @@ h2.product-title div {
 }
 #quadrifoglio .txt-others  {
 	color: #355620;
+}
+.item-products img:hover, .detail-product-selected  {
+	outline: 2px solid black;
+}
+#quadrifoglio .item-products img:hover, #quadrifoglio .detail-product-selected {
+	outline: 2px solid rgba(53,86,32, 1);
+}
+#visso .item-products img:hover, #visso .detail-product-selected {
+	outline: 2px solid #FEC800;
 }

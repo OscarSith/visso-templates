@@ -1,6 +1,6 @@
 <?php
 $currentUri = \Route::current()->uri();
-function getBrowser()
+/*function getBrowser()
 {
     $u_agent = $_SERVER['HTTP_USER_AGENT'];
     $bname = 'Unknown';
@@ -31,7 +31,7 @@ function getBrowser()
     }
 
     return $bname;
-}
+}*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,15 +50,6 @@ function getBrowser()
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		@if (getBrowser() != 'Safari')
-		<style type="text/css">
-			.visso-list .thumbnail .caption {
-				-webkit-transform: translateY(150px);
-					-moz-transform: translateY(150px);
-						transform: translateY(150px);
-			}
-		</style>
-		@endif
 	</head>
 	<body>
 		<header id="main-header" class="main-header">

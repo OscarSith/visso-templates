@@ -10,13 +10,13 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="img-size">
-					<img src="{{ asset('images/product-imgs/' . $producto->pro_imagen_default) }}" alt="{{ $producto->pro_nombre }}" class="img-responsive center-block">
+					<img src="{{ asset('images/product-imgs/' . $producto->pro_imagen_default) }}" alt="{{ $producto->pro_nombre }}" class="img-responsive center-block" id="productImage">
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="row">
 					<h2 class="product-title text-center">
-						<div>{{ $productoNombre }}</div>
+						<div id="productName">{{ $productoNombre }}</div>
 					</h2>
 					<div class="col-sm-12">
 						<div class="row">
@@ -28,7 +28,7 @@
 							</div>
 						</div>
 						<div class="col-sm-12">
-							<p class="about-banners product-desc text-justify">{{ $producto->pro_descripcion }}</p>
+							<p class="about-banners product-desc text-justify" id="product-description">{{ $producto->pro_descripcion }}</p>
 						</div>
 					</div>
 					<div class="col-sm-12 about-banners">
@@ -36,8 +36,8 @@
 						<div class="others-products">
 							@foreach($productosPorCategoria as $rec)
 							<div class="item-products">
-								<img src="{{ asset('images/product-imgs/' . $rec->pro_imagen_default) }}" class="img-responsive" alt="{{ $rec->pro_nombre }}">
-								<input type="hidden" value="{{ $producto->pro_descripcion }}" data-name="{{ $producto->pro_nombre }}">
+								<img src="{{ asset('images/product-imgs/' . $rec->pro_imagen_default) }}" class="img-responsive" alt="{{ $rec->pro_nombre }}" title="{{ $rec->pro_nombre }}">
+								<input type="hidden" value="{{ $rec->pro_descripcion }}" data-name="{{ $rec->pro_nombre }}" data-img="{{ $rec->pro_imagen_default }}">
 							</div>
 							@endforeach
 						</div>

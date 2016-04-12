@@ -11,6 +11,7 @@ class Producto extends Model
     	return $q->where('cat_id', $catID)->where('pro_estado', 1)->get([
     		'id',
     		'pro_nombre',
+    		'pro_descripcion',
     		'pro_imagen_default',
     	]);
     }
