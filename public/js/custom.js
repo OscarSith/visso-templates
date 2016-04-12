@@ -7,7 +7,7 @@ $(function() {
 
 	var $slider = $("#sliders-01");
 	if ($slider.length) {
-		var sets = {fade: true, arrows: false, autoplay: true, speed: 1500, autoplaySpeed: 5000, pauseOnHover: false};
+		var sets = {fade: true, arrows: false, autoplay: true, speed: 1800, autoplaySpeed: 5000, pauseOnHover: false};
 		$slider.slick(sets);
 		$("#sliders-02").slick(sets);
 		$("#sliders-03").slick(sets);

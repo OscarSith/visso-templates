@@ -9,7 +9,10 @@
 					<a href="{{ route('categorias', 'aresline') }}"><img src="images/marcas/aresline.jpg" alt="" class="img-responsive"></a>
 				</div>
 				<div>
-					<a href="{{ route('categorias', 'aresline') }}"><img src="images/marcas/aresline.jpg" alt="" class="img-responsive"></a>
+					<a href="{{ route('categorias', 'aresline') }}"><img src="images/marcas/aresline2.jpg" alt="" class="img-responsive"></a>
+				</div>
+				<div>
+					<a href="{{ route('categorias', 'aresline') }}"><img src="images/marcas/aresline3.jpg" alt="" class="img-responsive"></a>
 				</div>
 			</div>
 		</div>
@@ -19,7 +22,10 @@
 					<a href="{{ route('categorias', 'quadrifoglio') }}"><img src="images/marcas/quadrifoglio.jpg" alt="" class="img-responsive"></a>
 				</div>
 				<div>
-					<a href="{{ route('categorias', 'quadrifoglio') }}"><img src="images/marcas/quadrifoglio.jpg" alt="" class="img-responsive"></a>
+					<a href="{{ route('categorias', 'quadrifoglio') }}"><img src="images/marcas/quadrifoglio2.jpg" alt="" class="img-responsive"></a>
+				</div>
+				<div>
+					<a href="{{ route('categorias', 'quadrifoglio') }}"><img src="images/marcas/quadrifoglio3.jpg" alt="" class="img-responsive"></a>
 				</div>
 			</div>
 		</div>
@@ -29,7 +35,10 @@
 					<a href="{{ route('categorias', 'visso') }}"><img src="images/marcas/visso.jpg" alt="" class="img-responsive"></a>
 				</div>
 				<div>
-					<a href="{{ route('categorias', 'visso') }}"><img src="images/marcas/visso.jpg" alt="" class="img-responsive"></a>
+					<a href="{{ route('categorias', 'visso') }}"><img src="images/marcas/visso2.jpg" alt="" class="img-responsive"></a>
+				</div>
+				<div>
+					<a href="{{ route('categorias', 'visso') }}"><img src="images/marcas/visso3.jpg" alt="" class="img-responsive"></a>
 				</div>
 			</div>
 		</div>
