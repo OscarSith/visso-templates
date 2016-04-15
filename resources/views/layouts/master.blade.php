@@ -47,8 +47,8 @@ $currentUri = \Route::current()->uri();
 		<link href="{{ asset('css/style.min.css') }}" rel="stylesheet">
 
 		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
 	<body>
@@ -66,22 +66,22 @@ $currentUri = \Route::current()->uri();
 										<span class="icon-bar"></span>
 									</button>
 									<a href="{{ url('/') }}" class="navbar-brand">
-										<img src="{{ asset('images/logo_p2.png') }}">
+										<img src="{{ asset('images/logo_p2.png') }}" alt="logo Visso">
 									</a>
 									<div class="links-socials pull-left">
-										<a href="#">
+										<a href="#" target="_blank">
 											<span class="fa-stack fa-lg">
 												<i class="fa fa-circle-thin fa-stack-2x"></i>
 												<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 											</span>
 										</a>
-										<a href="#">
+										<a href="https://www.linkedin.com/company/peviso" target="_blank">
 											<span class="fa-stack fa-lg">
 												<i class="fa fa-circle-thin fa-stack-2x"></i>
-												<i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+												<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
 											</span>
 										</a>
-										<a href="#">
+										<a href="https://es.pinterest.com/vissoperu" target="_blank">
 											<span class="fa-stack fa-lg">
 												<i class="fa fa-circle-thin fa-stack-2x"></i>
 												<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
@@ -93,7 +93,14 @@ $currentUri = \Route::current()->uri();
 									<ul class="nav navbar-nav navbar-right">
 										<li {{ $currentUri == '/' ? "class=current" : ''}}><a href="{{ url('/') }}">INICIO</a></li>
 										<li {{ $currentUri == 'nosotros' ? "class=current" : ''}}><a href="#">NOSOTROS</a></li>
-										<li {{ $currentUri == 'productos' ? "class=current" : ''}}><a href="{{ route('categorias', 'visso') }}">PRODUCTOS</a></li>
+										<li class="dropdown">
+											<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTOS <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="{{ route('categorias', 'aresline') }}">Aresline</a></li>
+												<li><a href="{{ route('categorias', 'quadrifoglio') }}">Quadrifoglio</a></li>
+												<li><a href="{{ route('categorias', 'visso') }}">Visso</a></li>
+											</ul>
+										</li>
 										<li><a href="#">PROYECTOS</a></li>
 										<li {{ $currentUri == 'contacto' ? "class=current" : ''}}><a href="{{ url('contacto') }}">CONTACTO</a></li>
 									</ul>
@@ -104,8 +111,10 @@ $currentUri = \Route::current()->uri();
 				</div>
 			</div>
 		</header>
+		<div id="body-content">
 		@section('content')
 		@show
+		</div>
 		<footer class="main-footer">
 			<div class="container">
 				<img src="{{ asset('images/partners.png') }}" class="center-block" id="img-partners">

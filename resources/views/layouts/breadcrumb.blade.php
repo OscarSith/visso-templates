@@ -9,7 +9,7 @@
 		@if (isset($productNivel) && $productNivel == 1)
 			<li class="active">{{ $cat_name }}</li>
 		@elseif (isset($cat_name))
-			<li><a href="{{ route('catByProduct', [$marca, $cat_name])}}">{{ $cat_name }}</a></li>
+			<li><a href="{{ route('catByProduct', [$marca, str_slug($cat_name)])}}">{{ $cat_name }}</a></li>
 		@endif
 		@if (isset($productoNombre))
 			<li class="active" id="breadcrumbProductName">{{ $productoNombre }}</li>

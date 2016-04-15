@@ -11,7 +11,7 @@
 		</div>
 		<div class="row visso-list">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
-				<div class="row" {{ $view == 1 ? ("id=marca-" . $marca ) : ''}}>
+				<div class="row {{ $categorias->count() == 2 ? 'fix-vertical-center' : '' }}" {{ $view == 1 ? ("id=marca-" . $marca ) : ''}}>
 					@if (!$categorias->isEmpty())
 						@foreach($categorias as $n => $categoria)
 						<div class="col-sm-4">

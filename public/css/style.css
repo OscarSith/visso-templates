@@ -23,7 +23,9 @@ a {
 .breadcrumb li {
 	text-transform: capitalize;
 }
-
+#body-content {
+	min-height: calc(100vh - 148px);
+}
 #sliders {
 	overflow: hidden;
 	max-height: 570px;
@@ -48,6 +50,13 @@ h3 { font-size: 30px; }
 h4 { font-size: 24px; }
 h5 { font-size: 18px; }
 h6 { font-size: 16px; }
+.nav .open>a:hover, .nav .open>a {
+	background-color: transparent !important;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0;
+ }
 
 /* Form & Buttons Styles Starts */
 
@@ -679,4 +688,7 @@ h2.product-title div {
 }
 #visso .item-products img:hover, #visso .detail-product-selected {
 	outline: 2px solid #FEC800;
+}
+.fix-vertical-center {
+	margin-top: 20%
 }
