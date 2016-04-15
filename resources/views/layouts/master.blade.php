@@ -1,37 +1,5 @@
 <?php
 $currentUri = \Route::current()->uri();
-/*function getBrowser()
-{
-    $u_agent = $_SERVER['HTTP_USER_AGENT'];
-    $bname = 'Unknown';
-    // Next get the name of the useragent yes seperately and for good reason
-    if(preg_match('/MSIE/i',$u_agent) && !preg_match('/Opera/i',$u_agent))
-    {
-        $bname = 'Internet Explorer';
-    }
-    elseif(preg_match('/Firefox/i',$u_agent))
-    {
-        $bname = 'Mozilla Firefox';
-    }
-    elseif(preg_match('/Chrome/i',$u_agent))
-    {
-        $bname = 'Google Chrome';
-    }
-    elseif(preg_match('/Safari/i',$u_agent))
-    {
-        $bname = 'Safari';
-    }
-    elseif(preg_match('/Opera/i',$u_agent))
-    {
-        $bname = 'Opera';
-    }
-    elseif(preg_match('/Netscape/i',$u_agent))
-    {
-        $bname = 'Netscape';
-    }
-
-    return $bname;
-}*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,7 +37,7 @@ $currentUri = \Route::current()->uri();
 										<img src="{{ asset('images/logo_p2.png') }}" alt="logo Visso">
 									</a>
 									<div class="links-socials pull-left">
-										<a href="#" target="_blank">
+										<a href="https://www.facebook.com/VissoMuebles" target="_blank">
 											<span class="fa-stack fa-lg">
 												<i class="fa fa-circle-thin fa-stack-2x"></i>
 												<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>

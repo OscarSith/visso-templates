@@ -35,12 +35,17 @@ $(function() {
 	if ($map.length) {
 		function initialize($) {
 			var mapOptions = {
-				zoom: 8,
-				center: new google.maps.LatLng(17.421306, 78.457553),
-				disableDefaultUI: false,
+				zoom: 17,
+				center: new google.maps.LatLng(-12.1072999,-77.0398141),
 				scrollwheel: false
 			};
 			var map = new google.maps.Map(document.querySelector('.map'), mapOptions);
+
+			new google.maps.Marker({
+				map: map,
+				draggable: false,
+				position: new google.maps.LatLng(-12.1072999,-77.0376141)
+			});
 		}
 		google.maps.event.addDomListener(window, 'load', initialize);
 	}

@@ -692,3 +692,35 @@ h2.product-title div {
 .fix-vertical-center {
 	margin-top: 20%
 }
+.footer-top-area {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #4a4a4a;
+}
+.newsletter-block h4, .social-media-block h4 {
+	margin-top: 7px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.social-media-block ul.sm-links {
+    margin: 2px 0 0;
+}
+.social-media-block ul.sm-links li {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.social-media-block ul.sm-links li {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #DC263F;
+    text-align: center;
+}
+.social-media-block ul.sm-links li a {
+	font-size: 20px;
+	color: #fff;
+}
+.social-media-block ul.sm-links li + li {
+	margin-left: 10px;
+}
