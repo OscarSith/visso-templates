@@ -69,7 +69,7 @@
 						<div class="input-group">
 							<input type="email" name="correo" class="form-control" placeholder="Correo electrónico">
 							<span class="input-group-btn">
-								<button class="btn btn-secondary" type="button">Suscribete</button>
+								<button class="btn btn-secondary">Suscribete</button>
 							</span>
 						</div>
 						{!! Form::close() !!}
