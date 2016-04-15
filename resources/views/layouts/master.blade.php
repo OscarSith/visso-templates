@@ -43,6 +43,12 @@ $currentUri = \Route::current()->uri();
 												<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 											</span>
 										</a>
+										<a href="https://issuu.com/visso_peru" target="_blank">
+											<span class="fa-stack fa-lg">
+												<i class="fa fa-circle-thin fa-stack-2x"></i>
+												<i class="fa fa fa-bullseye fa-stack-1x fa-inverse"></i>
+											</span>
+										</a>
 										<a href="https://www.linkedin.com/company/peviso" target="_blank">
 											<span class="fa-stack fa-lg">
 												<i class="fa fa-circle-thin fa-stack-2x"></i>
