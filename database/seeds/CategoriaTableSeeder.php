@@ -22,12 +22,12 @@ class CategoriaTableSeeder extends Seeder
 
 
             // ACCESORIOS -> 7
-            ['marca_id' => 3, 'cat_nombre' => 'ACCESORIOS PARA VALLAS', 'cat_imagen' => 'acce_porta_monitores.jpg', 'cat_sub' => 2, 'cat_parent' => 0],
-            ['marca_id' => 3, 'cat_nombre' => 'APOYA PIES', 'cat_imagen' => 'mesas_operativas.jpg', 'cat_sub' => 2, 'cat_parent' => 0],
-            ['marca_id' => 3, 'cat_nombre' => 'PORTA CPUS', 'cat_imagen' => 'mesas_inspira.jpg', 'cat_sub' => 2, 'cat_parent' => 0],
-            ['marca_id' => 3, 'cat_nombre' => 'PORTA MONITORES', 'cat_imagen' => 'mesas_operativas.jpg', 'cat_sub' => 2, 'cat_parent' => 0],
-            ['marca_id' => 3, 'cat_nombre' => 'VALLAS 3 EN 1', 'cat_imagen' => 'mesas_inizio.jpg', 'cat_sub' => 2, 'cat_parent' => 0],
-            ['marca_id' => 3, 'cat_nombre' => 'LUMINARIAS', 'cat_imagen' => 'mesas_operativas.jpg', 'cat_sub' => 2, 'cat_parent' => 0],
+            ['marca_id' => 3, 'cat_nombre' => 'ACCESORIOS PARA VALLAS', 'cat_imagen' => 'acce_porta_monitores.jpg', 'cat_sub' => 2, 'cat_parent' => 8],
+            ['marca_id' => 3, 'cat_nombre' => 'APOYA PIES', 'cat_imagen' => 'mesas_operativas.jpg', 'cat_sub' => 2, 'cat_parent' => 8],
+            ['marca_id' => 3, 'cat_nombre' => 'PORTA CPUS', 'cat_imagen' => 'mesas_inspira.jpg', 'cat_sub' => 2, 'cat_parent' => 8],
+            ['marca_id' => 3, 'cat_nombre' => 'PORTA MONITORES', 'cat_imagen' => 'mesas_operativas.jpg', 'cat_sub' => 2, 'cat_parent' => 8],
+            ['marca_id' => 3, 'cat_nombre' => 'VALLAS 3 EN 1', 'cat_imagen' => 'mesas_inizio.jpg', 'cat_sub' => 2, 'cat_parent' => 8],
+            ['marca_id' => 3, 'cat_nombre' => 'LUMINARIAS', 'cat_imagen' => 'mesas_operativas.jpg', 'cat_sub' => 2, 'cat_parent' => 8],
             // -> 12
 
             // ALMACENAMIENTO -> 13
@@ -43,25 +43,25 @@ class CategoriaTableSeeder extends Seeder
             // -> 18
 
         	// MESA DE REUNION -> 19
-        	['marca_id' => 3, 'cat_nombre' => 'GERENCIALES', 'cat_imagen' => 'silla_gerenciales.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
-        	['marca_id' => 3, 'cat_nombre' => 'OPERATIVOS', 'cat_imagen' => 'silla_operativos.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
-        	['marca_id' => 3, 'cat_nombre' => 'ALTA DIRECCIÓN', 'cat_imagen' => 'silla_alta_direccion.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
-        	['marca_id' => 3, 'cat_nombre' => 'VISITA', 'cat_imagen' => 'silla_bench.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
-            ['marca_id' => 3, 'cat_nombre' => 'GERENCIALES', 'cat_imagen' => 'silla_gerenciales.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
-            ['marca_id' => 3, 'cat_nombre' => 'OPERATIVOS', 'cat_imagen' => 'silla_operativos.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
-            ['marca_id' => 3, 'cat_nombre' => 'ALTA DIRECCIÓN', 'cat_imagen' => 'silla_alta_direccion.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
-            ['marca_id' => 3, 'cat_nombre' => 'VISITA', 'cat_imagen' => 'silla_bench.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
+        	['marca_id' => 3, 'cat_nombre' => 'ACCORD', 'cat_imagen' => 'silla_gerenciales.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
+        	['marca_id' => 3, 'cat_nombre' => 'ACTIVA', 'cat_imagen' => 'silla_operativos.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
+        	['marca_id' => 3, 'cat_nombre' => 'AVANTI', 'cat_imagen' => 'silla_alta_direccion.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
+        	['marca_id' => 3, 'cat_nombre' => 'CIRCULAR', 'cat_imagen' => 'silla_bench.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
+            ['marca_id' => 3, 'cat_nombre' => 'INIZIO', 'cat_imagen' => 'silla_gerenciales.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
+            ['marca_id' => 3, 'cat_nombre' => 'OVALADAS', 'cat_imagen' => 'silla_operativos.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
+            ['marca_id' => 3, 'cat_nombre' => 'REBATIBLES', 'cat_imagen' => 'silla_alta_direccion.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
+            ['marca_id' => 3, 'cat_nombre' => 'IMPULSA', 'cat_imagen' => 'silla_bench.jpg', 'cat_sub' => 5, 'cat_parent' => 0],
             // -> 26
 
         	// SILLONERA ERGONOMICA -> 27
-        	['marca_id' => 3, 'cat_nombre' => 'ACCORDO', 'cat_imagen' => 'mesas_accordo.jpg', 'cat_sub' => 6, 'cat_parent' => 0],
-        	['marca_id' => 3, 'cat_nombre' => 'ACTIVA', 'cat_imagen' => 'mesas_activa.jpg', 'cat_sub' => 6, 'cat_parent' => 0],
-        	['marca_id' => 3, 'cat_nombre' => 'AVANTI', 'cat_imagen' => 'mesas_avanti.jpg', 'cat_sub' => 6, 'cat_parent' => 0],
+        	['marca_id' => 3, 'cat_nombre' => 'GERENCIALES', 'cat_imagen' => 'mesas_accordo.jpg', 'cat_sub' => 6, 'cat_parent' => 0],
+        	['marca_id' => 3, 'cat_nombre' => 'OPERATIVOS', 'cat_imagen' => 'mesas_activa.jpg', 'cat_sub' => 6, 'cat_parent' => 0],
+        	['marca_id' => 3, 'cat_nombre' => 'VISITA', 'cat_imagen' => 'mesas_avanti.jpg', 'cat_sub' => 6, 'cat_parent' => 0],
             // -> 29
 
         	// SISTEMAS MODULARES -> 30
-        	['marca_id' => 3, 'cat_nombre' => 'PANELES', 'cat_imagen' => 'paneles_paneles.jpg', 'cat_sub' => 7, 'cat_parent' => 0],
-            ['marca_id' => 3, 'cat_nombre' => 'IMPULSA', 'cat_imagen' => 'mesas_impulsa.jpg', 'cat_sub' => 7, 'cat_parent' => 0],
+        	['marca_id' => 3, 'cat_nombre' => 'SISTEMA DE PANELES', 'cat_imagen' => 'paneles_paneles.jpg', 'cat_sub' => 7, 'cat_parent' => 0],
+            ['marca_id' => 3, 'cat_nombre' => 'SISTEMAS BENCH', 'cat_imagen' => 'mesas_impulsa.jpg', 'cat_sub' => 7, 'cat_parent' => 0],
             // -> 31
 
 

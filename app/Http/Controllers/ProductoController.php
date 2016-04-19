@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Producto;
 use App\Categoria;
+use App\Marca;
 
 class ProductoController extends Controller
 {
@@ -17,8 +18,13 @@ class ProductoController extends Controller
     {
         $cat_name = $this->strSlugInverse($cat_name);
 
-        $id = Categoria::where('cat_nombre', strtoupper($cat_name))->pluck('id')->first();
-        $productos = Producto::getByCatID($id);
+        $rs = Categoria::where('cat_nombre', strtoupper($cat_name))->first(['id', 'cat_parent']);
+        if ($rs->cat_parent > 0) {
+            $marca_id = Marca::getMarcaId($marca);
+            $productos = Categoria::getBySub($marca_id, $rs->cat_parent);
+        } else {
+            $productos = Producto::getByCatID($rs->id);
+        }
         $productNivel = 1;
 
         return view('listado-productos', compact('productos', 'marca', 'cat_name', 'productNivel'));
