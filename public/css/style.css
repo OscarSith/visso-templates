@@ -337,7 +337,7 @@ h6 { font-size: 16px; }
 		padding: 0;
 		width: 100%;
 		position: absolute;
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(0, 0, 0, 0.6);
 		bottom: 8px;
 	}
 	.visso-list .thumbnail .caption .product-details {
@@ -347,6 +347,9 @@ h6 { font-size: 16px; }
 
 	#quadrifoglio .visso-list .thumbnail .caption {
 		background: rgba(53, 86, 32, 0.68);
+	}
+	#visso .visso-list .thumbnail .caption {
+		background: rgba(255, 198, 9, 0.6);
 	}
 
 	/* Contact Section Styles Starts */
@@ -566,6 +569,9 @@ h6 { font-size: 16px; }
 #quadrifoglio .product-details strong {
 	background: url('../images/logotipo-quadri.png') no-repeat 0px 0px;
 }
+#visso .product-details strong {
+	background: url('../images/logotipo-visso-sm.png') no-repeat 0px 0px;
+}
 #sliders .col-sm-4, .visso-list .col-sm-4 {
 	padding: 0 8px;
 }
@@ -602,11 +608,11 @@ h2.product-title div {
 	background-color: rgba(255, 198, 9, 0.75);
 }
 #visso h2.product-title > div {
-	background: url('../images/logotipo-visso.png') no-repeat -2px -2px;
+	background: url('../images/logotipo-visso.png') no-repeat -2px 8px;
 	padding-left: 30px;
 }
 
-#aresline h2.product-title {
+#aresline h2.product-title, #aresline .btn-visso {
 	background-color: rgba(0, 0, 0, 0.68);
 }
 #aresline h2.product-title > div {

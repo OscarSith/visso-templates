@@ -11,6 +11,11 @@
 		@elseif (isset($cat_name))
 			<li><a href="{{ route('catByProduct', [$marca, str_slug($cat_name)])}}">{{ $cat_name }}</a></li>
 		@endif
+		@if (isset($sub_cat_name) && $productNivel == 2)
+			<li class="active">{{ $sub_cat_name }}</li>
+		@elseif (isset($sub_cat_name))
+			<li><a href="{{ route('catBySubCatID', [$marca, str_slug($cat_name), str_slug($sub_cat_name)])}}">{{ $sub_cat_name }}</a></li>
+		@endif
 		@if (isset($productoNombre))
 			<li class="active" id="breadcrumbProductName">{{ $productoNombre }}</li>
 		@endif

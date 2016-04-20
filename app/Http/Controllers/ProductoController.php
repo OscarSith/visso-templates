@@ -17,27 +17,56 @@ class ProductoController extends Controller
     public function index($marca, $cat_name)
     {
         $cat_name = $this->strSlugInverse($cat_name);
+        $categorias = [];
+        $productos = [];
 
         $rs = Categoria::where('cat_nombre', strtoupper($cat_name))->first(['id', 'cat_parent']);
         if ($rs->cat_parent > 0) {
             $marca_id = Marca::getMarcaId($marca);
-            $productos = Categoria::getBySub($marca_id, $rs->cat_parent);
+            $categorias = Categoria::getBySub($marca_id, $rs->cat_parent);
+            // dd($categorias->toArray());
         } else {
             $productos = Producto::getByCatID($rs->id);
         }
         $productNivel = 1;
 
-        return view('listado-productos', compact('productos', 'marca', 'cat_name', 'productNivel'));
+        return view('listado-productos', compact('productos', 'categorias', 'marca', 'cat_name', 'productNivel'));
+    }
+
+    public function indexSub($marca, $cat_name, $sub_cat_name)
+    {
+        $sub_cat_name = $this->strSlugInverse($sub_cat_name);
+        $cat_id = Categoria::where('cat_nombre', strtoupper($sub_cat_name))->pluck('id')->first();
+        $productos = Producto::getByCatID($cat_id);
+        $productNivel = 2;
+
+        return view('productos-por-categoria', compact('productos', 'marca', 'cat_name', 'sub_cat_name', 'productNivel'));
     }
 
     public function detalleProducto($marca, $cat_name, $id, $productoNombre)
     {
+        list($productosPorCategoria, $producto, $cat_name, $productoNombre) = $this->prepareDetailProduct($id, $cat_name);
+
+        return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'productoNombre', 'id'));
+    }
+
+    public function detalleProductoSub($marca, $cat_name, $sub_cat_name, $id, $productoNombre)
+    {
+        $cat_name = $this->strSlugInverse($cat_name);
+        $productNivel = null;
+        list($productosPorCategoria, $producto, $sub_cat_name, $productoNombre) = $this->prepareDetailProduct($id, $sub_cat_name);
+
+        return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'sub_cat_name', 'productoNombre', 'id', 'productNivel'));
+    }
+
+    private function prepareDetailProduct($id, $cat_name)
+    {
         $producto = Producto::find($id);
         $productoNombre = $producto->pro_nombre;
         $cat_name = $this->strSlugInverse($cat_name);
-
         $productosPorCategoria = Producto::getByCatID( Categoria::where('cat_nombre', strtoupper($cat_name))->pluck('id')->first() );
-        return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'productoNombre', 'id'));
+
+        return [$productosPorCategoria, $producto, $cat_name, $productoNombre];
     }
 
     /**

@@ -5,7 +5,7 @@
 	<div class="container" id="{{ $marca }}">
 		@include('layouts.breadcrumb')
 		<div class="cat-name">
-			<div>{{ $cat_name }}</div>
+			<div>{{ isset($sub_cat_name) ? $sub_cat_name : $cat_name }}</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-6">

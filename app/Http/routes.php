@@ -1,10 +1,19 @@
 <?php
 Route::group(['middleware' => ['web']], function () {
 	Route::get('/', 'WelcomeController@index')->name('home');
-	Route::get('productos-{marca}', 'CategoriaController@index')->name('categorias');
-	Route::get('productos-{marca}/{cat_name}', 'ProductoController@index')->name('catByProduct');
-	// Route::get('productos/{cat_name}-{parent_cat_id}/{cat_name_sub}-{id}', 'ProductoController@index')->name('productsByCatID');
-	Route::get('productos-{marca}/{cat_name}/detalle-producto/{id}-{producto}', 'ProductoController@detalleProducto')->name('detalleProducto');
+
+	// Marca
+	Route::get('{marca}', 'CategoriaController@index')->name('categorias');
+
+	// Detalle del producto
+	Route::get('{marca}/{cat_name}/{id}-{producto}', 'ProductoController@detalleProducto')->name('detalleProducto');
+	Route::get('{marca}/{cat_name}/{sub_cat_name}/{id}-{producto}', 'ProductoController@detalleProductoSub')->name('detalleProductoSub');
+
+	// Categorias y subcategorias
+	Route::get('{marca}/{cat_name}', 'ProductoController@index')->name('catByProduct');
+	Route::get('{marca}/{cat_name}/{sub_cat_name}', 'ProductoController@indexSub')->name('catBySubCatID');
+
+	// Otras paginas
 	Route::get('contacto', 'WelcomeController@contacto')->name('contacto');
 	Route::post('add-newsletter', 'WelcomeController@newsletter')->name('newsletter');
 });

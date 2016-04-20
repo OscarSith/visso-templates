@@ -19,18 +19,6 @@
 								<a href="{{ route('catByProduct', [str_slug($marca), str_slug($categoria->cat_nombre)])}}">
 									<img src="{{ asset('images/categorias/'. $categoria->cat_imagen) }}" alt="{{ strtolower($categoria->cat_nombre) }}" class="img-responsive">
 								</a>
-								<!-- <div class="caption">
-									<div class="product-details">
-										<a href="{{ route('catByProduct', [str_slug($categoria->cat_nombre), $categoria->cat_parent]) }}">
-											<div class="clearfix">
-												<img src="{{ asset('images/equis.png') }}" style="height: 27px;" class="center-block">
-											</div>
-											<div class="clearfix text-center">
-												<strong>{{ $categoria->cat_nombre }}</strong>
-											</div>
-										</a>
-									</div>
-								</div> -->
 							</div>
 						</div>
 						@endforeach
