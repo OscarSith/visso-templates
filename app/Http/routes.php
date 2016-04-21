@@ -1,6 +1,9 @@
 <?php
 Route::group(['middleware' => ['web']], function () {
+	// Otras paginas
 	Route::get('/', 'WelcomeController@index')->name('home');
+	Route::get('contacto', 'WelcomeController@contacto')->name('contacto');
+	Route::post('add-newsletter', 'WelcomeController@newsletter')->name('newsletter');
 
 	// Marca
 	Route::get('{marca}', 'CategoriaController@index')->name('categorias');
@@ -12,10 +15,6 @@ Route::group(['middleware' => ['web']], function () {
 	// Categorias y subcategorias
 	Route::get('{marca}/{cat_name}', 'ProductoController@index')->name('catByProduct');
 	Route::get('{marca}/{cat_name}/{sub_cat_name}', 'ProductoController@indexSub')->name('catBySubCatID');
-
-	// Otras paginas
-	Route::get('contacto', 'WelcomeController@contacto')->name('contacto');
-	Route::post('add-newsletter', 'WelcomeController@newsletter')->name('newsletter');
 });
 
 Route::group(['middleware' => ['web', 'guest'], 'prefix' => 'admin'], function($route) {

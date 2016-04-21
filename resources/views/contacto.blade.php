@@ -72,6 +72,11 @@
 								<button class="btn btn-secondary">Suscribete</button>
 							</span>
 						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<label><input type="checkbox" name="acepta" value="1" class="fix-checkbox" checked> Acepto recibir newsletter y novedades</label>
+							</div>
+						</div>
 						{!! Form::close() !!}
 					</div>
 				</div>

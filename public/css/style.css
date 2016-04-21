@@ -730,3 +730,9 @@ h2.product-title div {
 .social-media-block ul.sm-links li + li {
 	margin-left: 10px;
 }
+.fix-checkbox {
+	margin-top: 6px !important;
+}
+.checkbox label {
+	color: #fff !important
+}
