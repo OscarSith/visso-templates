@@ -4,7 +4,7 @@
 <section id="contact" class="contact section-area products">
 	<div class="rotate-box-1"></div>
 	<div class="container">
-		<h2 class="page-header">Escribenos</h2>
+		<h2 class="page-header">Escríbenos</h2>
 		<div class="contact-form-area">
 			<div class="status alert alert-success"></div>
 			<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="{{ route('sendMailContact') }}">

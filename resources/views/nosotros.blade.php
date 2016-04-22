@@ -15,7 +15,7 @@
 				</div>
 				<div class="col-sm-7" id="about-info">
 					<h2 class="product-title text-center">
-						<div id="productName">¿Porque trabajar con nosotros?</div>
+						<div id="productName">¿Por que trabajar con nosotros?</div>
 					</h2>
 					<div class="lead-info">
 						<ol>
