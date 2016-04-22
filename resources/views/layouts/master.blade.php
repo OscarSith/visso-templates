@@ -75,7 +75,7 @@ $currentUri = \Route::current()->uri();
 												<li><a href="{{ route('categorias', 'visso') }}">Visso</a></li>
 											</ul>
 										</li>
-										<li><a href="#">PROYECTOS</a></li>
+										<li><a href="{{ url('proyectos') }}">PROYECTOS</a></li>
 										<li {{ $currentUri == 'contacto' ? "class=current" : ''}}><a href="{{ url('contacto') }}">CONTACTO</a></li>
 									</ul>
 								</div>

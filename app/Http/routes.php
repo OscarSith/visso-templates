@@ -3,6 +3,11 @@ Route::group(['middleware' => ['web']], function () {
 	// Otras paginas
 	Route::get('/', 'WelcomeController@index')->name('home');
 	Route::get('nosotros', 'WelcomeController@nosotros')->name('about-us');
+<<<<<<< HEAD
+=======
+	Route::get('proyectos', 'WelcomeController@proyectos')->name('proyectos');
+	Route::get('proyectos/{id}-{nombre_proyecto}', 'WelcomeController@proyectDetail')->name('proyectDetail');
+>>>>>>> 36e6034f2a312c9cb4a2a796ebfe64882d72d28f
 	Route::get('contacto', 'WelcomeController@contacto')->name('contacto');
 	Route::post('add-newsletter', 'WelcomeController@newsletter')->name('newsletter');
 

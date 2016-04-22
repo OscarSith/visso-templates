@@ -333,12 +333,13 @@ h6 { font-size: 16px; }
 	.visso-list .thumbnail ul.btn-list li + li {
 		margin-top: 10px;
 	}
-	.visso-list .thumbnail .caption {
-		padding: 0;
-		width: 100%;
-		position: absolute;
+	.visso-list .thumbnail .caption, #proyectos div.caption {
 		background: rgba(0, 0, 0, 0.6);
 		bottom: 8px;
+		left: 0%;
+		padding: 0;
+		position: absolute;
+		right: 0%;
 	}
 	.visso-list .thumbnail .caption .product-details {
 		padding: 6px 0px;
@@ -753,7 +754,13 @@ h2.product-title div {
 	margin-top: 10px;
 }
 .lead-info {
+<<<<<<< HEAD
 	line-height: 1.3em
+=======
+	line-height: 1.3em;
+	min-height: 230px;
+	max-height: 340px;
+>>>>>>> 36e6034f2a312c9cb4a2a796ebfe64882d72d28f
 }
 .txt-quadri-about {
 	color: #2B5240;
@@ -766,4 +773,42 @@ h2.product-title div {
 	display: inline-block;
 	height: 24px;
 	width: 24px;
+<<<<<<< HEAD
+=======
+}
+.content-proyect img.img-proyects {
+	height: 238px;
+}
+.content-proyect {
+	position: relative;
+	margin-bottom: 15px
+}
+#proyectos div.caption {
+	left: 1px;
+	right: 1px;
+}
+.content-proyect .product-details {
+	height: 44px;
+}
+.proyect-title {
+	background-color: rgba(0, 0, 0, 0.6);
+	font-size: 1.8em !important;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.item-proyects {
+	margin: 0 2px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 155%;
+	height: 110px;
+	width: 125px;
+}
+.item-proyects:hover {
+	opacity: .6;
+}
+#detalle-proyecto .cat-name > div{
+	background-image: none !important;
+>>>>>>> 36e6034f2a312c9cb4a2a796ebfe64882d72d28f
 }
