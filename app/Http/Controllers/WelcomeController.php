@@ -25,8 +25,6 @@ class WelcomeController extends Controller
         return view('nosotros');
     }
 
-<<<<<<< HEAD
-=======
     public function proyectos()
     {
         $proyectos = Proyecto::latest()->get(['id', 'proy_nombre','proy_thumb_imagen', 'proy_logotipo']);
@@ -40,7 +38,6 @@ class WelcomeController extends Controller
         return view('detalle-proyecto', compact('proyecto', 'galery'));
     }
 
->>>>>>> 36e6034f2a312c9cb4a2a796ebfe64882d72d28f
     public function contacto()
     {
     	return view('contacto');

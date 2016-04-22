@@ -15,7 +15,6 @@ class CreateNewslettersTable extends Migration
         Schema::create('newsletters', function (Blueprint $table) {
             $table->increments('id');
             $table->string('correo');
-            $table->tinyInteger('acepta')->default(2);// 1 aceptado, != de 1 no aceptó
             $table->timestamps();
         });
     }

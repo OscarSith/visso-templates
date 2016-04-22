@@ -754,13 +754,9 @@ h2.product-title div {
 	margin-top: 10px;
 }
 .lead-info {
-<<<<<<< HEAD
-	line-height: 1.3em
-=======
 	line-height: 1.3em;
 	min-height: 230px;
 	max-height: 340px;
->>>>>>> 36e6034f2a312c9cb4a2a796ebfe64882d72d28f
 }
 .txt-quadri-about {
 	color: #2B5240;
@@ -773,8 +769,6 @@ h2.product-title div {
 	display: inline-block;
 	height: 24px;
 	width: 24px;
-<<<<<<< HEAD
-=======
 }
 .content-proyect img.img-proyects {
 	height: 238px;
