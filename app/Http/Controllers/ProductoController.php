@@ -57,7 +57,7 @@ class ProductoController extends Controller
     {
         $cat_name = $this->strSlugInverse($cat_name);
         $productNivel = null;
-        list($productosPorCategoria, $producto, $sub_cat_name, $productoNombre) = $this->prepareDetailProduct($id, $cat_name, $sub_cat_name);
+        list($productosPorCategoria, $producto, $cat_name, $productoNombre, $sub_cat_name) = $this->prepareDetailProduct($id, $cat_name, $sub_cat_name);
 
         return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'sub_cat_name', 'productoNombre', 'id', 'productNivel'));
     }
@@ -77,7 +77,7 @@ class ProductoController extends Controller
         $cat_name = $this->strSlugInverse($cat_name);
         $productosPorCategoria = Producto::getByCatID( $cat_id );
 
-        return [$productosPorCategoria, $producto, $cat_name, $productoNombre];
+        return [$productosPorCategoria, $producto, $cat_name, $productoNombre, $sub_cat_name];
     }
 
     /**

@@ -9,7 +9,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-6">
-				<div class="img-size">
+				<div class="img-size wow fadeInUp" data-wow-delay="0s">
 					<img src="{{ asset('images/product-imgs/' . $producto->pro_imagen_default) }}" alt="{{ $producto->pro_nombre }}" class="img-responsive center-block" id="productImage">
 				</div>
 			</div>
@@ -34,8 +34,8 @@
 					<div class="col-sm-12 about-banners">
 						<span class="txt-others">OTROS ACCESORIOS</span>
 						<div class="others-products">
-							@foreach($productosPorCategoria as $rec)
-							<div class="item-products">
+							@foreach($productosPorCategoria as $n => $rec)
+							<div class="item-products wow fadeInDown" data-wow-delay="{{ $n/4 }}s">
 								<img src="{{ asset('images/product-imgs/' . $rec->pro_imagen_default) }}" class="img-responsive" alt="{{ $rec->pro_nombre }}" title="{{ $rec->pro_nombre }}">
 								<input type="hidden" value="{{ $rec->pro_descripcion }}" data-name="{{ $rec->pro_nombre }}" data-img="{{ $rec->pro_imagen_default }}">
 							</div>

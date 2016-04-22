@@ -10,7 +10,7 @@
 		</div>
 		<div class="col-sm-12">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-6 wow fadeInUp" data-wow-delay="0s">
 					<img src="{{ asset('images/proyectos/' . $proyecto->proy_imagen_default) }}" alt="" class="img-responsive center-block" id="productImage">
 				</div>
 				<div class="col-sm-6">
@@ -21,8 +21,8 @@
 						{!! $proyecto->proy_descripcion !!}
 					</div>
 					<div class="others-proyects">
-						@foreach($galery as $rec)
-						<div class="item-products item-proyects" data-img="{{ $rec }}" style="background-image: url('{{ asset('images/proyectos/' . $rec) }}')">
+						@foreach($galery as $n => $rec)
+						<div class="item-products item-proyects wow fadeInDown" data-wow-delay="{{ $n/4 }}s" data-img="{{ $rec }}" style="background-image: url('{{ asset('images/proyectos/' . $rec) }}')">
 						</div>
 						@endforeach
 					</div>

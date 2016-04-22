@@ -20,34 +20,34 @@
 					</div>
 					@endif
 					<div class="col-sm-6 col-xs-12">
-						<div class="form-group">
+						<div class="form-group wow fadeInUp" data-wow-delay="0s">
 							<label for="razon" class="sr-only">Razón Social: </label>
 							<input type="text" class="form-control no-border-radius" name="razon" id="razon" required="required" placeholder="Razón Social">
 						</div>
-						<div class="form-group">
+						<div class="form-group wow fadeInUp" data-wow-delay="0.2s">
 							<label for="name" class="sr-only">Nombre y Apellido: </label>
 							<input type="text" class="form-control no-border-radius" name="name" id="name" required="required" placeholder="Nombre y Apellido">
 						</div>
-						<div class="form-group">
+						<div class="form-group wow fadeInUp" data-wow-delay="0.3s">
 							<label for="puesto" class="sr-only">Puesto: </label>
 							<input type="text" class="form-control no-border-radius" name="puesto" id="puesto" required="required" placeholder="Puesto que ocupa">
 						</div>
-						<div class="form-group">
+						<div class="form-group wow fadeInUp" data-wow-delay="0.4s">
 							<label for="email" class="sr-only">Correo: </label>
 							<input type="text" class="form-control no-border-radius" name="correo" id="email" required="required" placeholder="Correo electrónico">
 						</div>
-						<div class="form-group">
+						<div class="form-group wow fadeInUp" data-wow-delay="0.5s">
 							<label for="telefono" class="sr-only">Teléfono: </label>
 							<input type="text" class="form-control no-border-radius" name="telefono" id="telefono" placeholder="Teléfono">
 						</div>
-						<div class="form-group">
+						<div class="form-group wow fadeInDown" data-wow-delay="7s">
 							<div class="checkbox">
 								<label><input type="checkbox" name="acepta" value="1" class="fix-checkbox" checked> Acepto recibir newsletter y novedades</label>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-6 col-xs-12">
-						<div class="form-group">
+						<div class="form-group wow fadeInDown" data-wow-delay="0.3s">
 							<label for="message" class="sr-only">Message: </label>
 							<textarea class="form-control no-border-radius" rows="12" style="height: 270px" name="message" id="message"  required="required" placeholder="Escriba aqui su mensaje..."></textarea>
 						</div>

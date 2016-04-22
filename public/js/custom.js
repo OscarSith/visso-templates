@@ -56,7 +56,9 @@ $(function() {
 			infinite: true,
 			slidesToShow: 3,
 			slidesToScroll: 1,
-			dots: true
+			dots: true,
+			prevArrow: '<button type="button" data-role="none" class="btn slick-prev"><i class="fa fa-arrow-circle-left fa-lg"></i></button>',
+			nextArrow: '<button type="button" data-role="none" class="btn slick-next"><i class="fa fa-arrow-circle-right fa-lg"></i></button>',
 		});
 
 		$('.others-products').on('click', '.item-products', function(e) {
@@ -83,7 +85,9 @@ $(function() {
 		$othersProyects.slick({
 			infinite: true,
 			slidesToShow: 4,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			prevArrow: '<button type="button" data-role="none" class="btn slick-prev"><i class="fa fa-arrow-circle-left fa-lg"></i></button>',
+			nextArrow: '<button type="button" data-role="none" class="btn slick-next"><i class="fa fa-arrow-circle-right fa-lg"></i></button>',
 		});
 
 		$othersProyects.on('click', '.item-proyects', function(e) {
