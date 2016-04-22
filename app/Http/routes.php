@@ -6,6 +6,7 @@ Route::group(['middleware' => ['web']], function () {
 	Route::get('proyectos', 'WelcomeController@proyectos')->name('proyectos');
 	Route::get('proyectos/{id}-{nombre_proyecto}', 'WelcomeController@proyectDetail')->name('proyectDetail');
 	Route::get('contacto', 'WelcomeController@contacto')->name('contacto');
+	Route::post('send-mail', 'WelcomeController@sendMailContact')->name('sendMailContact');
 	Route::post('add-newsletter', 'WelcomeController@newsletter')->name('newsletter');
 
 	// Marca

@@ -43,6 +43,15 @@ class WelcomeController extends Controller
     	return view('contacto');
     }
 
+    public function sendMailContact(Request $request)
+    {
+        if ($request->has('acepta')) {
+            Newsletter::create($request->all());
+        }
+
+        return redirect()->back()->with('success_message', 'Mensaje enviado exitosamente');
+    }
+
     public function newsletter(Request $request)
     {
         Newsletter::create($request->all());

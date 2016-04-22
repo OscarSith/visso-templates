@@ -7,8 +7,18 @@
 		<h2 class="page-header">Escribenos</h2>
 		<div class="contact-form-area">
 			<div class="status alert alert-success"></div>
-			<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="#">
+			<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="{{ route('sendMailContact') }}">
 				<div class="row">
+					@if(Session::has('success_message'))
+					<div class="col-sm-12">
+						<div class="alert alert-success alert-dismissible fade in" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</button>
+							<p>{{ session('success_message')}}</p>
+						</div>
+					</div>
+					@endif
 					<div class="col-sm-6 col-xs-12">
 						<div class="form-group">
 							<label for="razon" class="sr-only">Razón Social: </label>
@@ -24,11 +34,16 @@
 						</div>
 						<div class="form-group">
 							<label for="email" class="sr-only">Correo: </label>
-							<input type="text" class="form-control no-border-radius" name="email" id="email" required="required" placeholder="Correo electrónico">
+							<input type="text" class="form-control no-border-radius" name="correo" id="email" required="required" placeholder="Correo electrónico">
 						</div>
 						<div class="form-group">
 							<label for="telefono" class="sr-only">Teléfono: </label>
 							<input type="text" class="form-control no-border-radius" name="telefono" id="telefono" placeholder="Teléfono">
+						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<label><input type="checkbox" name="acepta" value="1" class="fix-checkbox" checked> Acepto recibir newsletter y novedades</label>
+							</div>
 						</div>
 					</div>
 					<div class="col-sm-6 col-xs-12">
@@ -49,16 +64,6 @@
 <div class="footer-top-area">
 	<div class="container">
 		<div class="row">
-			@if(Session::has('success_message'))
-			<div class="col-sm-12">
-				<div class="alert alert-success alert-dismissible fade in" role="alert">
-					<button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
-						<i class="fa fa-times" aria-hidden="true"></i>
-					</button>
-					<p>{{ session('success_message')}}</p>
-				</div>
-			</div>
-			@endif
 			<div class="col-md-8 newsletter-block">
 				<div class="row">
 					<div class="col-md-12">
@@ -71,11 +76,6 @@
 							<span class="input-group-btn">
 								<button class="btn btn-secondary">Suscribete</button>
 							</span>
-						</div>
-						<div class="form-group">
-							<div class="checkbox">
-								<label><input type="checkbox" name="acepta" value="1" class="fix-checkbox" checked> Acepto recibir newsletter y novedades</label>
-							</div>
 						</div>
 						{!! Form::close() !!}
 					</div>

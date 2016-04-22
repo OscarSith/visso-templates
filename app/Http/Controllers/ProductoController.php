@@ -36,7 +36,10 @@ class ProductoController extends Controller
     public function indexSub($marca, $cat_name, $sub_cat_name)
     {
         $sub_cat_name = $this->strSlugInverse($sub_cat_name);
-        $cat_id = Categoria::where('cat_nombre', strtoupper($sub_cat_name))->pluck('id')->first();
+        // Get the cat_sub
+        $cat_sub = Categoria::where('cat_nombre', strtoupper($this->strSlugInverse($cat_name)))->pluck('cat_parent')->first();
+
+        $cat_id = Categoria::where('cat_nombre', strtoupper($sub_cat_name))->where('cat_sub', $cat_sub)->pluck('id')->first();
         $productos = Producto::getByCatID($cat_id);
         $productNivel = 2;
 
