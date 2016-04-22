@@ -28,7 +28,7 @@
 							</div>
 						</div>
 						<div class="col-sm-12">
-							<p class="about-banners product-desc text-justify" id="product-description">{{ $producto->pro_descripcion }}</p>
+							<div class="about-banners product-desc text-justify" id="product-description">{!! $producto->pro_descripcion !!}</div>
 						</div>
 					</div>
 					<div class="col-sm-12 about-banners">
