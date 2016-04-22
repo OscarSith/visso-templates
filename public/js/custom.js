@@ -58,23 +58,41 @@ $(function() {
 			slidesToScroll: 1,
 			dots: true
 		});
+
+		$('.others-products').on('click', '.item-products', function(e) {
+			e.preventDefault();
+			var $this = $(this),
+				$hidden = $this.children().last(),
+				data = {name: $hidden.data('name'), description: $hidden.val(), image: $hidden.data('img')};
+
+			$this.parent().find('img').removeClass('detail-product-selected');
+			$this.children().first().addClass('detail-product-selected');
+
+			$('#productName, #breadcrumbProductName').text(data.name);
+			$('#product-description').html(data.description);
+			var image = $('#productImage').attr('src'),
+				arrs = image.split('/');
+
+			arrs.pop();
+			$('#productImage').attr('src', arrs.join('/') + '/' + data.image);
+		});
 	}
 
-	$('.others-products').on('click', '.item-products', function(e) {
-		e.preventDefault();
-		var $this = $(this),
-			$hidden = $this.children().last(),
-			data = {name: $hidden.data('name'), description: $hidden.val(), image: $hidden.data('img')};
+	var $othersProyects = $('div.others-proyects');
+	if ($othersProyects.length) {
+		$othersProyects.slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1
+		});
 
-		$this.parent().find('img').removeClass('detail-product-selected');
-		$this.children().first().addClass('detail-product-selected');
+		$othersProyects.on('click', '.item-proyects', function(e) {
+			var image = $(this).data('img'),
+				curremtImage = $('#productImage').attr('src'),
+				arrs = curremtImage.split('/');
 
-		$('#productName, #breadcrumbProductName').text(data.name);
-		$('#product-description').html(data.description);
-		var image = $('#productImage').attr('src'),
-			arrs = image.split('/');
-
-		arrs.pop();
-		$('#productImage').attr('src', arrs.join('/') + '/' + data.image);
-	});
+			arrs.pop();
+			$('#productImage').attr('src', arrs.join('/') + '/' + image);
+		});
+	}
 });
