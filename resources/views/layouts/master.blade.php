@@ -66,7 +66,7 @@ $currentUri = \Route::current()->uri();
 								<div class="navbar-collapse collapse">
 									<ul class="nav navbar-nav navbar-right">
 										<li {{ $currentUri == '/' ? "class=current" : ''}}><a href="{{ url('/') }}">INICIO</a></li>
-										<li {{ $currentUri == 'nosotros' ? "class=current" : ''}}><a href="#">NOSOTROS</a></li>
+										<li {{ $currentUri == 'nosotros' ? "class=current" : ''}}><a href="{{ url('nosotros') }}">NOSOTROS</a></li>
 										<li class="dropdown">
 											<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTOS <span class="caret"></span></a>
 											<ul class="dropdown-menu">

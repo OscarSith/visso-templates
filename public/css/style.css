@@ -9,7 +9,7 @@ body {
 	background: #fff url('../images/bg_body.jpg') no-repeat fixed;
 	background-size: cover;
 	color: #6e6e6e;
-	font: 14px/26px 'Ubuntu', Arial, Helvetica, sans-serif;
+	font: 14px/26px 'Ubuntu', Helvetica, sans-serif;
 }
 a {
 	color: #252424;
@@ -735,4 +735,35 @@ h2.product-title div {
 }
 .checkbox label {
 	color: #fff !important
+}
+#about-info {
+	color: #000;
+}
+#about-info h2 {
+	font-size: 1.9em;
+	padding: 10px 0;
+}
+#about-info ol {
+	margin-bottom: 30px;
+}
+#about-info ol > li {
+	padding-bottom: 13px
+}
+#about-info ol ul {
+	margin-top: 10px;
+}
+.lead-info {
+	line-height: 1.3em
+}
+.txt-quadri-about {
+	color: #2B5240;
+}
+.txt-aresline-about {
+	color: #727272;
+}
+.logotipo-in-about {
+	background: url(../images/logotipo-visso-alt.png) 50% 50% no-repeat;
+	display: inline-block;
+	height: 24px;
+	width: 24px;
 }
