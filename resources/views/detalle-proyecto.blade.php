@@ -3,6 +3,7 @@
 @section('content')
 <section id="detalle-proyecto" class="products">
 	<div class="container">
+		@include('layouts.breadcrumb-proyecto')
 		<div class="cat-name">
 			<div>
 				<img src="{{ asset('images/proyectos/logotipos/' . $proyecto->proy_logotipo) }}" class="img-responsive center-block">
@@ -15,7 +16,7 @@
 				</div>
 				<div class="col-sm-6">
 					<h2 class="product-title proyect-title text-center">
-						<div id="productName">¿Porque trabajar con nosotros?</div>
+						<div id="productName">{{ $proyecto->proy_nombre }}</div>
 					</h2>
 					<div class="lead-info">
 						{!! $proyecto->proy_descripcion !!}

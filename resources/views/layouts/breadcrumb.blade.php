@@ -2,9 +2,9 @@
 	<ol class="breadcrumb">
 		<li><a href="{{ url('/') }}">Inicio</a></li>
 		@if (isset($view) && $view == 1)
-			<li class="active">Productos {{ $marca }}</li>
+			<li class="active">{{ $marca }}</li>
 		@else
-			<li><a href="{{ route('categorias', $marca) }}">Productos {{ $marca }}</a></li>
+			<li><a href="{{ route('categorias', $marca) }}">{{ $marca }}</a></li>
 		@endif
 		@if (isset($productNivel) && $productNivel == 1)
 			<li class="active">{{ $cat_name }}</li>

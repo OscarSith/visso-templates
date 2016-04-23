@@ -3,6 +3,7 @@
 @section('content')
 <section id="proyectos" class="products">
 	<div class="container" id="visso">
+		@include('layouts.breadcrumb-proyecto')
 		<div class="cat-name">
 			<div>Proyectos</div>
 		</div>
