@@ -35,8 +35,8 @@ $(function() {
 	if ($map.length) {
 		function initialize($) {
 			var mapOptions = {
-				zoom: 17,
-				center: new google.maps.LatLng(-12.1072999,-77.0398141),
+				zoom: 20,
+				center: new google.maps.LatLng(-12.106991,-77.03699),
 				scrollwheel: false
 			};
 			var map = new google.maps.Map(document.querySelector('.map'), mapOptions);
@@ -44,7 +44,7 @@ $(function() {
 			new google.maps.Marker({
 				map: map,
 				draggable: false,
-				position: new google.maps.LatLng(-12.1072999,-77.0376141)
+				position: new google.maps.LatLng(-12.107091,-77.03692)
 			});
 		}
 		google.maps.event.addDomListener(window, 'load', initialize);

@@ -33,7 +33,7 @@ class ProyectoTableSeeder extends Seeder
 				'proy_nombre' => 'Proyecto Bolsa de Valores de Lima',
 				'proy_descripcion' => '<p>Características</p><p>Proyecto de Amoblamiento Integral: Diseño arquitectónico y de diseño de interiores. Instalación de alfombras, cielo raso, mamparas de vidrio, puertas, cableado eléctrico y da data. Amoblamiento.</p><p>Para el amoblamiento se utilizaron las siguientes líneas:</p><p>Línea Abaco.<br>Sillas giratorias modelo Smart.<br>Sillas giratorias modelo Confort.<br>Sillas de visita modelo Step.<br>Mesas de reuniones.<br>Credenzas, armarios y muebles aéreos.<br></p><p>140 puestos de trabajo<br>Área de la oficina: 1,000 m2</p>',
 				'proy_thumb_imagen' => 'thumb_bvl.jpg',
-				'proy_imagen_default' => 'bvl.jpg',
+				'proy_imagen_default' => 'bvl_1.jpg',
 				'proy_logotipo' => 'logotipo_bvl.png',
 				'proy_galeria' => '["bvl_1.jpg","bvl_2.jpg","bvl_3.jpg","bvl_4.jpg"]',
 			],

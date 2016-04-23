@@ -377,7 +377,7 @@ h6 { font-size: 16px; }
 
 /* Google Map Area Starts */
 .map {
-	height: 400px;
+	height: 520px;
 }
 
 /* Footer Styles Starts */
@@ -564,11 +564,11 @@ h6 { font-size: 16px; }
 .product-details strong {
 	color: #fff;
 	display: inline-block;
-	font-size: 1.1em;
+	font-size: .9em;
 	padding-left: 26px;
 }
 #quadrifoglio .product-details strong {
-	background: url('../images/logotipo-quadri.png') no-repeat 0px 0px;
+	background: url('../images/logotipo-quadri.png') no-repeat 1px -2px;
 }
 #visso .product-details strong {
 	background: url('../images/logotipo-visso-sm.png') no-repeat 0px 0px;
@@ -801,5 +801,14 @@ h2.product-title div {
 }
 #detalle-proyecto .cat-name > div{
 	background-image: none !important;
->>>>>>> 36e6034f2a312c9cb4a2a796ebfe64882d72d28f
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	background-color: rgba(254, 200, 0, 0.6) !important;
+}
+#products a.fix-list {
+	position: relative;
+	display: inline-block;
+}
+#products a.fix-list img {
+	height: 264px
 }
