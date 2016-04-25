@@ -48,7 +48,7 @@ class ProductoController extends Controller
 
     public function detalleProducto($marca, $cat_name, $id, $productoNombre)
     {
-        list($productosPorCategoria, $producto, $cat_name, $productoNombre) = $this->prepareDetailProduct($id, $cat_name);
+        list($productosPorCategoria, $producto, $cat_name, $productoNombre) = $this->prepareDetailProduct($id, $cat_name, '', $marca);
 
         return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'productoNombre', 'id'));
     }
@@ -62,7 +62,7 @@ class ProductoController extends Controller
         return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'sub_cat_name', 'productoNombre', 'id', 'productNivel'));
     }
 
-    private function prepareDetailProduct($id, $cat_name, $sub_cat_name = '')
+    private function prepareDetailProduct($id, $cat_name, $sub_cat_name = '', $marca = '')
     {
         $cat_id = 0;
         $producto = null;
@@ -75,7 +75,7 @@ class ProductoController extends Controller
             $cat_id = Categoria::where('cat_nombre', strtoupper($cat_name))->pluck('id')->first();
         }
 
-        if ($id == 24) {
+        if ($id == 24 || $marca != null) {
             $producto = Producto::where('cat_id', $id)->first();
             $productosPorCategoria = Producto::getByCatID( $id );
         } else {

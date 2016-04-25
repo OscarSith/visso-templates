@@ -1,6 +1,14 @@
 @extends('layouts.master')
 
 @section('content')
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <section class="products section-area">
 	<div class="container" id="{{ $marca }}">
 		@include('layouts.breadcrumb')
@@ -21,10 +29,10 @@
 					<div class="col-sm-12">
 						<div class="row">
 							<div class="col-sm-6">
-								<img src="{{ asset('images/share-facebook.jpg')}}" width="70px">
+								<div class="fb-share-button" data-href="https://www.facebook.com/VissoMuebles/" data-layout="button_count" data-mobile-iframe="true"></div>
 							</div>
 							<div class="col-sm-6 text-right pright-0">
-								<a href="#" class="btn btn-visso">SOLICITAR COTIZACIÓN</a>
+								<a href="{{ url('contacto') }}" class="btn btn-visso">SOLICITAR COTIZACIÓN</a>
 							</div>
 						</div>
 						<div class="col-sm-12">
