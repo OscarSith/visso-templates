@@ -613,6 +613,7 @@ h2.product-title div {
 
 #aresline h2.product-title, #aresline .btn-visso {
 	background-color: rgba(0, 0, 0, 0.68);
+	color: #fff !important;
 }
 #aresline h2.product-title > div {
 	background: url('../images/logotipo-aresline-alt.png') no-repeat 0px 8px;
