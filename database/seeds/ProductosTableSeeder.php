@@ -159,23 +159,73 @@ Especificaciones:</p>
 
                 // CUADRIFOGLIO - MOBILIARIO - Direccionales
                 ['cat_id' => 25, 'pro_nombre' => 'T45', 'pro_descripcion' => '<p>T45, un puente entre lo clásico y lo moderno.</p><p>Gracias a la pureza extrema de sus líneas y su fuerte personalidad, la nueva colección T45 confiere a los espacios de oficina una agradable combinación entre estilo, las nuevas tendencias estéticas y las más clásicas, la solidez formal y la funcionalidad.</p><p>Gracias a su diseño minimalista y lineal, T45 se distingue por su unión a 45° entre tablero y estructura y las combinaciones de acabados melamínicos.</p>', 'pro_imagen_default' => 'quadri-mobiliario-direccionales_t45.jpg'],
-                ['cat_id' => 25, 'pro_nombre' => 'X7', 'pro_descripcion' => '<p>T45, un puente entre lo clásico y lo moderno.</p><p>Gracias a la pureza extrema de sus líneas y su fuerte personalidad, la nueva colección T45 confiere a los espacios de oficina una agradable combinación entre estilo, las nuevas tendencias estéticas y las más clásicas, la solidez formal y la funcionalidad.</p><p>Gracias a su diseño minimalista y lineal, T45 se distingue por su unión a 45° entre tablero y estructura y las combinaciones de acabados melamínicos.</p>', 'pro_imagen_default' => 'quadri-mobiliario-direccionales_x7.jpg'],
-                ['cat_id' => 25, 'pro_nombre' => 'X8', 'pro_descripcion' => '<p>T45, un puente entre lo clásico y lo moderno.</p><p>Gracias a la pureza extrema de sus líneas y su fuerte personalidad, la nueva colección T45 confiere a los espacios de oficina una agradable combinación entre estilo, las nuevas tendencias estéticas y las más clásicas, la solidez formal y la funcionalidad.</p><p>Gracias a su diseño minimalista y lineal, T45 se distingue por su unión a 45° entre tablero y estructura y las combinaciones de acabados melamínicos.</p>', 'pro_imagen_default' => 'quadri-mobiliario-direccionales_x8.jpg'],
-                ['cat_id' => 25, 'pro_nombre' => 'X Time Work', 'pro_descripcion' => '<p>T45, un puente entre lo clásico y lo moderno.</p><p>Gracias a la pureza extrema de sus líneas y su fuerte personalidad, la nueva colección T45 confiere a los espacios de oficina una agradable combinación entre estilo, las nuevas tendencias estéticas y las más clásicas, la solidez formal y la funcionalidad.</p><p>Gracias a su diseño minimalista y lineal, T45 se distingue por su unión a 45° entre tablero y estructura y las combinaciones de acabados melamínicos.</p>', 'pro_imagen_default' => 'quadri-mobiliario-direccionales_xtimework.jpg'],
+                ['cat_id' => 25, 'pro_nombre' => 'X7', 'pro_descripcion' => '<ul>
+                    <li>Sobres en bilaminado de aglomerado de alta tensión, revestidos con melanina de alta calidad con poro abierto</li>
+                    <li>Sobres en cristal extra-blanco templado anti-huella están satinados en la parte superior, barnizados con efecto opaco en la parte inferior</li>
+                    <li>Placas de acero inoxidable. Cantos pulidos y esquina biselados a 45°.</li>
+                    <li>Patas disponibles en las versiones ‘’abierta’’ y ‘’cerrada’’, fabricadas en perfilado de acero. Incluye pies niveladores.</li>
+                    </ul>
+                    ', 'pro_imagen_default' => 'quadri-mobiliario-direccionales_x7.jpg'],
+                ['cat_id' => 25, 'pro_nombre' => 'X8', 'pro_descripcion' => '<ul>
+                        <li>Sobres en bilaminado de aglomerado de alta tensión, revestidos con melanina de alta calidad con poro abierto</li>
+                        <li>Antirreflejos, anti-arañazos</li>
+                        <li>Sobres en cristal extra-blanco templado anti-huella están satinados en la parte superior, barnizados con efecto opaco en la parte inferior</li>
+                        <li>Placas de acero inoxidable. Cantos pulidos y esquina biselados a 45°.</li>
+                    </ul>', 'pro_imagen_default' => 'quadri-mobiliario-direccionales_x8.jpg'],
+                ['cat_id' => 25, 'pro_nombre' => 'X Time Work', 'pro_descripcion' => '<ul>
+                        <li>Sobre realizado en melanina lavable, antirreflejo y anti-arañazos</li>
+                        <li>Sobre realizado en cristal templado barnizado, puede ser arqueado o curvo</li>
+                        <li>Estructura de melanina, con cantos rectos en ABS anti-golpes a juego y embellecedores regulares en ABS color aluminio
+                        </li>
+                        <li>Pies niveladores</li>
+                    </ul>', 'pro_imagen_default' => 'quadri-mobiliario-direccionales_xtimework.jpg'],
 
 
                 // Mostradores
-                ['cat_id' => 26, 'pro_nombre' => 'Z2', 'pro_descripcion' => '<p>T45, un puente entre lo clásico y lo moderno.</p><p>Gracias a la pureza extrema de sus líneas y su fuerte personalidad, la nueva colección T45 confiere a los espacios de oficina una agradable combinación entre estilo, las nuevas tendencias estéticas y las más clásicas, la solidez formal y la funcionalidad.</p><p>Gracias a su diseño minimalista y lineal, T45 se distingue por su unión a 45° entre tablero y estructura y las combinaciones de acabados melamínicos.</p>', 'pro_imagen_default' => 'quadri-mobiliario-mostradores-z2.jpg'],
+                ['cat_id' => 26, 'pro_nombre' => 'Z2', 'pro_descripcion' => '<ul>
+    <li>Módulos rectos realizados en tablero aglomerado de partículas de espesor 25mm, revestidos con papel melamínico.</li>
+    <li>Lavable, antirreflejos, anti-arañazos</li>
+    <li>Acabados blanco, nogal, canaletto y wengué a por semi-abierto con cantos en ABS anti-golpes</li>
+    <li>Patas realizadas en tubo de acero trefilado decapado con sección cuadrada</li>
+    <li>Sistema de iluminación</li>
+</ul>', 'pro_imagen_default' => 'quadri-mobiliario-mostradores-z2.jpg'],
 
                 // Operativos
-                ['cat_id' => 27, 'pro_nombre' => 'SIT STAND', 'pro_descripcion' => '<ul><li>Módulos rectos realizados en tablero aglomerado de partículas de espesor 25mm, revestidos con papel melamínico.</li><li>Lavable, antirreflejos, anti-arañazos</li><li>Acabados blanco, nogal, canaletto y wengué a por semi-abierto con cantos en ABS anti-golpes</li><li>Patas realizadas en tubo de acero trefilado decapado con sección cuadrada</li><li>Sistema de iluminación</li></ul>', 'pro_imagen_default' => 'quadri-mobiliario-operativos.jpg'],
-                ['cat_id' => 27, 'pro_nombre' => 'SYSTEM', 'pro_descripcion' => '<ul><li>Sobres realizados en tablero aglomerado de partículas de esp. 30mm. Revestido con papel melmaú anti-arañazos</li><li>Tapones embellecedores en ABS cromado. Tapa abatible se puede abrir en ambos sentidos y está dotada de un cepillo para cables.</li><li>Sobres en bilaminado de aglomerado de alta tensión, revestidos con melanina de alta calidad con poro abierto</li><li>Sobres en cristal extra-blanco templado anti-huella están satinados en la parte superior, barnizados con efecto opaco en la parte inferior</li><li>Placas de acero inoxidable. Cantos pulidos y esquina biselados a 45°.</li><li>Patas disponibles en las versiones ‘’abierta’’ y ‘’cerrada’’, fabricadas en perfilado de acero. Incluye pies niveladores</li></ul>', 'pro_imagen_default' => 'quadri-mobiliario-operativos-system.jpg'],
-                ['cat_id' => 27, 'pro_nombre' => 'X2', 'pro_descripcion' => '<ul><li>Sobres realizados en tablero aglomerado de partículas de esp. 30mm. Revestido con papel melmaú anti-arañazos</li><li>Tapones embellecedores en ABS cromado. Tapa abatible se puede abrir en ambos sentidos y está dotada de un cepillo para cables.</li><li>Sobres en bilaminado de aglomerado de alta tensión, revestidos con melanina de alta calidad con poro abierto</li><li>Sobres en cristal extra-blanco templado anti-huella están satinados en la parte superior, barnizados con efecto opaco en la parte inferior</li><li>Placas de acero inoxidable. Cantos pulidos y esquina biselados a 45°.</li><li>Patas disponibles en las versiones ‘’abierta’’ y ‘’cerrada’’, fabricadas en perfilado de acero. Incluye pies niveladores</li></ul>', 'pro_imagen_default' => 'quadri-mobiliario-operativos-x2.jpg'],
-                ['cat_id' => 27, 'pro_nombre' => 'X4', 'pro_descripcion' => '<ul><li>Sobres realizados en tablero aglomerado de partículas de esp. 30mm. Revestido con papel melmaú anti-arañazos</li><li>Tapones embellecedores en ABS cromado. Tapa abatible se puede abrir en ambos sentidos y está dotada de un cepillo para cables.</li><li>Sobres en bilaminado de aglomerado de alta tensión, revestidos con melanina de alta calidad con poro abierto</li><li>Sobres en cristal extra-blanco templado anti-huella están satinados en la parte superior, barnizados con efecto opaco en la parte inferior</li><li>Placas de acero inoxidable. Cantos pulidos y esquina biselados a 45°.</li><li>Patas disponibles en las versiones ‘’abierta’’ y ‘’cerrada’’, fabricadas en perfilado de acero. Incluye pies niveladores</li></ul>', 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4.jpg'],
+                ['cat_id' => 27, 'pro_nombre' => 'SIT STAND', 'pro_descripcion' => '<ul>
+                        <li>Sobres realizados en tablero aglomerado de partículas de esp. 30mm. Revestido con papel melmaú anti-arañazos.</li>
+                        <li>Dos patas en forma de ‘’T’’ invertida con REGULACIÓN DE ALTURA de 67,3 hasta 134,8cm</li>
+                        <li>Motor de elevación integrado en el cuerpo de la columna</li>
+                    </ul>', 'pro_imagen_default' => 'quadri-mobiliario-operativos.jpg'],
+                ['cat_id' => 27, 'pro_nombre' => 'SYSTEM', 'pro_descripcion' => '<p>La armonía de metal, de estilo elegante, sencillo y limpio. El sistema idea+ system capta su atención y combina la estética con la funcionalidad. La estructura metálica está disponible en tres acabados: negro, aluminio y blanco. Los carreteros de metal desmontable permiten la gestión de cables: se puede elegir entre cuatro acabados, negro , aluminio , blanco y cromo . Detalles que hacen atractiva cada entorno de trabajo. La pierna del sistema tiene tres tipos de ajuste de altura para adaptarse mejor a las necesidades del usuario: con el mecanismo de tornillo , con manivela o con motor eléctrico.</p>', 'pro_imagen_default' => 'quadri-mobiliario-operativos-system.jpg'],
+                ['cat_id' => 27, 'pro_nombre' => 'X2', 'pro_descripcion' => '<ul>
+    <li>Sobres en melanina realizados en tablero aglomerado de partículas de espesor 25-30mm, revestidos con papel melamínico.</li>
+    <li>Lavable, antirreflejos, anti-arañazos</li>
+    <li>Estructura disponible con barra telescópica en tubo de acero, con faldón estructurral en melanina y con faldón estructural de acero perforado.</li>
+    <li>Dotados de canales de electrificación en aluminio extruido barnizados</li>
+</ul>', 'pro_imagen_default' => 'quadri-mobiliario-operativos-x2.jpg'],
+                ['cat_id' => 27, 'pro_nombre' => 'X4', 'pro_descripcion' => '<ul>
+    <li>Sobres en melanina realizados en tablero aglomerado de partículas de espesor 25-30mm, revestidos con papel melamínico.</li>
+    <li>Lavable, antirreflejos, anti-arañazos</li>
+    <li>Estructuras realizads en tubo de acero laminado en frío disponible en color blanco brillante, aluminio o cromado</li>
+    <li>Cuerpo dotado de 8 pies niveladores en ABS. Fondo dotado de 2 pasacables con tapetas en ABS</li>
+</ul>', 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4.jpg'],
 
 
-                ['cat_id' => 28, 'pro_nombre' => 'X7', 'pro_descripcion' => '<ul><li>Sobres en bilaminado de aglomerado de alta tensión, revestidos con melanina de alta calidad con poro abierto</li><li>Lavable, antirreflejos, anti-arañazos</li><li>Sobres en cristal extra-blanco templado anti-huella están satinados en la parte superior, barnizados con efecto opaco en la parte inferior</li><li>Placas de acero inoxidable. Cantos pulidos y esquina biselados a 45°.</li><li>Tapa abatible puede abrirse en ambos sentidos y está dotada de un cepillo para los cables</li></ul>', 'pro_imagen_default' => 'quadri-mobiliario-reunion-x7.jpg'],
-                ['cat_id' => 28, 'pro_nombre' => 'X8', 'pro_descripcion' => '<ul><li>Sobres en bilaminado de aglomerado de alta tensión, revestidos con melanina de alta calidad con poro abierto</li><li>Lavable, antirreflejos, anti-arañazos</li><li>Sobres en cristal extra-blanco templado anti-huella están satinados en la parte superior, barnizados con efecto opaco en la parte inferior</li><li>Placas de acero inoxidable. Cantos pulidos y esquina biselados a 45°.</li><li>Tapa abatible puede abrirse en ambos sentidos y está dotada de un cepillo para los cables</li></ul>', 'pro_imagen_default' => 'quadri-mobiliario-reunion-x8.jpg'],
+                ['cat_id' => 28, 'pro_nombre' => 'X7', 'pro_descripcion' => '<ul>
+    <li>Bandeja de electrificación con laterales y tapa en aluminio pulido</li>
+    <li>Tapones embellecedores en ABS cromado. Tapa abatible se puede abrir en ambos sentidos y está dotada de un cepillo para cables.</li>
+    <li>Sobres en bilaminado de aglomerado de alta tensión, revestidos con melanina de alta calidad con poro abierto</li>
+    <li>Sobres en cristal extra-blanco templado anti-huella están satinados en la parte superior, barnizados con efecto opaco en la parte inferior</li>
+    <li>Placas de acero inoxidable. Cantos pulidos y esquina biselados a 45°.</li>
+    <li>Patas disponibles en las versiones ‘’abierta’’ y ‘’cerrada’’, fabricadas en perfilado de acero. Incluye pies niveladores.</li>
+</ul>', 'pro_imagen_default' => 'quadri-mobiliario-reunion-x7.jpg'],
+                ['cat_id' => 28, 'pro_nombre' => 'X8', 'pro_descripcion' => '<ul>
+    <li>Sobres en bilaminado de aglomerado de alta tensión, revestidos con melanina de alta calidad con poro abierto</li>
+    <li>Lavable, antirreflejos, anti-arañazos</li>
+    <li>Sobres en cristal extra-blanco templado anti-huella están satinados en la parte superior, barnizados con efecto opaco en la parte inferior</li>
+    <li>Placas de acero inoxidable. Cantos pulidos y esquina biselados a 45°.</li>
+    <li>Tapa abatible puede abrirse en ambos sentidos y está dotada de un cepillo para los cables</li>
+</ul>', 'pro_imagen_default' => 'quadri-mobiliario-reunion-x8.jpg'],
 
 
             // QUADRIFOGLIO - SILLAS
