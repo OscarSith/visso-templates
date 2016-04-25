@@ -16,7 +16,11 @@
 						@foreach($categorias as $n => $categoria)
 						<div class="col-sm-4">
 							<div class="thumbnail wow fadeInUp" data-wow-delay="{{ $n/4 }}s">
+								@if ($marca == 'aresline')
+								<a href="{{ route('detalleProducto', [$marca, str_slug($categoria->cat_nombre), $categoria->id, str_slug($categoria->cat_nombre)]) }}" class="fix-list">
+								@else
 								<a href="{{ route('catByProduct', [str_slug($marca), str_slug($categoria->cat_nombre)])}}" class="fix-list">
+								@endif
 									<img src="{{ asset('images/categorias/'. $categoria->cat_imagen) }}" alt="{{ strtolower($categoria->cat_nombre) }}" class="img-responsive">
 								</a>
 							</div>

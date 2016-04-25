@@ -65,6 +65,9 @@ class ProductoController extends Controller
     private function prepareDetailProduct($id, $cat_name, $sub_cat_name = '')
     {
         $cat_id = 0;
+        $producto = null;
+        $productosPorCategoria = null;
+
         if ($sub_cat_name != '') {
             $cat_sub = Categoria::where('cat_nombre', strtoupper($this->strSlugInverse($cat_name)))->pluck('cat_parent')->first();
             $cat_id = Categoria::where('cat_nombre', strtoupper($sub_cat_name))->where('cat_sub', $cat_sub)->pluck('id')->first();
@@ -72,10 +75,15 @@ class ProductoController extends Controller
             $cat_id = Categoria::where('cat_nombre', strtoupper($cat_name))->pluck('id')->first();
         }
 
-        $producto = Producto::find($id);
+        if ($id == 24) {
+            $producto = Producto::where('cat_id', $id)->first();
+            $productosPorCategoria = Producto::getByCatID( $id );
+        } else {
+            $producto = Producto::find($id);
+            $productosPorCategoria = Producto::getByCatID( $cat_id );
+        }
         $productoNombre = $producto->pro_nombre;
         $cat_name = $this->strSlugInverse($cat_name);
-        $productosPorCategoria = Producto::getByCatID( $cat_id );
 
         return [$productosPorCategoria, $producto, $cat_name, $productoNombre, $sub_cat_name];
     }

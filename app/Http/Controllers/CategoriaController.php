@@ -19,6 +19,7 @@ class CategoriaController extends Controller
         $marca_id = Marca::where('nombre', strtoupper($marca))->pluck('id')->first();
         if ($marca_id > 0) {
             $categorias = Categoria::getBySub($marca_id);
+            // dd($categorias);
             // View, es el nivel de subcategoria que tiene una categoria ejem: view = 2 o 3 ...
             $view = 1;
             // dd($categorias->toArray());

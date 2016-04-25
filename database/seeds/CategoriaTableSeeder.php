@@ -50,9 +50,15 @@ class CategoriaTableSeeder extends Seeder
 
 
             // QUADRIFOGLIO
-            ['marca_id' => 2, 'cat_nombre' => 'MOBILIARIO', 'cat_imagen' => 'quadri-mobiliario.jpg', 'cat_sub' => 1, 'cat_parent' => 0],
+            ['marca_id' => 2, 'cat_nombre' => 'MOBILIARIO', 'cat_imagen' => 'quadri-mobiliario.jpg', 'cat_sub' => 1, 'cat_parent' => 2],
             ['marca_id' => 2, 'cat_nombre' => 'SILLAS', 'cat_imagen' => 'quadri-sillas.jpg', 'cat_sub' => 1, 'cat_parent' => 0],
 
+                //DIreccionales
+                ['marca_id' => 2, 'cat_nombre' => 'BOISERE', 'cat_imagen' => 'quadri-mobiliario-boilere.jpg', 'cat_sub' => 2, 'cat_parent' => 1],
+                ['marca_id' => 2, 'cat_nombre' => 'DIRECCIONALES', 'cat_imagen' => 'quadri-mobiliario-direccionales.jpg', 'cat_sub' => 2, 'cat_parent' => 0],
+                ['marca_id' => 2, 'cat_nombre' => 'MOSTRADORES', 'cat_imagen' => 'quadri-mobiliario-mostradores-z2.jpg', 'cat_sub' => 2, 'cat_parent' => 0],
+                ['marca_id' => 2, 'cat_nombre' => 'OPERATIVOS', 'cat_imagen' => 'quadri-mobiliario-operativos.jpg', 'cat_sub' => 2, 'cat_parent' => 0],
+                ['marca_id' => 2, 'cat_nombre' => 'REUNIÓN', 'cat_imagen' => 'quadri-mobiliario-reunion.jpg', 'cat_sub' => 2, 'cat_parent' => 0],
         ];
 
         foreach ($categorias as $key => $value) {

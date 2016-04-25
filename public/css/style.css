@@ -320,20 +320,22 @@ h6 { font-size: 16px; }
 .products {
 	overflow: hidden;
 }
-.visso-list .thumbnail {
+.thumbnail {
+	background-color: transparent;
+	border: 2px solid #FEC800;
+	overflow: hidden;
 	padding: 0;
 	position: relative;
-	overflow: hidden;
 }
-	.visso-list .thumbnail ul.btn-list {
+	.thumbnail ul.btn-list {
 		position: absolute;
 		top: 15px;
 		right: 15px;
 	}
-	.visso-list .thumbnail ul.btn-list li + li {
+	.thumbnail ul.btn-list li + li {
 		margin-top: 10px;
 	}
-	.visso-list .thumbnail .caption, #proyectos div.caption {
+	.thumbnail .caption, #proyectos div.caption {
 		background: rgba(0, 0, 0, 0.6);
 		bottom: 8px;
 		left: 0%;
@@ -341,15 +343,15 @@ h6 { font-size: 16px; }
 		position: absolute;
 		right: 0%;
 	}
-	.visso-list .thumbnail .caption .product-details {
+	.thumbnail .caption .product-details {
 		padding: 6px 0px;
 		text-transform: uppercase;
 	}
 
-	#quadrifoglio .visso-list .thumbnail .caption {
+	#quadrifoglio .thumbnail .caption {
 		background: rgba(53, 86, 32, 0.68);
 	}
-	#visso .visso-list .thumbnail .caption {
+	#visso .thumbnail .caption {
 		background: rgba(255, 198, 9, 0.6);
 	}
 
@@ -388,7 +390,7 @@ h6 { font-size: 16px; }
 
 /* Generic Styles Starts */
 .no-border-radius,
-.visso-list .thumbnail,
+.thumbnail,
 .btn-default,
 .btn-secondary {
 	-webkit-border-radius: 0;
@@ -401,8 +403,8 @@ h6 { font-size: 16px; }
 			box-shadow: none;
 }
 .clearance .thumbnail,
-.visso-list .thumbnail {
-	border: none;
+.thumbnail {
+	border: none !important;
 }
 .btn-transparent,
 .visso-list .thumbnail {
@@ -557,10 +559,6 @@ h6 { font-size: 16px; }
 	height: 170px;
 	overflow: hidden;
 }
-.thumbnail {
-	border: 2px solid #FEC800;
-	background-color: transparent;
-}
 .product-details strong {
 	color: #fff;
 	display: inline-block;
@@ -573,7 +571,7 @@ h6 { font-size: 16px; }
 #visso .product-details strong {
 	background: url('../images/logotipo-visso-sm.png') no-repeat 0px 0px;
 }
-#sliders .col-sm-4, .visso-list .col-sm-4 {
+#sliders .col-sm-4, #products .row .col-sm-4 {
 	padding: 0 8px;
 }
 .breadcrumb {
