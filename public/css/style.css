@@ -811,3 +811,36 @@ h2.product-title div {
 #products a.fix-list img {
 	height: 264px
 }
+.content-link-partners {
+	margin: 0 auto;
+	position: relative;
+	width: 270px;
+}
+.content-link-partners ul {
+	position: absolute;
+	width: 100%
+}
+.content-link-partners li {
+	display: inline-block;
+}
+.content-link-partners .all li {
+	height: 45px;
+	width: 37px;
+}
+.all .cert-2 {
+	width: 39px;
+}
+.all .cert-3 {
+	width: 35px;
+}
+.all .cert-5 {
+	margin-right: 6px !important;
+	width: 58px !important;
+}
+.content-link-partners a {
+	display: block;
+	height: inherit;
+}
+.aresline img {
+	width: 80%
+}
