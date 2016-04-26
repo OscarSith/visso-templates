@@ -45,3 +45,9 @@
 	</div>
 </div>
 @endsection
+
+@section('footer')
+<div class="container">
+	<img src="{{ asset('images/partners.png') }}" class="center-block" id="img-partners">
+</div>
+@endsection

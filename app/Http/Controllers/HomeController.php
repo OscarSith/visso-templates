@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Newsletter;
 
 class HomeController extends Controller
 {
@@ -24,6 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $emails = Newsletter::latest()->paginate(5);
+
+        return view('home', ['emails' => $emails]);
     }
 }

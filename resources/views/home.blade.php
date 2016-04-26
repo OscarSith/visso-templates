@@ -8,7 +8,26 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Correo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @if (!$emails->isEmpty())
+                        @foreach ($emails as $email)
+                            <tr>
+                                <td>{{ $email->correo }}</td>
+                            </tr>
+                        @endforeach
+                        @else
+                            <tr>
+                                <td class="text-center">No hay registros que mostrar</td>
+                            </tr>
+                        @endif
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

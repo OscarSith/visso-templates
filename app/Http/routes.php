@@ -1,4 +1,18 @@
 <?php
+Route::group(['middleware' => ['web', 'guest'], 'prefix' => 'admin'], function($route) {
+
+	$route->get('login', 'Auth\AuthController@showLoginForm');
+	$route->post('login', 'Auth\AuthController@login')->name('login');
+
+});
+
+Route::group(['middleware' => 'web', 'prefix' => 'admin'], function () {
+
+	$this->get('/', 'HomeController@index');
+
+	$this->get('logout', 'Auth\AuthController@logout');
+});
+
 Route::group(['middleware' => ['web']], function () {
 	// Otras paginas
 	Route::get('/', 'WelcomeController@index')->name('home');
@@ -19,18 +33,4 @@ Route::group(['middleware' => ['web']], function () {
 	// Categorias y subcategorias
 	Route::get('{marca}/{cat_name}', 'ProductoController@index')->name('catByProduct');
 	Route::get('{marca}/{cat_name}/{sub_cat_name}', 'ProductoController@indexSub')->name('catBySubCatID');
-});
-
-Route::group(['middleware' => ['web', 'guest'], 'prefix' => 'admin'], function($route) {
-
-	$route->get('login', 'Auth\AuthController@showLoginForm');
-	$route->post('login', 'Auth\AuthController@login')->name('login');
-
-});
-
-Route::group(['middleware' => 'web', 'prefix' => 'admin'], function () {
-
-	$this->get('/', 'HomeController@index');
-
-	$this->get('logout', 'Auth\AuthController@logout');
 });

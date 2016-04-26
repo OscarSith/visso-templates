@@ -90,9 +90,8 @@ $currentUri = \Route::current()->uri();
 		@show
 		</div>
 		<footer class="main-footer">
-			<div class="container">
-				<img src="{{ asset('images/partners.png') }}" class="center-block" id="img-partners">
-			</div>
+			@section('footer')
+			@show
 		</footer>
 		<script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
 		<script src="{{ asset('js/bootstrap.min.js') }}"></script>

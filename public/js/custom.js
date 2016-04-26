@@ -64,19 +64,16 @@ $(function() {
 		$('.others-products').on('click', '.item-products', function(e) {
 			e.preventDefault();
 			var $this = $(this),
-				$hidden = $this.children().last(),
-				data = {name: $hidden.data('name'), description: $hidden.val(), image: $hidden.data('img')};
+				img = $this.find('img').data('img');
 
 			$this.parent().find('img').removeClass('detail-product-selected');
 			$this.children().first().addClass('detail-product-selected');
 
-			$('#productName, #breadcrumbProductName').text(data.name);
-			$('#product-description').html(data.description);
 			var image = $('#productImage').attr('src'),
 				arrs = image.split('/');
 
 			arrs.pop();
-			$('#productImage').attr('src', arrs.join('/') + '/' + data.image);
+			$('#productImage').attr('src', arrs.join('/') + '/' + img);
 		});
 	}
 

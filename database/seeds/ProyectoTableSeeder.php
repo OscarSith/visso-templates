@@ -62,14 +62,6 @@ class ProyectoTableSeeder extends Seeder
 				'proy_galeria' => '["steviaone_1.jpg","steviaone_2.jpg","steviaone_3.jpg","steviaone_4.jpg"]',
 			],
 			[
-				'proy_nombre' => 'Proyecto Euroestudios',
-				'proy_descripcion' => '<p>Características</p><p>Proyecto de Amoblamiento Integral: instalación de alfombras, cielo raso, cableado eléctrico y de datos.</p><p>Se utilizaron las siguientes líneas:</p><p>Línea Adapta<br>Sillas giratorias Guiatta</p>',
-				'proy_thumb_imagen' => 'thumb_eurostudio.jpg',
-				'proy_imagen_default' => 'eurostudio_1.jpg',
-				'proy_logotipo' => 'logotipo_euroestudio.jpg',
-				'proy_galeria' => '["eurostudio_1.jpg","eurostudio_2.jpg","eurostudio_3.jpg","eurostudio_4.jpg"]',
-			],
-			[
 				'proy_nombre' => 'DIARIO EL TIEMPO',
 				'proy_descripcion' => '<p>Características</p><p>Proyecto de Amoblamiento Integral: instalación de alfombras, cielo raso, cableado eléctrico y de datos.</p><p>Se utilizaron las siguientes líneas:</p><p>Línea Adapta<br>Sillas giratorias Guiatta</p>',
 				'proy_thumb_imagen' => 'thumb_diario.jpg',

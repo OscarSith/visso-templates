@@ -14,7 +14,7 @@
 		<div class="row {{ $marca }}-list text-center">
 			<div class="col-md-offset-1 col-md-10 {{ $flag ? 'no-float' : ''}}">
 				@foreach($productos as $n => $producto)
-				@if (($total == 4 && $n == 2) || ($total == 7 && $n == 3))
+				@if (($total == 4 && $n == 2) || ($total == 7 && $n == 4) || $n == 8)
 					<div class="clearfix no-float col-sm-12">
 				@endif
 				<div class="col-md-3 col-sm-4">

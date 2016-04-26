@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Producto;
 use App\Categoria;
 use App\Marca;
+use App\Galeria;
 
 class ProductoController extends Controller
 {
@@ -48,7 +49,7 @@ class ProductoController extends Controller
 
     public function detalleProducto($marca, $cat_name, $id, $productoNombre)
     {
-        list($productosPorCategoria, $producto, $cat_name, $productoNombre) = $this->prepareDetailProduct($id, $cat_name, '', $marca);
+        list($productosPorCategoria, $producto, $cat_name, $productoNombre) = $this->prepareDetailProduct($id, $cat_name, '', $marca, $productoNombre);
 
         return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'productoNombre', 'id'));
     }
@@ -62,7 +63,7 @@ class ProductoController extends Controller
         return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'sub_cat_name', 'productoNombre', 'id', 'productNivel'));
     }
 
-    private function prepareDetailProduct($id, $cat_name, $sub_cat_name = '', $marca = '')
+    private function prepareDetailProduct($id, $cat_name, $sub_cat_name = '', $marca = '', $productoNombre = '')
     {
         $cat_id = 0;
         $producto = null;
@@ -75,12 +76,14 @@ class ProductoController extends Controller
             $cat_id = Categoria::where('cat_nombre', strtoupper($cat_name))->pluck('id')->first();
         }
 
-        if ($id == 24 || $marca != null) {
+
+        if ($id == 24 || ($marca != null && $marca != 'quadrifoglio')) {
             $producto = Producto::where('cat_id', $id)->first();
-            $productosPorCategoria = Producto::getByCatID( $id );
+            $productosPorCategoria = $this->getProductsOrGalery($id, $marca, '', $productoNombre);
+            //  Producto::getByCatID( $id );
         } else {
             $producto = Producto::find($id);
-            $productosPorCategoria = Producto::getByCatID( $cat_id );
+            $productosPorCategoria = $this->getProductsOrGalery( $id, $marca, $cat_id, $productoNombre);
         }
         $productoNombre = $producto->pro_nombre;
         $cat_name = $this->strSlugInverse($cat_name);
@@ -102,6 +105,18 @@ class ProductoController extends Controller
         }
 
         return $cat_name;
+    }
+
+    private function getProductsOrGalery($id, $marca, $cat_id = '', $productoNombre = '')
+    {
+        if ($marca === 'aresline') {
+            return Producto::getByCatID( $cat_id != '' ? $cat_id : $id );
+        } else {
+            if ($productoNombre == 'boisere') {
+                $id = Producto::where('cat_id', $id)->pluck('id')->first();
+            }
+            return Galeria::where( 'producto_id', $id )->get(['id', 'pro_imagen_default']);
+        }
     }
 
     /**

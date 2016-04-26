@@ -49,6 +49,8 @@ class WelcomeController extends Controller
             Newsletter::create($request->all());
         }
 
+        \Mail::send('');
+
         return redirect()->back()->with('success_message', 'Mensaje enviado exitosamente');
     }
 
