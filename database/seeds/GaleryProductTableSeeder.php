@@ -85,6 +85,17 @@ class GaleryProductTableSeeder extends Seeder
         	['producto_id' => 98, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x2_8.jpg'],
         	['producto_id' => 98, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x2_9.jpg'],
         	['producto_id' => 98, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x2_10.jpg'],
+
+        	// X4
+        	['producto_id' => 99, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4.jpg'],
+        	['producto_id' => 99, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4_2.jpg'],
+        	['producto_id' => 99, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4_3.jpg'],
+        	['producto_id' => 99, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4_4.jpg'],
+        	['producto_id' => 99, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4_5.jpg'],
+        	['producto_id' => 99, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4_6.jpg'],
+        	['producto_id' => 99, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4_7.jpg'],
+        	['producto_id' => 99, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4_8.jpg'],
+        	['producto_id' => 99, 'pro_imagen_default' => 'quadri-mobiliario-operativos-x4_9.jpg'],
         ];
 
         foreach ($galery as $key) {
