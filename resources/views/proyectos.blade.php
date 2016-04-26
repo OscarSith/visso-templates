@@ -17,7 +17,13 @@
 								<img src="{{ asset('images/proyectos/thumbs/' . $proyecto->proy_thumb_imagen) }}" alt="{{ $proyecto->proy_nombre }}" class="img-responsive center-block img-proyects">
 								<div class="caption">
 									<div class="product-details">
+										@if ($proyecto->proy_logotipo != '')
 										<img src="{{ asset('images/proyectos/logotipos/' . $proyecto->proy_logotipo) }}" class="img-responsive center-block">
+										@else
+										<div class="text-center">
+											{{ $proyecto->proy_nombre }}
+										</div>
+										@endif
 									</div>
 								</div>
 							</a>

@@ -4,11 +4,15 @@
 <section id="detalle-proyecto" class="products">
 	<div class="container">
 		@include('layouts.breadcrumb-proyecto')
+		@if ($proyecto->proy_logotipo != '')
 		<div class="cat-name">
 			<div>
 				<img src="{{ asset('images/proyectos/logotipos/' . $proyecto->proy_logotipo) }}" class="img-responsive center-block">
 			</div>
 		</div>
+		@else
+		&nbsp;
+		@endif
 		<div class="col-sm-12">
 			<div class="row">
 				<div class="col-sm-6 wow fadeInUp" data-wow-delay="0s">

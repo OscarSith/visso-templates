@@ -15,7 +15,7 @@ class ProyectoTableSeeder extends Seeder
         $proyectos = [
 			[
 				'proy_nombre' => '4LIFE - 2015',
-				'proy_descripcion' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+				'proy_descripcion' => '<p>2015<br>40 Puestos de Trabajo Instalados.<br>Línea de Mobiliario ABACO y QUADRA<br>Silloneria: Smart, Clio, Movie.<br>Muebles especiales.</p>',
 				'proy_thumb_imagen' => 'thumb_4life_2015.jpg',
 				'proy_imagen_default' => '4life_2.jpg',
 				'proy_logotipo' => 'logotipo_4life.png',
@@ -23,7 +23,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'APM Terminals',
-				'proy_descripcion' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+				'proy_descripcion' => '<p>2015<br>600 Puestos de Trabajo Instalados.<br>Línea de Mobiliario QUADRA.<br>Silloneria: Consiglieri, Confort , Step malla.<br>Archivadores Móviles.</p>',
 				'proy_thumb_imagen' => 'thumb_apm.jpg',
 				'proy_imagen_default' => 'apm_1.jpg',
 				'proy_logotipo' => 'logotipo_apm.png',
@@ -31,7 +31,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'Proyecto Bolsa de Valores de Lima',
-				'proy_descripcion' => '<p>Características</p><p>Proyecto de Amoblamiento Integral: Diseño arquitectónico y de diseño de interiores. Instalación de alfombras, cielo raso, mamparas de vidrio, puertas, cableado eléctrico y da data. Amoblamiento.</p><p>Para el amoblamiento se utilizaron las siguientes líneas:</p><p>Línea Abaco.<br>Sillas giratorias modelo Smart.<br>Sillas giratorias modelo Confort.<br>Sillas de visita modelo Step.<br>Mesas de reuniones.<br>Credenzas, armarios y muebles aéreos.<br></p><p>140 puestos de trabajo<br>Área de la oficina: 1,000 m2</p>',
+				'proy_descripcion' => '<p>2015<br>140 Puestos de Trabajo Instalados.<br>Línea de Mobiliario ABACO.<br>Silloneria: Smart, Confort , Step malla.<br>Mesas de Reuniones: circulares y Targa.</p>',
 				'proy_thumb_imagen' => 'thumb_bvl.jpg',
 				'proy_imagen_default' => 'bvl_1.jpg',
 				'proy_logotipo' => 'logotipo_bvl.png',
@@ -39,7 +39,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'HUAWEI',
-				'proy_descripcion' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+				'proy_descripcion' => '<p>2014<br>300 Puestos de Trabajo Instalados.<br>Línea de Mobiliario: PANELES, GEO.<br>Silloneria: Rudy.<br>Muebles especiales.</p>',
 				'proy_thumb_imagen' => 'thumb_huawei.jpg',
 				'proy_imagen_default' => 'huawei_1.jpg',
 				'proy_logotipo' => 'logotipo_huawei.png',
@@ -47,7 +47,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'SERFOR',
-				'proy_descripcion' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+				'proy_descripcion' => '<p>2016<br>450 Puestos de Trabajo Instalados.<br>Línea de Mobiliario GEO<br>Silloneria: Confort , Step tapizadas y Butterfly.<br>Mesas de Reuniones Impulsa<br>Archivadores Móviles.</p>',
 				'proy_thumb_imagen' => 'thumb_serfor.jpg',
 				'proy_imagen_default' => 'serfir_1.jpg',
 				'proy_logotipo' => 'logotipo_serfor.png',
@@ -55,7 +55,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'Proyecto STEVIA ONE',
-				'proy_descripcion' => '<p>Características</p><p>Proyecto de Amoblamiento:</p><p>Se utilizaron las siguientes líneas:</p><p>Línea Abaco<br>Sillas giratorias Smart<br>Mesas de reunión circulares<br>Torres de almacenamiento.</p><p>60 puestos de trabajo<br>Área de la oficina: 600 m2</p>',
+				'proy_descripcion' => '<p>2015<br>60 Puestos de Trabajo Instalados.<br>Línea de Mobiliario ABACO<br>Silloneria: Smart.</p>',
 				'proy_thumb_imagen' => 'thumb_steviaone.jpg',
 				'proy_imagen_default' => 'steviaone_1.jpg',
 				'proy_logotipo' => 'logotipo_steviaone.png',
@@ -63,7 +63,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'DIARIO EL TIEMPO',
-				'proy_descripcion' => '<p>Características</p><p>Proyecto de Amoblamiento Integral: instalación de alfombras, cielo raso, cableado eléctrico y de datos.</p><p>Se utilizaron las siguientes líneas:</p><p>Línea Adapta<br>Sillas giratorias Guiatta</p>',
+				'proy_descripcion' => '<p>2015<br>100 Puestos de Trabajo Instalados.<br>Línea de Mobiliario ABACO, SEPARADORES PORTA ACCESORIOS.<br>Silloneria: Clio.</p>',
 				'proy_thumb_imagen' => 'thumb_diario.jpg',
 				'proy_imagen_default' => 'diario_1.jpg',
 				'proy_logotipo' => 'logotipo_diario.jpg',
@@ -71,11 +71,19 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'TSOFT',
-				'proy_descripcion' => '<p>Características</p><p>Proyecto de Amoblamiento Integral: instalación de alfombras, cielo raso, cableado eléctrico y de datos.</p><p>Se utilizaron las siguientes líneas:</p><p>Línea Adapta<br>Sillas giratorias Guiatta</p>',
+				'proy_descripcion' => '<p>2014<br>100 Puestos de Trabajo Instalados.<br>Línea de Mobiliario GEO RECTO y MISKI.<br>Silloneria: Smart, Clio.</p>',
 				'proy_thumb_imagen' => 'thumb_tsoft.jpg',
 				'proy_imagen_default' => 'tsoft_1.jpg',
 				'proy_logotipo' => 'logotipo_tsoft.jpg',
 				'proy_galeria' => '["tsoft_1.jpg","tsoft_2.jpg","tsoft_3.jpg"]',
+			],
+			[
+				'proy_nombre' => 'ANSALDO SIGNALLING AND TRANSPORTATION SYSTEMS (STS)',
+				'proy_descripcion' => '<p>2016<br>100 Puestos de Trabajo Instalados<br>Línea de Mobiliario ABACO, T45, PANELES<br>Silloneria: CLIO</p>',
+				'proy_thumb_imagen' => 'thumb_ansaldo_1.jpg',
+				'proy_imagen_default' => 'ansaldo_1.jpg',
+				'proy_logotipo' => '',
+				'proy_galeria' => '["ansaldo_1.jpg","ansaldo_2.jpg","ansaldo_3.jpg","ansaldo_4.jpg","ansaldo_5.jpg","ansaldo_6.jpg","ansaldo_7.jpg"]',
 			]
 		];
 
