@@ -48,6 +48,16 @@
 
 @section('footer')
 <div class="container">
+	<div class="content-link-partners">
+		<ul class="list-unstyled all">
+			<li class="cert-1"><a href="http://www.aresline.com/en_US/pagine/5/certified-quality" target="_blank"></a></li>
+			<li class="cert-2 quadri"><a href="https://ic.fsc.org/es" target="_blank"></a></li>
+			<li class="cert-3"><a href="http://www.aresline.com/en_US/pagine/5/certified-quality" target="_blank"></a></li>
+			<li class="cert-4"><a href="http://www.aresline.com/en_US/pagine/5/certified-quality" target="_blank"></a></li>
+			<li class="cert-5"><a href="http://www.pannelloecologico.com/" target="_blank"></a></li>
+			<li class="cert-6"><a href="http://www.aresline.com/en_US/pagine/5/certified-quality" target="_blank"></a></li>
+		</ul>
+	</div>
 	<img src="{{ asset('images/partners.png') }}" class="center-block" id="img-partners">
 </div>
 @endsection
