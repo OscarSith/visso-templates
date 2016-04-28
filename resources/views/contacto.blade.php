@@ -7,7 +7,7 @@
 		<h2 class="page-header">Escríbenos</h2>
 		<div class="contact-form-area">
 			<div class="status alert alert-success"></div>
-			<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="{{ route('sendMailContact') }}">
+			{!! Form::open(['route' => 'sendMailContact', 'class' => 'contact-contact', 'id' => 'main-contact-form']) !!}
 				<div class="row">
 					@if(Session::has('success_message'))
 					<div class="col-sm-12">
@@ -56,7 +56,7 @@
 						<input type="submit" class="btn btn-lg btn-secondary" value="Enviar Mensaje">
 					</div>
 				</div>
-			</form>
+			{!! Form::close() !!}
 		</div>
 	</div>
 </section>

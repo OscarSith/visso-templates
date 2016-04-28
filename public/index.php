@@ -35,6 +35,11 @@ require __DIR__.'/../bootstrap/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
+function public_path($path = 'public_html')
+{
+    return realpath(__DIR__).($path ? DIRECTORY_SEPARATOR.$path : $path);
+}
+
 /*
 |--------------------------------------------------------------------------
 | Run The Application

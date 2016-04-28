@@ -6,6 +6,7 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Newsletter;
 use App\Proyecto;
+use Mail;
 
 class WelcomeController extends Controller
 {
@@ -45,11 +46,16 @@ class WelcomeController extends Controller
 
     public function sendMailContact(Request $request)
     {
+        $params = $request->all();
         if ($request->has('acepta')) {
-            Newsletter::create($request->all());
+            Newsletter::create($params);
         }
 
-        \Mail::send('');
+        Mail::send('layouts.contact_mail', $params, function($m) {
+            $m->from('no-reply@visso.com.pe', 'Visso');
+
+            $m->to('larriega@gmail.com', 'Oscar Larriega')->subject('Mensaje enviado desde la web de Visso');
+        });
 
         return redirect()->back()->with('success_message', 'Mensaje enviado exitosamente');
     }
