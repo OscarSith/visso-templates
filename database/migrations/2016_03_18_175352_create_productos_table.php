@@ -14,14 +14,11 @@ class CreateProductosTable extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('cat_id')->unsigned();
             $table->string('pro_nombre');
             $table->text('pro_descripcion');
             $table->string('pro_imagen_default');
             $table->tinyInteger('pro_estado')->default(1);
             $table->timestamps();
-
-            $table->foreign('cat_id')->references('id')->on('categorias');
         });
     }
 

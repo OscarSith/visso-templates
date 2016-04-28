@@ -20,6 +20,9 @@ class CreateCategoriasTable extends Migration
             $table->tinyInteger('cat_estado')->default(1);
             $table->tinyInteger('cat_sub');
             $table->tinyInteger('cat_parent');
+            $table->tinyInteger('cat_detalle');
+            $table->tinyInteger('cat_sub_nivel');
+            $table->integer('product_id')->unsigned()->default(0);
             $table->timestamps();
         });
     }

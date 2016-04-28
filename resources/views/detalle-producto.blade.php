@@ -13,7 +13,13 @@
 	<div class="container" id="{{ $marca }}">
 		@include('layouts.breadcrumb')
 		<div class="cat-name">
-			<div>{{ isset($sub_cat_name) ? $sub_cat_name : $cat_name }}</div>
+			<div>
+				@if ($cat_name != '')
+					{{ isset($sub_cat_name) ? $sub_cat_name : $cat_name }}
+				@else
+					{{ $producto->pro_nombre }}
+				@endif
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-6">
@@ -24,7 +30,7 @@
 			<div class="col-sm-6">
 				<div class="row">
 					<h2 class="product-title text-center">
-						<div id="productName">{{ $productoNombre }}</div>
+						<div id="productName">{{ $producto->pro_nombre }}</div>
 					</h2>
 					<div class="col-sm-12">
 						<div class="row">
@@ -53,4 +59,7 @@
 		</div>
 	</div>
 </section>
+@endsection
+@section('footer')
+@include('layouts.certificaciones')
 @endsection

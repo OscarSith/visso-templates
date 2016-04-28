@@ -18,39 +18,24 @@ class ProductoController extends Controller
     public function index($marca, $cat_name)
     {
         $cat_name = $this->strSlugInverse($cat_name);
-        $categorias = [];
-        $productos = [];
 
         $rs = Categoria::where('cat_nombre', strtoupper($cat_name))->first(['id', 'cat_parent']);
-        if ($rs->cat_parent > 0) {
-            $marca_id = Marca::getMarcaId($marca);
-            $categorias = Categoria::getBySub($marca_id, $rs->cat_parent);
-            // dd($categorias->toArray());
-        } else {
-            $productos = Producto::getByCatID($rs->id);
-        }
+        $marca_id = Marca::getMarcaId($marca);
+        $categorias = Categoria::getBySub($marca_id, $rs->cat_parent);
         $productNivel = 1;
 
-        return view('listado-productos', compact('productos', 'categorias', 'marca', 'cat_name', 'productNivel'));
+        return view('listado-productos', compact('categorias', 'marca', 'cat_name', 'productNivel'));
     }
 
-    public function indexSub($marca, $cat_name, $sub_cat_name)
+    public function detalleProductoSimple($marca, $id, $productoNombre)
     {
-        $sub_cat_name = $this->strSlugInverse($sub_cat_name);
-        // Get the cat_sub
-        $cat_sub = Categoria::where('cat_nombre', strtoupper($this->strSlugInverse($cat_name)))->pluck('cat_parent')->first();
-
-        $cat_id = Categoria::where('cat_nombre', strtoupper($sub_cat_name))->where('cat_sub', $cat_sub)->pluck('id')->first();
-        $productos = Producto::getByCatID($cat_id);
-        $productNivel = 2;
-
-        return view('productos-por-categoria', compact('productos', 'marca', 'cat_name', 'sub_cat_name', 'productNivel'));
+        list($productosPorCategoria, $producto, $cat_name, $productoNombre) = $this->prepareDetailProduct($id, '', '', $marca, $productoNombre);
+        return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'productoNombre', 'id'));
     }
 
     public function detalleProducto($marca, $cat_name, $id, $productoNombre)
     {
         list($productosPorCategoria, $producto, $cat_name, $productoNombre) = $this->prepareDetailProduct($id, $cat_name, '', $marca, $productoNombre);
-
         return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'productoNombre', 'id'));
     }
 
@@ -59,36 +44,21 @@ class ProductoController extends Controller
         $cat_name = $this->strSlugInverse($cat_name);
         $productNivel = null;
         list($productosPorCategoria, $producto, $cat_name, $productoNombre, $sub_cat_name) = $this->prepareDetailProduct($id, $cat_name, $sub_cat_name);
-
         return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'sub_cat_name', 'productoNombre', 'id', 'productNivel'));
     }
 
     private function prepareDetailProduct($id, $cat_name, $sub_cat_name = '', $marca = '', $productoNombre = '')
     {
-        $cat_id = 0;
-        $producto = null;
-        $productosPorCategoria = null;
-
-        if ($sub_cat_name != '') {
-            $cat_sub = Categoria::where('cat_nombre', strtoupper($this->strSlugInverse($cat_name)))->pluck('cat_parent')->first();
-            $cat_id = Categoria::where('cat_nombre', strtoupper($sub_cat_name))->where('cat_sub', $cat_sub)->pluck('id')->first();
-        } else {
-            $cat_id = Categoria::where('cat_nombre', strtoupper($cat_name))->pluck('id')->first();
+        $producto = Producto::find($id);
+        // dd($producto);
+        $productosPorCategoria = Galeria::where( 'producto_id', $id )->get(['id', 'pro_imagen_default']);
+            // $this->getProductsOrGalery( $id, $marca, $cat->id, $productoNombre);
+        // }
+        if ($cat_name != '') {
+            $cat_name = $this->strSlugInverse($cat_name);
         }
 
-
-        if ($id == 24 || ($marca != null && $marca != 'quadrifoglio')) {
-            $producto = Producto::where('cat_id', $id)->first();
-            $productosPorCategoria = $this->getProductsOrGalery($id, $marca, '', $productoNombre);
-            //  Producto::getByCatID( $id );
-        } else {
-            $producto = Producto::find($id);
-            $productosPorCategoria = $this->getProductsOrGalery( $id, $marca, $cat_id, $productoNombre);
-        }
-        $productoNombre = $producto->pro_nombre;
-        $cat_name = $this->strSlugInverse($cat_name);
-
-        return [$productosPorCategoria, $producto, $cat_name, $productoNombre, $sub_cat_name];
+        return [$productosPorCategoria, $producto, $cat_name, $sub_cat_name];
     }
 
     /**

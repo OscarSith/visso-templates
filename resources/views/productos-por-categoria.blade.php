@@ -14,7 +14,7 @@
 		<div class="row {{ $marca }}-list text-center">
 			<div class="col-md-offset-1 col-md-10 {{ $flag ? 'no-float' : ''}}">
 				@foreach($productos as $n => $producto)
-				@if (($total == 4 && $n == 2) || ($total == 7 && $n == 4) || $n == 8)
+				@if (($total == 4 && $n == 2) || ($total == 7 && $n == 4))
 					<div class="clearfix no-float col-sm-12">
 				@endif
 				<div class="col-md-3 col-sm-4">
@@ -31,7 +31,7 @@
 						</a>
 					</div>
 				</div>
-				@if (($total == 4 && $n == 3) || ($total == 7 && $n == 6))
+				@if (($total == 4 && $n == 3) || ($total == 7 && $n == 4))
 					</div>
 				@endif
 				@endforeach
@@ -39,4 +39,7 @@
 		</div>
 	</div>
 </section>
+@endsection
+@section('footer')
+@include('layouts.certificaciones')
 @endsection
