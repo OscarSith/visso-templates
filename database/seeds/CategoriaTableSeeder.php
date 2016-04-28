@@ -63,7 +63,7 @@ class CategoriaTableSeeder extends Seeder
             ['marca_id' => 3, 'cat_nombre' => 'SILLONERÍA ERGONÓMICA', 'cat_imagen' => 'visso-sillonera-ergonomica.jpg', 'cat_sub' => 1, 'cat_parent' => 11, 'cat_detalle' => 0, 'cat_sub_nivel' => 1],
                 ['marca_id' => 3, 'cat_nombre' => 'GERENCIALES', 'cat_imagen' => 'visso-sillonera-ergonomica-gerenciales.jpg', 'cat_sub' => 11, 'cat_parent' => 12, 'cat_detalle' => 0, 'cat_sub_nivel' => 2],
                     ['marca_id' => 3, 'cat_nombre' => 'Consiglieri Alta', 'cat_imagen' => 'visso-silloneria-consiglierialta.jpg', 'cat_sub' => 12, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 39],
-                    ['marca_id' => 3, 'cat_nombre' => 'Consiglieri Baja', 'cat_imagen' => 'visso-silloneria-consiglieribaja.jpg', 'cat_sub' => 12, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 40],
+                    ['marca_id' => 3, 'cat_nombre' => 'Consiglieri Baja', 'cat_imagen' => 'visso-silloneria-consiglieribaja-baja.jpg', 'cat_sub' => 12, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 40],
                     ['marca_id' => 3, 'cat_nombre' => 'Consiglieri Trineo', 'cat_imagen' => 'visso-silloneria-consiglieri-trineo.jpg', 'cat_sub' => 12, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 42],
                     ['marca_id' => 3, 'cat_nombre' => 'Guru Alta', 'cat_imagen' => 'visso-silloneria-gurualta.jpg', 'cat_sub' => 12, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 41],
                     ['marca_id' => 3, 'cat_nombre' => 'Guru Baja', 'cat_imagen' => 'visso-silloneria-gurubaja.jpg', 'cat_sub' => 12, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 43],

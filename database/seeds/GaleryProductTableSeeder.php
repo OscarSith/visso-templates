@@ -71,8 +71,106 @@ class GaleryProductTableSeeder extends Seeder
             ['producto_id' => 5, 'pro_imagen_default' => 'visso-accesorios-valla-3-en-1-NP_CVT.jpg'],
             ['producto_id' => 5, 'pro_imagen_default' => 'visso-accesorios-valla-3-en-1-NP_CM-VA.jpg'],
 
+            // VISSO ESCRITORIO
+            // OPERATIVOS ABACO
+            ['producto_id' => 24, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-abaco.jpg'],
+            ['producto_id' => 24, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-abaco-pata-abaco.jpg'],
+            ['producto_id' => 24, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-abaco-abaco-simple.jpg'],
+            ['producto_id' => 24, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-abaco-abaco-multiple-con-credenza.jpg'],
+            ['producto_id' => 24, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-abaco-abaco-gerencial.jpg'],
+            ['producto_id' => 24, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-abaco-abaco-doble.jpg'],
 
-            // ['producto_id' => 4, 'pro_imagen_default' => '.jpg'],
+            // OPERATIVOS - ASTER
+            ['producto_id' => 25, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-aster.jpg'],
+            ['producto_id' => 25, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-aster-aster-simple.jpg'],
+            ['producto_id' => 25, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-aster-aster-en-L.jpg'],
+            ['producto_id' => 25, 'pro_imagen_default' => '.jpg'],
+
+            // OPERATIVOS - MISKI
+            ['producto_id' => 26, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-quadra.jpg'],
+            ['producto_id' => 26, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-quadra-quadras-con-separadores-de-melamina.jpg'],
+            ['producto_id' => 26, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-quadra-quadra-simple.jpg'],
+            ['producto_id' => 26, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-quadra-quadra-recto.jpg'],
+            ['producto_id' => 26, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-quadra-quadra-con-armario-separador.jpg'],
+            ['producto_id' => 26, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-quadra-cuadra-en-L.jpg'],
+
+            // OPERATIVOS - MISKI
+            ['producto_id' => 27, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-miski.jpg'],
+
+            // OPERATIVOS - PORTICO
+            ['producto_id' => 28, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-portico.jpg'],
+
+            // PRESIDENCIALES - DUCON
+            ['producto_id' => 29, 'pro_imagen_default' => 'visso-escritorio-presidenciales-ducon.jpg'],
+            ['producto_id' => 29, 'pro_imagen_default' => 'visso-escritorio-presidenciales-ducon-gerencial-dukon_0011_prv.jpg'],
+            ['producto_id' => 29, 'pro_imagen_default' => 'visso-escritorio-presidenciales-ducon-ducon2.jpg'],
+
+            // MESSA REUNION
+            // ACCORDO
+            ['producto_id' => 30, 'pro_imagen_default' => 'visso-messa-reunion-accord.jpg'],
+            ['producto_id' => 30, 'pro_imagen_default' => 'visso-messa-reunion-accordo-accordo-en-poliuretano.jpg'],
+            ['producto_id' => 30, 'pro_imagen_default' => 'visso-messa-reunion-accordo-accordo-enchapada-en-madera.jpg'],
+
+            // ACTIVA
+            ['producto_id' => 31, 'pro_imagen_default' => 'visso-messa-reunion-activa.jpg'],
+            ['producto_id' => 31, 'pro_imagen_default' => 'visso-messa-reunion-activa-activa-2.jpg'],
+
+            // AVANTI
+            ['producto_id' => 32, 'pro_imagen_default' => 'visso-messa-reunion-avanti.jpg'],
+            ['producto_id' => 32, 'pro_imagen_default' => 'visso-messa-reunion-avanti-avanti_0011_prv.jpg'],
+
+            // CIRCULAR
+            ['producto_id' => 33, 'pro_imagen_default' => 'visso-messa-reunion-circular.jpg'],
+            ['producto_id' => 33, 'pro_imagen_default' => 'visso-messa-reunion-circular-impulsa-larga.jpg'],
+            ['producto_id' => 33, 'pro_imagen_default' => 'visso-messa-reunion-circular-impulsa-corta.jpg'],
+            ['producto_id' => 33, 'pro_imagen_default' => 'visso-messa-reunion-circular-circular-de-melamina.jpg'],
+            ['producto_id' => 33, 'pro_imagen_default' => 'visso-messa-reunion-circular-archimede-image-6.jpg'],
+            ['producto_id' => 33, 'pro_imagen_default' => 'visso-messa-reunion-circular-13.jpg'],
+
+            // INIZIO
+            ['producto_id' => 34, 'pro_imagen_default' => 'visso-messa-reunion-inizio.jpg'],
+            ['producto_id' => 34, 'pro_imagen_default' => 'visso-messa-reunion-inizio-mesa-inizio-de-poliuretano.jpg'],
+            ['producto_id' => 34, 'pro_imagen_default' => 'visso-messa-reunion-inizio-mesa-inizio-de-formica.jpg'],
+
+            // OVALADAS
+            ['producto_id' => 35, 'pro_imagen_default' => 'visso-messa-reunion-ovaladas.jpg'],
+            ['producto_id' => 35, 'pro_imagen_default' => 'visso-messa-reunion-ovaladas-mesa-ovalada-patas-de-melamina.jpg'],
+
+            // REBATIBLES
+            ['producto_id' => 36, 'pro_imagen_default' => 'visso-messa-reunion-rebatible.jpg'],
+            ['producto_id' => 36, 'pro_imagen_default' => 'visso-messa-reunion-rebatible-mesa-rebatible-2.jpg'],
+
+            // IMPULSA
+            ['producto_id' => 37, 'pro_imagen_default' => 'visso-messa-reunion-impulsa.jpg'],
+            ['producto_id' => 37, 'pro_imagen_default' => 'visso-messa-reunion-impulsa-impulsa-larga.jpg'],
+            ['producto_id' => 37, 'pro_imagen_default' => 'visso-messa-reunion-impulsa-impulsa-corta.jpg'],
+
+            // CONSIGUIERI ALTA
+            ['producto_id' => 39, 'pro_imagen_default' => 'visso-silloneria-consiglierialta.jpg'],
+            ['producto_id' => 39, 'pro_imagen_default' => 'visso-silloneria-consiglierialta-class-alta-1552.jpg'],
+            ['producto_id' => 39, 'pro_imagen_default' => 'visso-silloneria-consiglierialta-class-alta-1535.jpg'],
+
+            // CONSIGUIERI BAJA
+            ['producto_id' => 40, 'pro_imagen_default' => 'visso-silloneria-consiglieribaja-baja.jpg'],
+            ['producto_id' => 40, 'pro_imagen_default' => 'visso-silloneria-consiglieribaja-manager-baja-1510.jpg'],
+            ['producto_id' => 40, 'pro_imagen_default' => 'visso-silloneria-consiglieribaja-manager-baja-1514.jpg'],
+
+            // CONSIGLIERI TRINEO
+            ['producto_id' => 42, 'pro_imagen_default' => 'visso-silloneria-consiglieri-trineo.jpg'],
+
+            // GURU ALTA
+            ['producto_id' => 41, 'pro_imagen_default' => 'visso-silloneria-gurualta.jpg'],
+            ['producto_id' => 41, 'pro_imagen_default' => 'visso-silloneria-gurualta-manager-alta-4.jpg'],
+            ['producto_id' => 41, 'pro_imagen_default' => 'visso-silloneria-gurualta-manager-alta-3.jpg'],
+            ['producto_id' => 41, 'pro_imagen_default' => 'visso-silloneria-gurualta-manager-alta-1.jpg'],
+
+            // GURU BAJA
+            ['producto_id' => 43, 'pro_imagen_default' => 'visso-silloneria-gurubaja.jpg'],
+            ['producto_id' => 43, 'pro_imagen_default' => 'visso-silloneria-gurubaja-manager-baja-1467.jpg'],
+            ['producto_id' => 43, 'pro_imagen_default' => 'visso-silloneria-gurubaja-manager-baja-1465.jpg'],
+
+            // GURÚ TRINEO
+            ['producto_id' => 44, 'pro_imagen_default' => 'visso-silloneria-guru-trineo.jpg'],
             // ['producto_id' => 4, 'pro_imagen_default' => '.jpg'],
 
             // AMADEUS

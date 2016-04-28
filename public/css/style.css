@@ -639,6 +639,7 @@ h2.product-title div {
 	color: #000000;
 	font-weight: 600;
 	line-height: 1.6em;
+	min-height: 194px
 }
 .img-size {
 	background-color: #fff;
@@ -752,7 +753,7 @@ h2.product-title div {
 .lead-info {
 	line-height: 1.3em;
 	min-height: 230px;
-	max-height: 340px;
+	font-size: 1.1em;
 }
 .txt-quadri-about {
 	color: #2B5240;
