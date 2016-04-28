@@ -22,17 +22,55 @@ class CategoriaController extends Controller
             // dd($categorias);
             // View, es el nivel de subcategoria que tiene una categoria ejem: view = 2 o 3 ...
             $view = 1;
-            // dd($categorias->toArray());
-            return view('categorias-sub_categorias', compact('categorias', 'marca', 'view'));
+            $cat_name = '';
+            return view('categorias-sub_categorias', compact('categorias', 'marca', 'view', 'marca_id', 'cat_name'));
         }
 
         return abort(404);
+    }
+
+    public function index2($marca, $cat_name)
+    {
+        $cat_name = $this->strSlugInverse($cat_name);
+
+        $cat_parent = Categoria::where('cat_nombre', strtoupper($cat_name))->pluck('cat_parent')->first();
+        $marca_id = Marca::getMarcaId($marca);
+        $categorias = Categoria::getBySub($marca_id, $cat_parent);
+        $productNivel = 1;
+
+        return view('listado-productos', compact('categorias', 'marca', 'cat_name', 'productNivel', 'marca_id'));
+    }
+
+    public function index3($marca, $cat_name, $cat_parent, $sub_cat_name)
+    {
+        $sub_cat_name = $this->strSlugInverse($sub_cat_name);
+        $marca_id = Marca::getMarcaId($marca);
+        $categorias = Categoria::getBySub($marca_id, $cat_parent);
+        $productNivel = 2;
+
+        return view('listado-productos', compact('categorias', 'marca', 'cat_name', 'sub_cat_name', 'marca_id', 'productNivel'));
     }
 
     public function subIndex($name, $catSub)
     {
         $categorias = Categoria::getBySub($catSub);
         return view('productos-por-categoria', ['categorias' => $categorias, 'categoriaNombre' => $name, 'parent_cat_id' => $catSub]);
+    }
+
+    /**
+     * En caso de que el nombre de la categoria esté con linea en medio,
+     * agregado por la funcion str_slug()
+     * @param  string $cat_name
+     * @return string
+     */
+    private function strSlugInverse($cat_name)
+    {
+        $arr = explode('-', $cat_name);
+        if (count($arr) > 1) {
+            $cat_name = implode(' ', $arr);
+        }
+
+        return $cat_name;
     }
 
     /**

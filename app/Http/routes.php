@@ -25,12 +25,12 @@ Route::group(['middleware' => ['web']], function () {
 
 	// Marca
 	Route::get('{marca}', 'CategoriaController@index')->name('categorias');
+	Route::get('{marca}/{cat_name}', 'CategoriaController@index2')->name('catByProduct');
+	Route::get('{marca}/{cat_name}/{cat_parent}-{sub_cat_name}', 'CategoriaController@index3')->name('catBySubCatID');
 
 	// Detalle del producto
-	Route::get('{marca}/{cat_name}/{id}-{producto}', 'ProductoController@detalleProducto')->name('detalleProducto');
-	Route::get('{marca}/{cat_name}/{sub_cat_name}/{id}-{producto}', 'ProductoController@detalleProductoSub')->name('detalleProductoSub');
+	Route::get('{marca}/detalle/{id}/{producto}', 'ProductoController@detalleProductoSimple')->name('detalleProductoSimple');
+	Route::get('{marca}/{cat_name}/detalle/{id}/{producto}', 'ProductoController@detalleProducto')->name('detalleProducto');
+	Route::get('{marca}/{cat_name}/{sub_cat_name}-{sub_cat_name}/detalle/{id}/{producto}', 'ProductoController@detalleProductoSub')->name('detalleProductoSub');
 
-	// Categorias y subcategorias
-	Route::get('{marca}/{cat_name}', 'ProductoController@index')->name('catByProduct');
-	Route::get('{marca}/{cat_name}/{sub_cat_name}', 'ProductoController@indexSub')->name('catBySubCatID');
 });

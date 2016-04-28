@@ -54,9 +54,8 @@ $(function() {
 	if ($othersProducts.length) {
 		$othersProducts.slick({
 			infinite: true,
-			slidesToShow: 3,
+			slidesToShow: 4,
 			slidesToScroll: 1,
-			dots: true,
 			prevArrow: '<button type="button" data-role="none" class="btn slick-prev"><i class="fa fa-arrow-circle-left fa-lg"></i></button>',
 			nextArrow: '<button type="button" data-role="none" class="btn slick-next"><i class="fa fa-arrow-circle-right fa-lg"></i></button>',
 		});
