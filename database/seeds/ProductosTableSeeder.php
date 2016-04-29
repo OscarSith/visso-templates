@@ -23,7 +23,7 @@ class ProductosTableSeeder extends Seeder
 
         	// ALMACENAMIENTO
             // ARCHIVOS MOVILES
-            ['pro_nombre' => '2 cajones estándar y 1 file de bolsa', 'pro_descripcion' => '<p><strong>Características</strong></p><p>Gracias a las ruedas de alta transito, las cajoneras móviles cuentan con una gran flexibilidad de movimiento permitiendo así al usuario disponer de la mejor manera de su espacio disponible.</p><p>Configuraciones:<br>- 03 cajones estándar.</p><p>- 02 cajones estándar y un cajón de archivo para files de bolsa.</p>', 'pro_imagen_default' => 'visso-almacenamiento-armario-gerenciales.jpg'],
+            ['pro_nombre' => '03 CAJONES LATERALES', 'pro_descripcion' => '<p><strong>Características</strong></p><p>Gracias a las ruedas de alta transito, las cajoneras móviles cuentan con una gran flexibilidad de movimiento permitiendo así al usuario disponer de la mejor manera de su espacio disponible.<br>Configuraciones:</p><p>- 03 cajones estándar</p>', 'pro_imagen_default' => 'visso-almacenamiento-cajoneras-movil.jpg'],
 
             // ARMARIOS
         	['pro_nombre' => 'GERENCIALES', 'pro_descripcion' => '<p><strong>Características</strong></p><p>Armarios medios utilizados dentro de la configuracion de oficina abierta.</p><p>Ademas de su caracteristica de almacenamiento, sirve como separador y delimitador de espacios.</p><p>Puertas en melamina o vidrio o con marco de aluminio.</p><p>18 colores disponibles.</p><p>Dimension estandar: 1.20 m. de alto x 0.90 m. de ancho x 0.40 m de fando (con puertas)</p>', 'pro_imagen_default' => 'visso-almacenamiento-armario-gerenciales.jpg'],

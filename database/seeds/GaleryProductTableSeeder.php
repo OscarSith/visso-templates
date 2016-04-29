@@ -71,6 +71,12 @@ class GaleryProductTableSeeder extends Seeder
             ['producto_id' => 5, 'pro_imagen_default' => 'visso-accesorios-valla-3-en-1-NP_CVT.jpg'],
             ['producto_id' => 5, 'pro_imagen_default' => 'visso-accesorios-valla-3-en-1-NP_CM-VA.jpg'],
 
+            // ARCHIVOS MOVILES
+            ['producto_id' => 6, 'pro_imagen_default' => 'visso-almacenamiento-cajoneras-movil.jpg', 'name' => '03 CAJONES LATERALES', 'description' => '<p><strong>Características</strong></p><p>Gracias a las ruedas de alta transito, las cajoneras móviles cuentan con una gran flexibilidad de movimiento permitiendo así al usuario disponer de la mejor manera de su espacio disponible.<br>Configuraciones:</p><p>- 03 cajones estándar</p>'],
+            ['producto_id' => 6, 'pro_imagen_default' => 'visso-almacenamiento-cajoneras-movil-02-cajones.jpg', 'name' => '02 CAJONES', 'description' => '<p><strong>Características</strong></p><p>Gracias a las ruedas de alta transito, las cajoneras móviles cuentan con una gran flexibilidad de movimiento permitiendo así al usuario disponer de la mejor manera de su espacio disponible.<br>Configuraciones:</p><p>- 02 cajones estándar<br>- 02 cajones estándar con cojín de visita.<br>- 02 cajones de archivo para files de bolsa.</p>'],
+            ['producto_id' => 6, 'pro_imagen_default' => 'visso-almacenamiento-cajoneras-movil-02-cajones-01-file-bolsa.jpg', 'name' => '02 cajones estándar y 1 file de bolsa', 'description' => '<p><strong>Características</strong></p><p>Gracias a las ruedas de alta transito, las cajoneras móviles cuentan con una gran flexibilidad de movimiento permitiendo así al usuario disponer de la mejor manera de su espacio disponible.</p><p>Configuraciones:<br>- 03 cajones estándar.</p><p>- 02 cajones estándar y un cajón de archivo para files de bolsa.</p>'],
+
+
             // VISSO ESCRITORIO
             // OPERATIVOS ABACO
             ['producto_id' => 24, 'pro_imagen_default' => 'visso-escritorio-operativos-linea-abaco.jpg'],

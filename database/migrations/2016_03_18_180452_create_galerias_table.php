@@ -16,6 +16,8 @@ class CreateGaleriasTable extends Migration
             $table->increments('id');
             $table->integer('producto_id')->unsigned();
             $table->string('pro_imagen_default');
+            $table->string('name')->nullable();
+            $table->text('description')->nullable();
             $table->tinyInteger('gal_estado')->default(1);
             $table->timestamps();
 
