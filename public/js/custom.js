@@ -63,7 +63,8 @@ $(function() {
 		$('.others-products').on('click', '.item-products', function(e) {
 			e.preventDefault();
 			var $this = $(this),
-				img = $this.find('img').data('img');
+				$img = $this.find('img')
+				data = {img: $img.data('img'), name: $img.data('name'), description: $img.data('description')};
 
 			$this.parent().find('img').removeClass('detail-product-selected');
 			$this.children().first().addClass('detail-product-selected');
@@ -72,7 +73,11 @@ $(function() {
 				arrs = image.split('/');
 
 			arrs.pop();
-			$('#productImage').attr('src', arrs.join('/') + '/' + img);
+			if (data.name) {
+				$('#productName, #breadcrumbProductName').text(data.name);
+				$('#product-description').html(data.description);
+			}
+			$('#productImage').attr('src', arrs.join('/') + '/' + data.img);
 		});
 	}
 

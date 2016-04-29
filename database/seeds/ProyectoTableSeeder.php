@@ -15,7 +15,7 @@ class ProyectoTableSeeder extends Seeder
         $proyectos = [
 			[
 				'proy_nombre' => '4LIFE - 2015',
-				'proy_descripcion' => '<p>2015<br>40 Puestos de Trabajo Instalados.<br>Línea de Mobiliario ABACO y QUADRA<br>Silloneria: Smart, Clio, Movie.<br>Muebles especiales.</p>',
+				'proy_descripcion' => '<ul><li>2015</li><li>40 Puestos de Trabajo Instalados.</li><li>Línea de Mobiliario ABACO y QUADRA</li><li>Silloneria: Smart, Clio, Movie.</li><li>Muebles especiales.</li></ul>',
 				'proy_thumb_imagen' => 'thumb_4life_2015.jpg',
 				'proy_imagen_default' => '4life_2.jpg',
 				'proy_logotipo' => 'logotipo_4life.png',
@@ -23,7 +23,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'APM Terminals',
-				'proy_descripcion' => '<p>2015<br>600 Puestos de Trabajo Instalados.<br>Línea de Mobiliario QUADRA.<br>Silloneria: Consiglieri, Confort , Step malla.<br>Archivadores Móviles.</p>',
+				'proy_descripcion' => '<ul><li>2015</li><li>600 Puestos de Trabajo Instalados.</li><li>Línea de Mobiliario QUADRA.</li><li>Silloneria: Consiglieri, Confort , Step malla.</li><li>Archivadores Móviles.</li></ul>',
 				'proy_thumb_imagen' => 'thumb_apm.jpg',
 				'proy_imagen_default' => 'apm_1.jpg',
 				'proy_logotipo' => 'logotipo_apm.png',
@@ -31,7 +31,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'Proyecto Bolsa de Valores de Lima',
-				'proy_descripcion' => '<p>2015<br>140 Puestos de Trabajo Instalados.<br>Línea de Mobiliario ABACO.<br>Silloneria: Smart, Confort , Step malla.<br>Mesas de Reuniones: circulares y Targa.</p>',
+				'proy_descripcion' => '<ul><li>2015</li><li>140 Puestos de Trabajo Instalados.</li><li>Línea de Mobiliario ABACO.</li><li>Silloneria: Smart, Confort , Step malla.</li><li>Mesas de Reuniones: circulares y Targa.</li></ul>',
 				'proy_thumb_imagen' => 'thumb_bvl.jpg',
 				'proy_imagen_default' => 'bvl_1.jpg',
 				'proy_logotipo' => 'logotipo_bvl.png',
@@ -39,7 +39,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'HUAWEI',
-				'proy_descripcion' => '<p>2014<br>300 Puestos de Trabajo Instalados.<br>Línea de Mobiliario: PANELES, GEO.<br>Silloneria: Rudy.<br>Muebles especiales.</p>',
+				'proy_descripcion' => '<ul><li>2014</li><li>300 Puestos de Trabajo Instalados.</li><li>Línea de Mobiliario: PANELES, GEO.</li><li>Silloneria: Rudy.<br>Muebles especiales.</li></ul>',
 				'proy_thumb_imagen' => 'thumb_huawei.jpg',
 				'proy_imagen_default' => 'huawei_1.jpg',
 				'proy_logotipo' => 'logotipo_huawei.png',
@@ -47,7 +47,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'SERFOR',
-				'proy_descripcion' => '<p>2016<br>450 Puestos de Trabajo Instalados.<br>Línea de Mobiliario GEO<br>Silloneria: Confort , Step tapizadas y Butterfly.<br>Mesas de Reuniones Impulsa<br>Archivadores Móviles.</p>',
+				'proy_descripcion' => '<ul><li>2016</li><li>450 Puestos de Trabajo Instalados.</li><li>Línea de Mobiliario GEO</li><li>Silloneria: Confort , Step tapizadas y Butterfly.</li><li>Mesas de Reuniones Impulsa</li><li>Archivadores Móviles.</li></ul>',
 				'proy_thumb_imagen' => 'thumb_serfor.jpg',
 				'proy_imagen_default' => 'serfir_1.jpg',
 				'proy_logotipo' => 'logotipo_serfor.png',
@@ -55,7 +55,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'Proyecto STEVIA ONE',
-				'proy_descripcion' => '<p>2015<br>60 Puestos de Trabajo Instalados.<br>Línea de Mobiliario ABACO<br>Silloneria: Smart.</p>',
+				'proy_descripcion' => '<ul><li>2015</li><li>60 Puestos de Trabajo Instalados.</li><li>Línea de Mobiliario ABACO</li><li>Silloneria: Smart.</li></ul>',
 				'proy_thumb_imagen' => 'thumb_steviaone.jpg',
 				'proy_imagen_default' => 'steviaone_1.jpg',
 				'proy_logotipo' => 'logotipo_steviaone.png',
@@ -63,7 +63,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'DIARIO EL TIEMPO',
-				'proy_descripcion' => '<p>2015<br>100 Puestos de Trabajo Instalados.<br>Línea de Mobiliario ABACO, SEPARADORES PORTA ACCESORIOS.<br>Silloneria: Clio.</p>',
+				'proy_descripcion' => '<ul><li>2015</li><li>100 Puestos de Trabajo Instalados.</li><li>Línea de Mobiliario ABACO, SEPARADORES PORTA ACCESORIOS.</li><li>Silloneria: Clio.</li></ul>',
 				'proy_thumb_imagen' => 'thumb_diario.jpg',
 				'proy_imagen_default' => 'diario_1.jpg',
 				'proy_logotipo' => 'logotipo_diario.jpg',
@@ -71,7 +71,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'TSOFT',
-				'proy_descripcion' => '<p>2014<br>100 Puestos de Trabajo Instalados.<br>Línea de Mobiliario GEO RECTO y MISKI.<br>Silloneria: Smart, Clio.</p>',
+				'proy_descripcion' => '<ul><li>2014</li><li>100 Puestos de Trabajo Instalados.</li><li>Línea de Mobiliario GEO RECTO y MISKI.</li><li>Silloneria: Smart, Clio.</li></ul>',
 				'proy_thumb_imagen' => 'thumb_tsoft.jpg',
 				'proy_imagen_default' => 'tsoft_1.jpg',
 				'proy_logotipo' => 'logotipo_tsoft.jpg',
@@ -79,7 +79,7 @@ class ProyectoTableSeeder extends Seeder
 			],
 			[
 				'proy_nombre' => 'ANSALDO SIGNALLING AND TRANSPORTATION SYSTEMS (STS)',
-				'proy_descripcion' => '<p>2016<br>100 Puestos de Trabajo Instalados<br>Línea de Mobiliario ABACO, T45, PANELES<br>Silloneria: CLIO</p>',
+				'proy_descripcion' => '<ul><li>2016</li><li>100 Puestos de Trabajo Instalados</li><li>Línea de Mobiliario ABACO, T45, PANELES</li><li>Silloneria: CLIO</li></ul>',
 				'proy_thumb_imagen' => 'thumb_ansaldo_1.jpg',
 				'proy_imagen_default' => 'ansaldo_1.jpg',
 				'proy_logotipo' => '',

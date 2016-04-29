@@ -49,7 +49,7 @@
 						<div class="others-products">
 							@foreach($productosPorCategoria as $n => $rec)
 							<div class="item-products wow fadeInDown" data-wow-delay="{{ $n/4 }}s">
-								<img src="{{ asset('images/product-imgs/' . $rec->pro_imagen_default) }}" class="img-responsive" alt="{{ $rec->pro_imagen_default }}" data-img="{{ $rec->pro_imagen_default }}">
+								<img src="{{ asset('images/product-imgs/' . $rec->pro_imagen_default) }}" class="img-responsive" alt="{{ $rec->pro_imagen_default }}" data-img="{{ $rec->pro_imagen_default }}" data-name="{{ $rec->name }}" data-description="{{ $rec->description }}">
 							</div>
 							@endforeach
 						</div>

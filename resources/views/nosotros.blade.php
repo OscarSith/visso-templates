@@ -9,9 +9,9 @@
 		<div class="col-sm-12">
 			<div class="row">
 				<div class="col-sm-5">
-					<img src="images/nosotros-visso.jpg" alt="Imagen Visso" class="wow fadeInUp" data-wow-delay="0s">
-					<img src="images/nosotros-quadrifoglio.jpg" alt="Imagen Quadrifoglio" class="wow fadeInUp" data-wow-delay="0.3s">
-					<img src="images/nosotros-areline.jpg" alt="Imagen Aresline" class="wow fadeInUp" data-wow-delay="0.6s">
+					<img src="images/nosotros-visso.jpg" alt="Imagen Visso" class="img-responsive center-block wow fadeInUp" data-wow-delay="0s">
+					<img src="images/nosotros-quadrifoglio.jpg" alt="Imagen Quadrifoglio" class="img-responsive center-block wow fadeInUp" data-wow-delay="0.3s">
+					<img src="images/nosotros-areline.jpg" alt="Imagen Aresline" class="img-responsive center-block wow fadeInUp" data-wow-delay="0.6s">
 				</div>
 				<div class="col-sm-7" id="about-info">
 					<h2 class="product-title text-center">

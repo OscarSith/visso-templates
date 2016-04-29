@@ -751,9 +751,10 @@ h2.product-title div {
 	margin-top: 10px;
 }
 .lead-info {
+	font-size: 1.4em;
 	line-height: 1.3em;
 	min-height: 230px;
-	font-size: 1.1em;
+	padding-top: 25px;
 }
 .txt-quadri-about {
 	color: #2B5240;
