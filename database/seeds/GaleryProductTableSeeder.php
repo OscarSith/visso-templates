@@ -145,6 +145,11 @@ class GaleryProductTableSeeder extends Seeder
             ['producto_id' => 37, 'pro_imagen_default' => 'visso-messa-reunion-impulsa-impulsa-larga.jpg'],
             ['producto_id' => 37, 'pro_imagen_default' => 'visso-messa-reunion-impulsa-impulsa-corta.jpg'],
 
+            // INTEGRA
+            ['producto_id' => 38, 'pro_imagen_default' => 'visso-silloneria-ergonimica-gerenciales-Integra2.jpg'],
+            ['producto_id' => 38, 'pro_imagen_default' => 'visso-silloneria-ergonimica-gerenciales-Integra1.jpg'],
+            ['producto_id' => 38, 'pro_imagen_default' => 'visso-silloneria-ergonimica-gerenciales-Integra3.jpg'],
+
             // CONSIGUIERI ALTA
             ['producto_id' => 39, 'pro_imagen_default' => 'visso-silloneria-consiglierialta.jpg'],
             ['producto_id' => 39, 'pro_imagen_default' => 'visso-silloneria-consiglierialta-class-alta-1552.jpg'],
@@ -171,6 +176,128 @@ class GaleryProductTableSeeder extends Seeder
 
             // GURÚ TRINEO
             ['producto_id' => 44, 'pro_imagen_default' => 'visso-silloneria-guru-trineo.jpg'],
+
+            // CLIO
+            ['producto_id' => 45, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-clio-clio1.jpg'],
+            ['producto_id' => 45, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-clio-clio2.jpg'],
+            ['producto_id' => 45, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-clio-clio3.jpg'],
+            ['producto_id' => 45, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-clio-clio4.jpg'],
+
+            // CLIO CAJERA
+            ['producto_id' => 46, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-cliocajera-CLIO-CAJERA3.jpg'],
+            ['producto_id' => 46, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-cliocajera-CLIO-CAJERA1.jpg'],
+            ['producto_id' => 46, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-cliocajera-CLIO-CAJERA2.jpg'],
+            ['producto_id' => 46, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-cliocajera-CLIO-CAJERA4.jpg'],
+            ['producto_id' => 46, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-cliocajera-CLIO-CAJERA5.jpg'],
+
+            // CONFORT
+            ['producto_id' => 47, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-confort-confort1.jpg'],
+            ['producto_id' => 47, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-confort-confort2.jpg'],
+            ['producto_id' => 47, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-confort-confort3.jpg'],
+            ['producto_id' => 47, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-confort-confort4.jpg'],
+
+            // CONFORT BASE ALUMINIO
+            ['producto_id' => 48, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-comfort-base-aluminio1.jpg'],
+            ['producto_id' => 48, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-comfort-base-aluminio2.jpg'],
+            ['producto_id' => 48, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-comfort-base-aluminio3.jpg'],
+            ['producto_id' => 48, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-comfort-base-aluminio4.jpg'],
+            ['producto_id' => 48, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-comfort-base-aluminio5.jpg'],
+
+            // GUIATTA
+            ['producto_id' => 49, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-guiatta-guiatta2.jpg'],
+            ['producto_id' => 49, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-guiatta-guiatta1.jpg'],
+            ['producto_id' => 49, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-guiatta-guiatta3.jpg'],
+            ['producto_id' => 49, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-guiatta-guiatta4.jpg'],
+
+            // GUIATTA ALUMINIO
+            ['producto_id' => 50, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-guiatta-base aluminio1.jpg'],
+            ['producto_id' => 50, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-guiatta-base aluminio2.jpg'],
+            ['producto_id' => 50, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-guiatta-base aluminio3.jpg'],
+            ['producto_id' => 50, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-guiatta-base aluminio4.jpg'],
+
+            // SMART
+            ['producto_id' => 51, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-smart1.jpg'],
+            ['producto_id' => 51, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-smart2.jpg'],
+            ['producto_id' => 51, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-smart3.jpg'],
+            ['producto_id' => 51, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-smart4.jpg'],
+            ['producto_id' => 51, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-smart5.jpg'],
+
+            // SMART BASE ALUMINIO
+            ['producto_id' => 52, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio1.jpg'],
+            ['producto_id' => 52, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio2.jpg'],
+            ['producto_id' => 52, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio3.jpg'],
+            ['producto_id' => 52, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio4.jpg'],
+            ['producto_id' => 52, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio5.jpg'],
+
+            // SMART ALUMINIO CABECERA
+            ['producto_id' => 53, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio-cabecera1.jpg'],
+            ['producto_id' => 53, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio-cabecera2.jpg'],
+            ['producto_id' => 53, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio-cabecera3.jpg'],
+            ['producto_id' => 53, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio-cabecera4.jpg'],
+            ['producto_id' => 53, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio-cabecera5.jpg'],
+
+            // SENIOR
+            ['producto_id' => 54, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-senior-senior1.jpg'],
+            ['producto_id' => 54, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-senior-senior2.jpg'],
+            ['producto_id' => 54, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-senior-senior3.jpg'],
+            ['producto_id' => 54, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-senior-senior4.jpg'],
+
+            // BUTTERFLY
+            ['producto_id' => 55, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-butterfly-1.jpg'],
+            ['producto_id' => 55, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-butterfly-2.jpg'],
+
+            // ISO CARPETA
+            ['producto_id' => 56, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-isocarpeta-2.jpg'],
+            ['producto_id' => 56, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-isocarpeta-1.jpg'],
+
+            // LÍNEA ISO
+            ['producto_id' => 57, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-iso-3.jpg'],
+            ['producto_id' => 57, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-iso-2.jpg'],
+            ['producto_id' => 57, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-iso-1.jpg'],
+
+            // LINEA ISO CON BRAZO
+            ['producto_id' => 58, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-isoconbrazo-ISO-CON-BRAZO2.jpg'],
+            ['producto_id' => 58, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-isoconbrazo-ISO-CON-BRAZO1.jpg'],
+            ['producto_id' => 58, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-isoconbrazo-ISO-CON-BRAZO3.jpg'],
+            ['producto_id' => 58, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-isoconbrazo-ISO-CON-BRAZO4.jpg'],
+
+            // STEP MALLA
+            ['producto_id' => 59, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-malla-stepmalla4.jpg'],
+            ['producto_id' => 59, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-malla-stepmalla1.jpg'],
+            ['producto_id' => 59, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-malla-stepmalla2.jpg'],
+            ['producto_id' => 59, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-malla-stepmalla3.jpg'],
+            ['producto_id' => 59, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-malla-stepmalla5.jpg'],
+            ['producto_id' => 59, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-malla-stepmalla6.jpg'],
+
+            // STEP TAPIZADA
+            ['producto_id' => 60, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-tapiz-STEPTAPIZ5.jpg'],
+            ['producto_id' => 60, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-tapiz-STEPTAPIZ1.jpg'],
+            ['producto_id' => 60, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-tapiz-STEPTAPIZ2.jpg'],
+            ['producto_id' => 60, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-tapiz-STEPTAPIZ3.jpg'],
+            ['producto_id' => 60, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-tapiz-STEPTAPIZ4.jpg'],
+            ['producto_id' => 60, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-step-tapiz-STEPTAPIZ6.jpg'],
+
+            // VERSA
+            ['producto_id' => 61, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-versa5.jpg'],
+            ['producto_id' => 61, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-versa1.jpg'],
+            ['producto_id' => 61, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-versa2.jpg'],
+            ['producto_id' => 61, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-versa3.jpg'],
+            ['producto_id' => 61, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-versa4.jpg'],
+
+            // FLIP
+            ['producto_id' => 62, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-flip4.jpg'],
+            ['producto_id' => 62, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-flip1.jpg'],
+            ['producto_id' => 62, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-flip2.jpg'],
+            ['producto_id' => 62, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-flip3.jpg'],
+            ['producto_id' => 62, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-flip5.jpg'],
+
+            // UP
+            ['producto_id' => 63, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-up-up5.jpg'],
+            ['producto_id' => 63, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-up-up1.jpg'],
+            ['producto_id' => 63, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-up-up2.jpg'],
+            ['producto_id' => 63, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-up-up3.jpg'],
+            ['producto_id' => 63, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-up-up4.jpg'],
+            ['producto_id' => 63, 'pro_imagen_default' => 'visso-silloneria-ergonomica-visita-up-up6.jpg'],
             // ['producto_id' => 4, 'pro_imagen_default' => '.jpg'],
 
             // AMADEUS
@@ -200,17 +327,17 @@ class GaleryProductTableSeeder extends Seeder
             ['producto_id' => 70, 'pro_imagen_default' => 'aresline-PF3-05.jpg'],
 
             // XTEN
-            ['producto_id' => 71, 'pro_imagen_default' => 'aresline-xten-01.jpg'],
-            ['producto_id' => 71, 'pro_imagen_default' => 'aresline-xten-03.jpg'],
-            ['producto_id' => 71, 'pro_imagen_default' => 'aresline-xten-04.jpg'],
-            ['producto_id' => 71, 'pro_imagen_default' => 'aresline-xten-02.jpg'],
+            ['producto_id' => 72, 'pro_imagen_default' => 'aresline-xten-01.jpg'],
+            ['producto_id' => 72, 'pro_imagen_default' => 'aresline-xten-03.jpg'],
+            ['producto_id' => 72, 'pro_imagen_default' => 'aresline-xten-04.jpg'],
+            ['producto_id' => 72, 'pro_imagen_default' => 'aresline-xten-02.jpg'],
 
             // TRENDY
-            ['producto_id' => 72, 'pro_imagen_default' => 'aresline-trendy-01.jpg'],
-            ['producto_id' => 72, 'pro_imagen_default' => 'aresline-trendy-03.jpg'],
-            ['producto_id' => 72, 'pro_imagen_default' => 'aresline-trendy-04.jpg'],
-            ['producto_id' => 72, 'pro_imagen_default' => 'aresline-trendy-02.jpg'],
-            ['producto_id' => 72, 'pro_imagen_default' => 'aresline-trendy-05.jpg'],
+            ['producto_id' => 71, 'pro_imagen_default' => 'aresline-trendy-01.jpg'],
+            ['producto_id' => 71, 'pro_imagen_default' => 'aresline-trendy-03.jpg'],
+            ['producto_id' => 71, 'pro_imagen_default' => 'aresline-trendy-04.jpg'],
+            ['producto_id' => 71, 'pro_imagen_default' => 'aresline-trendy-02.jpg'],
+            ['producto_id' => 71, 'pro_imagen_default' => 'aresline-trendy-05.jpg'],
 
         	// Boisere
         	['producto_id' => 73, 'pro_imagen_default' => 'quadri-mobiliario-boilere.jpg'],

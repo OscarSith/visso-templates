@@ -19,7 +19,6 @@ class CategoriaController extends Controller
         $marca_id = Marca::where('nombre', strtoupper($marca))->pluck('id')->first();
         if ($marca_id > 0) {
             $categorias = Categoria::getBySub($marca_id);
-            // dd($categorias);
             // View, es el nivel de subcategoria que tiene una categoria ejem: view = 2 o 3 ...
             $view = 1;
             $cat_name = '';
@@ -38,7 +37,7 @@ class CategoriaController extends Controller
         $categorias = Categoria::getBySub($marca_id, $cat_parent);
         $productNivel = 1;
 
-        return view('listado-productos', compact('categorias', 'marca', 'cat_name', 'productNivel', 'marca_id'));
+        return view('listado-productos', compact('categorias', 'marca', 'marca_id', 'cat_name', 'productNivel'));
     }
 
     public function index3($marca, $cat_name, $cat_parent, $sub_cat_name)
@@ -48,7 +47,7 @@ class CategoriaController extends Controller
         $categorias = Categoria::getBySub($marca_id, $cat_parent);
         $productNivel = 2;
 
-        return view('listado-productos', compact('categorias', 'marca', 'cat_name', 'sub_cat_name', 'marca_id', 'productNivel'));
+        return view('listado-productos', compact('categorias', 'marca', 'cat_name', 'sub_cat_name', 'marca_id', 'productNivel', 'cat_parent'));
     }
 
     public function subIndex($name, $catSub)

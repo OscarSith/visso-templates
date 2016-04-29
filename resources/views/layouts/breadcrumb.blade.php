@@ -18,7 +18,7 @@
 		@if (isset($sub_cat_name) && $productNivel == 2)
 			<li class="active">{{ $sub_cat_name }}</li>
 		@elseif (isset($sub_cat_name))
-			<li><a href="{{ route('catBySubCatID', [$marca, str_slug($cat_name), str_slug($sub_cat_name)])}}">{{ $sub_cat_name }}</a></li>
+			<li><a href="{{ route('catBySubCatID', [$marca, str_slug($cat_name), $cat_parent, str_slug($sub_cat_name)])}}">{{ $sub_cat_name }}</a></li>
 		@endif
 
 		@if (isset($producto) && $cat_name != '')

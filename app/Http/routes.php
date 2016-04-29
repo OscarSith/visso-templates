@@ -31,6 +31,6 @@ Route::group(['middleware' => ['web']], function () {
 	// Detalle del producto
 	Route::get('{marca}/detalle/{id}/{producto}', 'ProductoController@detalleProductoSimple')->name('detalleProductoSimple');
 	Route::get('{marca}/{cat_name}/detalle/{id}/{producto}', 'ProductoController@detalleProducto')->name('detalleProducto');
-	Route::get('{marca}/{cat_name}/{sub_cat_name}-{sub_cat_name}/detalle/{id}/{producto}', 'ProductoController@detalleProductoSub')->name('detalleProductoSub');
+	Route::get('{marca}/{cat_name}/{cat_parent}-{sub_cat_name}/detalle/{id}/{producto}', 'ProductoController@detalleProductoSub')->name('detalleProductoSub');
 
 });
