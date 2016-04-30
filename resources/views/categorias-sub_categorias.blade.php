@@ -34,7 +34,6 @@
 						<div class="col-sm-12">
 							<br><br><br>
 							<h4 class="text-center">Lo sentimos, no hay resultados que mostrar</h4>
-							<br><br><br>
 						</div>
 					@endif
 				</div>

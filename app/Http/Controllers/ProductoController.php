@@ -18,26 +18,24 @@ class ProductoController extends Controller
     public function detalleProductoSimple($marca, $id, $productoNombre)
     {
         $cat_name = '';
-        list($productosPorCategoria, $producto) = $this->prepareDetailProduct($id, $cat_name);
+        list($productosPorCategoria, $producto) = $this->prepareDetailProduct($id);
         return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'productoNombre', 'id'));
     }
 
     public function detalleProducto($marca, $cat_name, $id, $productoNombre)
     {
-        list($productosPorCategoria, $producto) = $this->prepareDetailProduct($id, $cat_name);
+        list($productosPorCategoria, $producto, $cat_name) = $this->prepareDetailProduct($id, $cat_name);
         return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'productoNombre', 'id'));
     }
 
     public function detalleProductoSub($marca, $cat_name, $cat_parent, $sub_cat_name, $id, $productoNombre)
     {
-        $cat_name = $this->strSlugInverse($cat_name);
-        $sub_cat_name = $this->strSlugInverse($sub_cat_name);
         $productNivel = null;
-        list($productosPorCategoria, $producto) = $this->prepareDetailProduct($id, $cat_name);
+        list($productosPorCategoria, $producto, $cat_name, $sub_cat_name) = $this->prepareDetailProduct($id, $cat_name, $sub_cat_name);
         return view('detalle-producto', compact('productosPorCategoria', 'producto', 'marca', 'cat_name', 'sub_cat_name', 'productoNombre', 'id', 'productNivel', 'cat_parent'));
     }
 
-    private function prepareDetailProduct($id, $cat_name)
+    private function prepareDetailProduct($id, $cat_name = '', $sub_cat_name = '')
     {
         $producto = Producto::find($id);
         $productosPorCategoria = Galeria::where( 'producto_id', $id )->get(['id', 'pro_imagen_default', 'name', 'description']);
@@ -46,7 +44,11 @@ class ProductoController extends Controller
             $cat_name = $this->strSlugInverse($cat_name);
         }
 
-        return [$productosPorCategoria, $producto];
+        if ($sub_cat_name != '') {
+            $sub_cat_name = $this->strSlugInverse($sub_cat_name);
+        }
+
+        return [$productosPorCategoria, $producto, $cat_name, $sub_cat_name];
     }
 
     /**

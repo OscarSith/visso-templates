@@ -51,12 +51,6 @@ class CategoriaController extends Controller
         return view('listado-productos', compact('categorias', 'marca', 'cat_name', 'sub_cat_name', 'marca_id', 'productNivel', 'cat_parent'));
     }
 
-    public function subIndex($name, $catSub)
-    {
-        $categorias = Categoria::getBySub($catSub);
-        return view('productos-por-categoria', ['categorias' => $categorias, 'categoriaNombre' => $name, 'parent_cat_id' => $catSub]);
-    }
-
     /**
      * En caso de que el nombre de la categoria esté con linea en medio,
      * agregado por la funcion str_slug()

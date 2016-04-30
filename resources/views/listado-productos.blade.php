@@ -23,7 +23,7 @@
 								@if ($categoria->cat_sub_nivel == 2)
 								<a href="{{ route('detalleProducto', [$marca, str_slug($cat_name), $categoria->product_id, str_slug($categoria->cat_nombre)]) }}" class="fix-list chota-detalle">
 								@elseif ($categoria->cat_sub_nivel == 3)
-								<a href="{{ route('detalleProductoSub', [$marca, str_slug($cat_name), $cat_parent, $sub_cat_name, $categoria->product_id, str_slug($categoria->cat_nombre)])}}">
+								<a href="{{ route('detalleProductoSub', [$marca, str_slug($cat_name), $cat_parent, str_slug($sub_cat_name), $categoria->product_id, str_slug($categoria->cat_nombre)])}}">
 								@endif
 							@else
 							<a href="{{ route('catBySubCatID', [$marca, str_slug($cat_name), $categoria->cat_parent, str_slug($categoria->cat_nombre)]) }}" class="fix-list">
