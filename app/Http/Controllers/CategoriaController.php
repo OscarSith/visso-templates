@@ -42,6 +42,7 @@ class CategoriaController extends Controller
 
     public function index3($marca, $cat_name, $cat_parent, $sub_cat_name)
     {
+        $cat_name = $this->strSlugInverse($cat_name);
         $sub_cat_name = $this->strSlugInverse($sub_cat_name);
         $marca_id = Marca::getMarcaId($marca);
         $categorias = Categoria::getBySub($marca_id, $cat_parent);
