@@ -98,6 +98,6 @@ $currentUri = \Route::current()->uri();
 		<script src="{{ asset('js/slick.min.js') }}"></script>
 		<script src="{{ asset('js/wow.min.js') }}"></script>
 		@yield('contact')
-		<script src="{{ asset('js/custom.js') }}"></script>
+		<script src="{{ asset('js/custom.js?cache=' . time()) }}"></script>
 	</body>
 </html>

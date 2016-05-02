@@ -3,13 +3,6 @@
 @section('content')
 <div id="fb-root"></div>
 <script>
-window.fbAsyncInit = function() {
-	FB.init({
-		appId      : '1614489195537932',
-		xfbml      : false,
-		version    : 'v2.6'
-	});
-};
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -43,7 +36,7 @@ window.fbAsyncInit = function() {
 					<div class="col-sm-12">
 						<div class="row">
 							<div class="col-sm-6">
-								<button class="btn btn-small btn-primary" id="share-fb"><i class="fa fa-facebook"></i> Compartir</button>
+								<button class="btn btn-small btn-primary" disabled id="share-fb"><i class="fa fa-facebook"></i> <span>Cargando...</span></button>
 							</div>
 							<div class="col-sm-6 text-right pright-0">
 								<a href="{{ url('contacto') }}" class="btn btn-visso">SOLICITAR COTIZACIÓN</a>
