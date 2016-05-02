@@ -80,7 +80,9 @@ class CategoriaTableSeeder extends Seeder
                     ['marca_id' => 3, 'cat_nombre' => 'Smart', 'cat_imagen' => 'visso-silloneria-operativos-smart.jpg', 'cat_sub' => 13, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 43],
                     ['marca_id' => 3, 'cat_nombre' => 'Smart con base de aluminio', 'cat_imagen' => 'visso-silloneria-operativos-smart-b-aluminio.jpg', 'cat_sub' => 13, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 44],
                     ['marca_id' => 3, 'cat_nombre' => 'Smart con base de aluminio y cabecera', 'cat_imagen' => 'visso-silloneria-operativos-smart-b-aluminio-cabecera.jpg', 'cat_sub' => 13, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 45],
-                    ['marca_id' => 3, 'cat_nombre' => 'Senior', 'cat_imagen' => 'visso-silloneria-operativos_senior.jpg', 'cat_sub' => 13, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 46],
+
+                    // Hubo un error y este es silla gerencial
+                    ['marca_id' => 3, 'cat_nombre' => 'Senior', 'cat_imagen' => 'visso-silloneria-operativos_senior.jpg', 'cat_sub' => 12, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 46],
 
                 ['marca_id' => 3, 'cat_nombre' => 'VISITA', 'cat_imagen' => 'visso-sillonera-ergonomica-visita.jpg', 'cat_sub' => 11, 'cat_parent' => 14, 'cat_detalle' => 0, 'cat_sub_nivel' => 2],
                     ['marca_id' => 3, 'cat_nombre' => 'Butterfly', 'cat_imagen' => 'visso-silloneria-visita-butterfly.jpg', 'cat_sub' => 14, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 47],
@@ -149,12 +151,12 @@ class CategoriaTableSeeder extends Seeder
                     ['marca_id' => 2, 'cat_nombre' => 'OXYGEN', 'cat_imagen' => 'quadri-sillas-operativos-OXYGEN_1.jpg', 'cat_sub' => 9, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 84],
 
                 ['marca_id' => 2, 'cat_nombre' => 'REUNIÓN', 'cat_imagen' => 'quadri-sillas-reunion-cove.jpg', 'cat_sub' => 7, 'cat_parent' => 10, 'cat_detalle' => 0, 'cat_sub_nivel' => 2],
-                    ['marca_id' => 2, 'cat_nombre' => 'COVE', 'cat_imagen' => 'quadri-sillas-reunion-COVE_1.jpg', 'cat_sub' => 10, 'cat_detalle' => 1, 'product_id' => 85],
+                    ['marca_id' => 2, 'cat_nombre' => 'COVE', 'cat_imagen' => 'quadri-sillas-reunion-COVE_1.jpg', 'cat_sub' => 10, 'cat_detalle' => 1, 'product_id' => 85, 'cat_sub_nivel' => 3],
 
                 ['marca_id' => 2, 'cat_nombre' => 'SILLONES DE ESPERA', 'cat_imagen' => 'quadri-sillas-sillones-espera.jpg', 'cat_sub' => 7, 'cat_parent' => 11, 'cat_detalle' => 0, 'cat_sub_nivel' => 2],
-                    ['marca_id' => 2, 'cat_nombre' => 'ACCORD', 'cat_imagen' => 'quadri-sillas-sillones-espera-accord-ACCORD1.jpg', 'cat_sub' => 11, 'cat_detalle' => 1, 'product_id' => 86],
-                    ['marca_id' => 2, 'cat_nombre' => 'AGIO', 'cat_imagen' => 'quadri-sillas-sillones-espera-agio-OFFISIT_AGIO_3.jpg', 'cat_sub' => 11, 'cat_detalle' => 1, 'product_id' => 87],
-                    ['marca_id' => 2, 'cat_nombre' => 'ASSO', 'cat_imagen' => 'quadri-sillas-sillones-espera-asso-OFFISIT_ASSO_1.jpg', 'cat_sub' => 11, 'cat_detalle' => 1, 'product_id' => 88],
+                    ['marca_id' => 2, 'cat_nombre' => 'ACCORD', 'cat_imagen' => 'quadri-sillas-sillones-espera-accord-ACCORD1.jpg', 'cat_sub' => 11, 'cat_detalle' => 1, 'product_id' => 86, 'cat_sub_nivel' => 3],
+                    ['marca_id' => 2, 'cat_nombre' => 'AGIO', 'cat_imagen' => 'quadri-sillas-sillones-espera-agio-OFFISIT_AGIO_3.jpg', 'cat_sub' => 11, 'cat_detalle' => 1, 'product_id' => 87, 'cat_sub_nivel' => 3],
+                    ['marca_id' => 2, 'cat_nombre' => 'ASSO', 'cat_imagen' => 'quadri-sillas-sillones-espera-asso-OFFISIT_ASSO_1.jpg', 'cat_sub' => 11, 'cat_detalle' => 1, 'product_id' => 88, 'cat_sub_nivel' => 3],
         ];
 
         foreach ($categorias as $key => $value) {

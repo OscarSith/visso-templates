@@ -38,7 +38,7 @@ class ProductoController extends Controller
     private function prepareDetailProduct($id, $cat_name = '', $sub_cat_name = '')
     {
         $producto = Producto::find($id);
-        $productosPorCategoria = Galeria::where( 'producto_id', $id )->get(['id', 'pro_imagen_default', 'name', 'description']);
+        $productosPorCategoria = Galeria::where( 'producto_id', $id )->where('gal_estado', 1)->get(['id', 'pro_imagen_default', 'name', 'description']);
 
         if ($cat_name != '') {
             $cat_name = $this->strSlugInverse($cat_name);

@@ -227,7 +227,7 @@ h6 { font-size: 16px; }
 	top: 90px;
 	left: 0;
 	right: 0;
-	z-index: 9999;
+	z-index: 999;
 }
 	#main-menu {
 		position: relative;
@@ -846,4 +846,13 @@ h2.product-title div {
 }
 .aresline img {
 	width: 80%
+}
+.thumbnail a {
+	display: inline-block;
+	height: 260px;
+	overflow: hidden;
+}
+#fbMessage {
+	font-size: .9em;
+	line-height: 1.6em;
 }

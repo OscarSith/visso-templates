@@ -1,4 +1,4 @@
-$(function() {
+// $(function() {
 	// REMOVE # FROM URL
 	$( 'a[href="#"]' ).click( function(e) {
 		e.preventDefault();
@@ -100,4 +100,53 @@ $(function() {
 			$('#productImage').attr('src', arrs.join('/') + '/' + image);
 		});
 	}
-});
+
+	$('#facebookModalId').on('show.bs.modal', function(e) {
+		var $this = $(e.relatedTarget);
+		$('#fbImg').attr('src', $('#productImage').attr('src'));
+		$('#fbMessage').html($('#product-description').html());
+	});
+
+	$('#shareContent').on('click', function(e) {
+		var $this = $(this),
+			$inputs = $.merge($('#form-facebook-share :input'), $this);
+
+		$inputs.prop('disabled', true);
+		Publicar($inputs);
+	});
+	function initFb() {
+		FB.getLoginStatus(function(resp) {
+			if (resp.status === 'connected') {
+				$('#facebookModalId').modal('show');
+			} else {
+				FB.login(function(resp) {
+					console.warn(resp);
+						$('#facebookModalId').modal('show');
+					}, {
+						scope: 'public_profile,publish_actions'
+					}
+				);
+			}
+		});
+	}
+
+	function Publicar($inputs) {
+		FB.api('/me/feed', 'post', {
+			message: $inputs.first().val(),
+			name: $('#productName').html(),
+			link: location.href,
+			description: $('#product-description').text(),
+			picture: $('#productImage').attr('src')
+		}, function(resp) {
+			$inputs.prop('disabled', false);
+			if (resp.error) {
+				alert(resp.error.message);
+			} else {
+				$('#facebookModalId').modal('hide');
+				alert('El producto ha sido compartido.');
+			}
+		});
+	}
+
+$('#share-fb').on('click', initFb);
+// });

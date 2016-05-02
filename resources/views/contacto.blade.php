@@ -49,7 +49,7 @@
 					<div class="col-sm-6 col-xs-12">
 						<div class="form-group wow fadeInDown" data-wow-delay="0.3s">
 							<label for="message" class="sr-only">Message: </label>
-							<textarea class="form-control no-border-radius" rows="12" style="height: 270px" name="message" id="message"  required="required" placeholder="Escriba aqui su mensaje..."></textarea>
+							<textarea class="form-control no-border-radius" rows="12" style="height: 270px" name="mensaje" id="message"  required="required" placeholder="Escriba aqui su mensaje..."></textarea>
 						</div>
 					</div>
 					<div class="col-xs-12 text-center">

@@ -2,7 +2,15 @@
 
 @section('content')
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>
+window.fbAsyncInit = function() {
+	FB.init({
+		appId      : '1614489195537932',
+		xfbml      : false,
+		version    : 'v2.6'
+	});
+};
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
@@ -35,7 +43,7 @@
 					<div class="col-sm-12">
 						<div class="row">
 							<div class="col-sm-6">
-								<div class="fb-share-button" data-href="https://www.facebook.com/VissoMuebles/" data-layout="button_count" data-mobile-iframe="true"></div>
+								<button class="btn btn-small btn-primary" id="share-fb"><i class="fa fa-facebook"></i> Compartir</button>
 							</div>
 							<div class="col-sm-6 text-right pright-0">
 								<a href="{{ url('contacto') }}" class="btn btn-visso">SOLICITAR COTIZACIÓN</a>
@@ -59,6 +67,33 @@
 		</div>
 	</div>
 </section>
+<div class="modal fade" id="facebookModalId" tabindex="-1" role="dialog" aria-labelledby="facebookModal">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="facebookModal">Compartir en Facebook</h4>
+			</div>
+			<div class="modal-body">
+				<form id="form-facebook-share">
+					<div class="form-group">
+						<textarea id="fbDescription" cols="30" rows="3" placeholder="Algún mensaje adicional..." class="form-control"></textarea>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<img src="{{ asset('images/product-imgs/' . $producto->pro_imagen_default) }}" id="fbImg" class="img-responsive center-block">
+						</div>
+						<div class="col-md-6" id="fbMessage">{!! $producto->pro_descripcion !!}</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+				<button type="button" class="btn btn-primary" id="shareContent">Compartir</button>
+			</div>
+		</div>
+	</div>
+</div>
 @endsection
 @section('footer')
 @include('layouts.certificaciones')
