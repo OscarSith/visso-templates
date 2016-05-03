@@ -95,7 +95,7 @@ class CategoriaTableSeeder extends Seeder
                     ['marca_id' => 3, 'cat_nombre' => 'FLIP', 'cat_imagen' => 'visso-silloneria-visita-flip.jpg', 'cat_sub' => 14, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 54],
                     ['marca_id' => 3, 'cat_nombre' => 'UP', 'cat_imagen' => 'visso-silloneria-visita-up.jpg', 'cat_sub' => 14, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 55],
 
-            ['marca_id' => 3, 'cat_nombre' => 'SISTEMAS MODULARES', 'cat_imagen' => 'visso-sistemas-modulares.jpg', 'cat_sub' => 1, 'cat_parent' => 15],
+            ['marca_id' => 3, 'cat_nombre' => 'SISTEMAS MODULARES', 'cat_imagen' => 'visso-sistemas-modulares.jpg', 'cat_sub' => 1, 'cat_parent' => 15, 'cat_sub_nivel' => 1],
                 ['marca_id' => 3, 'cat_nombre' => 'SISTEMA DE PANELES', 'cat_imagen' => 'visso-sistemas-modulares-paneles.jpg', 'cat_sub' => 15, 'cat_detalle' => 1, 'cat_sub_nivel' => 2, 'product_id' => 56],
                 ['marca_id' => 3, 'cat_nombre' => 'SISTEMAS BENCH', 'cat_imagen' => 'visso-sistemas-modulares-bench.jpg', 'cat_sub' => 15, 'cat_detalle' => 0, 'cat_parent' => 16, 'cat_sub_nivel' => 2],
                     ['marca_id' => 3, 'cat_nombre' => 'BENCH ASTER', 'cat_imagen' => 'visso-sistemas-modulares-sistema-bench-bench-aster-aster1.jpg', 'cat_sub' => 16, 'cat_detalle' => 1, 'cat_sub_nivel' => 3, 'product_id' => 57],

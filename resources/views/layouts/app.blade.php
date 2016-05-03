@@ -22,6 +22,12 @@
         .fa-btn {
             margin-right: 6px;
         }
+        .thumbnail {
+            height: 380px
+        }
+        .galery .thumbnail {
+            height: 280px;
+        }
     </style>
 </head>
 <body id="app-layout">
@@ -76,14 +82,13 @@
     </nav>
 
     <div class="container">
-        <div class="row">
         @yield('content')
-        </div>
     </div>
     <!-- JavaScripts -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-    <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+    @yield('script')
 </body>
 </html>

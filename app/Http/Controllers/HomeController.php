@@ -35,6 +35,20 @@ class HomeController extends Controller
     {
         $categorias = Categoria::getBySub(1);
 
-        return view('admin.listado-categorias', ['categorias' => $categorias]);
+        return view('admin.listado-categorias', ['categorias' => $categorias, 'marca' => 1]);
+    }
+
+    public function quadrifoglio()
+    {
+        $categorias = Categoria::getBySub(2);
+
+        return view('admin.listado-categorias', ['categorias' => $categorias, 'marca' => 2]);
+    }
+
+    public function visso()
+    {
+        $categorias = Categoria::getBySub(3);
+
+        return view('admin.listado-categorias', ['categorias' => $categorias, 'marca' => 3]);
     }
 }

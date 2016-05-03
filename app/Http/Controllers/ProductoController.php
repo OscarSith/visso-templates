@@ -96,7 +96,10 @@ class ProductoController extends Controller
      */
     public function show($id)
     {
-        //
+        $producto = Producto::find($id);
+        $galerias = Galeria::getByProductId($id);
+
+        return view('admin.admin-detalle-producto', compact('producto', 'galerias'));
     }
 
     /**
@@ -119,7 +122,18 @@ class ProductoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $params = [];
+        if ($request->hasFile('pro_imagen_default')) {
+            $params = $request->all();
+        } else {
+            $params = $request->except('pro_imagen_default');
+        }
+
+        $producto = Producto::find($id);
+        $producto->fill($params);
+        $producto->save();
+
+        return redirect()->back()->with('success_message', 'Datos del producto actualizados');
     }
 
     /**

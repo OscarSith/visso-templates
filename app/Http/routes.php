@@ -13,6 +13,12 @@ Route::group(['middleware' => 'web', 'prefix' => 'admin'], function () {
 	$this->get('quadrifoglio', 'HomeController@quadrifoglio')->name('quadrifoglio');
 	$this->get('visso', 'HomeController@visso')->name('visso');
 
+	// Cambiar imagen
+	$this->post('update-cat-photo', 'CategoriaController@store')->name('changeImagen');
+	$this->get('detalle-producto/{id}', 'ProductoController@show')->name('adminDetalleProducto');
+	$this->put('update-producto/{id}', 'ProductoController@update')->name('adminUpdateProduct');
+	$this->get('{marca}/sub-categoria/{cat_parent}', 'CategoriaController@show')->name('adminViewSubCat');
+
 	$this->get('logout', 'Auth\AuthController@logout')->name('logout');
 });
 
