@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Newsletter;
+use App\Categoria;
 
 class HomeController extends Controller
 {
@@ -25,8 +26,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $emails = Newsletter::latest()->paginate(5);
+        $emails = Newsletter::latest()->paginate(30);
 
-        return view('home', ['emails' => $emails]);
+        return view('admin.home', ['emails' => $emails]);
+    }
+
+    public function aresline()
+    {
+        $categorias = Categoria::getBySub(1);
+
+        return view('admin.listado-categorias', ['categorias' => $categorias]);
     }
 }

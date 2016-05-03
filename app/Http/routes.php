@@ -8,9 +8,12 @@ Route::group(['middleware' => ['web', 'guest'], 'prefix' => 'admin'], function($
 
 Route::group(['middleware' => 'web', 'prefix' => 'admin'], function () {
 
-	$this->get('/', 'HomeController@index');
+	$this->get('/', 'HomeController@index')->name('dashboard');
+	$this->get('aresline', 'HomeController@aresline')->name('aresline');
+	$this->get('quadrifoglio', 'HomeController@quadrifoglio')->name('quadrifoglio');
+	$this->get('visso', 'HomeController@visso')->name('visso');
 
-	$this->get('logout', 'Auth\AuthController@logout');
+	$this->get('logout', 'Auth\AuthController@logout')->name('logout');
 });
 
 Route::group(['middleware' => ['web']], function () {
