@@ -18,6 +18,9 @@ Route::group(['middleware' => 'web', 'prefix' => 'admin'], function () {
 	$this->get('detalle-producto/{id}', 'ProductoController@show')->name('adminDetalleProducto');
 	$this->put('update-producto/{id}', 'ProductoController@update')->name('adminUpdateProduct');
 	$this->get('{marca}/sub-categoria/{cat_parent}', 'CategoriaController@show')->name('adminViewSubCat');
+	$this->post('add-new-image-galery', 'ProductoController@store')->name('addNewImageGalery');
+	$this->put('edit-image-galery/{id}', 'ProductoController@edit')->name('editImageGalery');
+	$this->delete('delete-image-galery/{id}', 'ProductoController@destroy')->name('deleteImageGalery');
 
 	$this->get('logout', 'Auth\AuthController@logout')->name('logout');
 });

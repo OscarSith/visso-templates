@@ -9,6 +9,7 @@ use App\Producto;
 use App\Categoria;
 use App\Marca;
 use App\Galeria;
+use File;
 
 class ProductoController extends Controller
 {
@@ -69,7 +70,22 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $params = [];
+        if ($request->hasFile('pro_imagen_default')) {
+            $params = $request->all();
+            try {
+                $params['pro_imagen_default'] = $this->uploadPhoto($request, 'pro_imagen_default', 'productos');
+
+            } catch (Exception $ex) {
+                return redirect()->back()->with('error_message', 'Ups... no se puede procesar el archivo subido, intentelo de nuevo, si persiste contacte con el programador');
+            }
+        } else {
+            $params = $request->except('pro_imagen_default');
+        }
+
+        Galeria::create($params);
+
+        return redirect()->back()->with('success_message', 'Imagen agregada con exito');
     }
 
     /**
@@ -92,9 +108,38 @@ class ProductoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        //
+        $params = [];
+        if ($request->hasFile('pro_imagen_default')) {
+            $params = $request->all();
+
+            try {
+                $params['pro_imagen_default'] = $this->uploadPhoto($request, 'pro_imagen_default', 'productos');
+
+            } catch (Exception $ex) {
+                return redirect()->back()->with('error_message', 'Ups... no se puede procesar el archivo subido, intentelo de nuevo, si persiste contacte con el programador');
+            }
+
+        } else {
+            $params = $request->except('pro_imagen_default');
+        }
+
+        if ($params['position'] == 1) {
+            $producto = Producto::find($params['producto_id']);
+            if ($request->hasFile('pro_imagen_default')) {
+                $producto->pro_imagen_default = $params['pro_imagen_default'];
+            }
+            $producto->pro_descripcion = $params['description'];
+            $producto->pro_nombre = $params['name'];
+            $producto->save();
+        }
+
+        $galeria = Galeria::find($id);
+        $galeria->fill($params);
+        $galeria->save();
+
+        return redirect()->back()->with('success_message', 'Datos del producto actualizados');
     }
 
     /**
@@ -112,6 +157,11 @@ class ProductoController extends Controller
 
             try {
                 $params['pro_imagen_default'] = $this->uploadPhoto($request, 'pro_imagen_default', 'productos');
+
+                $galeria_id = Galeria::where('producto_id', $id)->pluck('id')->first();
+                $galeria = Galeria::find($galeria_id);
+                $galeria->pro_imagen_default = $params['pro_imagen_default'];
+                $galeria->save();
 
             } catch (Exception $ex) {
                 return redirect()->back()->with('error_message', 'Ups... no se puede procesar el archivo subido, intentelo de nuevo, si persiste contacte con el programador');
@@ -136,6 +186,10 @@ class ProductoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $galeria = Galeria::find($id);
+        File::delete('images/product-imgs/' . $galeria->pro_imagen_default);
+        $galeria->delete();
+
+        return redirect()->back()->with('success_message', 'Imagen Eliminada');
     }
 }

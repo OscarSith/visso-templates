@@ -35,18 +35,22 @@ class Controller extends BaseController
         $file = $request->file($imagen_name);
         $imageName = strtolower(str_random(4)) . '_' . str_replace([' ', '-'], '_', $file->getClientOriginalName());
         $url_path = 'images/categorias/';
+        $size = 280;
 
         if ($type == 'productos') {
         	$url_path = 'images/product-imgs/';
+            $size = 520;
         }
 
-        // Reajusta el tamaño de la imagen
-        Image::make($file->path())->resize(280, null, function($contraint) {
+        Image::make($file->path())->resize($size, null, function($contraint) {
             $contraint->aspectRatio();
-        })->save( $url_path . $imageName, 98);
+            $contraint->upsize();
+        })->save( $url_path . $imageName, 98);;
 
         // Eliminando la foto anterior
-        File::delete($url_path . $request->input('current_cat_image'));
+        if ($request->has('current_cat_image')) {
+            File::delete($url_path . $request->input('current_cat_image'));
+        }
 
         return $imageName;
     }

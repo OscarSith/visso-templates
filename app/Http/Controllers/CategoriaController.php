@@ -100,7 +100,9 @@ class CategoriaController extends Controller
     public function show($marca, $parent_id)
     {
         $categorias = Categoria::getBySub($marca, $parent_id);
-        return view('admin.listado-categorias', compact('categorias', 'marca'));
+        $ma = Marca::find($marca, ['nombre']);
+        $nombre = $ma->nombre;
+        return view('admin.listado-categorias', compact('categorias', 'marca', 'nombre'));
     }
 
     /**

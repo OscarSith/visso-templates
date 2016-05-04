@@ -5,11 +5,14 @@
 	<div class="col-sm-12">
 		<div class="panel panel-inverse">
 			<div class="row">
+				<h2 class="page-header text-center">{{ $nombre }}</h2>
 				@include('layouts.displays_messages')
 				@foreach($categorias as $categoria)
 				<div class="col-sm-4 col-md-3">
 					<div class="thumbnail">
-						<img src="{{ asset('images/categorias/'. $categoria->cat_imagen) }}" alt="" class="img-responsive center-block">
+						<div class="cat-image-list">
+							<img src="{{ asset('images/categorias/'. $categoria->cat_imagen) }}" alt="" class="img-responsive center-block">
+						</div>
 						<div class="caption">
 							<h4>{{ $categoria->cat_nombre}}</h4>
 							<p data-id="{{ $categoria->cat_sub_nivel }}">

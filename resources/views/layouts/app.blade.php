@@ -26,7 +26,28 @@
             height: 380px
         }
         .galery .thumbnail {
-            height: 280px;
+            height: auto;
+        }
+        .mt0 {
+            margin-top: 0;
+        }
+        .thumb-image-galery {
+            height: 180px;
+            overflow: hidden;
+            margin-bottom: 4px
+        }
+        .no-margin {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        #productImage {
+            border: 1px solid #ddd;
+            padding: 4px;
+            border-radius: 6px;
+        }
+        .cat-image-list {
+            height: 270px;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -84,7 +105,6 @@
     <div class="container">
         @yield('content')
     </div>
-    <!-- JavaScripts -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
