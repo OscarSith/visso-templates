@@ -9,9 +9,9 @@ Route::group(['middleware' => ['web', 'guest'], 'prefix' => 'admin'], function($
 Route::group(['middleware' => 'web', 'prefix' => 'admin'], function () {
 
 	$this->get('/', 'HomeController@index')->name('dashboard');
-	$this->get('aresline', 'HomeController@aresline')->name('aresline');
-	$this->get('quadrifoglio', 'HomeController@quadrifoglio')->name('quadrifoglio');
-	$this->get('visso', 'HomeController@visso')->name('visso');
+	$this->get('marca-aresline', 'HomeController@aresline')->name('aresline');
+	$this->get('marca-quadrifoglio', 'HomeController@quadrifoglio')->name('quadrifoglio');
+	$this->get('marca-visso', 'HomeController@visso')->name('visso');
 
 	// Cambiar imagen
 	$this->post('update-cat-photo', 'CategoriaController@store')->name('changeImagen');
@@ -33,13 +33,13 @@ Route::group(['middleware' => ['web']], function () {
 	Route::post('add-newsletter', 'WelcomeController@newsletter')->name('newsletter');
 
 	// Marca
-	Route::get('{marca}', 'CategoriaController@index')->name('categorias');
-	Route::get('{marca}/{cat_name}', 'CategoriaController@index2')->name('catByProduct');
-	Route::get('{marca}/{cat_name}/{cat_parent}-{sub_cat_name}', 'CategoriaController@index3')->name('catBySubCatID');
+	Route::get('marca-{marca}', 'CategoriaController@index')->name('categorias');
+	Route::get('marca-{marca}/{cat_name}', 'CategoriaController@index2')->name('catByProduct');
+	Route::get('marca-{marca}/{cat_name}/{cat_parent}-{sub_cat_name}', 'CategoriaController@index3')->name('catBySubCatID');
 
 	// Detalle del producto
-	Route::get('{marca}/detalle/{id}/{producto}', 'ProductoController@detalleProductoSimple')->name('detalleProductoSimple');
-	Route::get('{marca}/{cat_name}/detalle/{id}/{producto}', 'ProductoController@detalleProducto')->name('detalleProducto');
-	Route::get('{marca}/{cat_name}/{cat_parent}-{sub_cat_name}/detalle/{id}/{producto}', 'ProductoController@detalleProductoSub')->name('detalleProductoSub');
+	Route::get('marca-{marca}/detalle/{id}/{producto}', 'ProductoController@detalleProductoSimple')->name('detalleProductoSimple');
+	Route::get('marca-{marca}/{cat_name}/detalle/{id}/{producto}', 'ProductoController@detalleProducto')->name('detalleProducto');
+	Route::get('marca-{marca}/{cat_name}/{cat_parent}-{sub_cat_name}/detalle/{id}/{producto}', 'ProductoController@detalleProductoSub')->name('detalleProductoSub');
 
 });

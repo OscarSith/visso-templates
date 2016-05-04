@@ -17,7 +17,7 @@
 					<h2 class="product-title text-center">
 						<div id="productName">¿Por que trabajar con nosotros?</div>
 					</h2>
-					<div class="lead-info">
+					<div class="lead-info text-justify">
 						<ol>
 							<li>Flexibilidad y personalización: porque con nosotros podrá personalizar su oficina y no limitarse solo a tamaños y colores estándar de otras marcas.</li>
 							<li>Tiempo de entrega cortos, manejamos entregas de hasta 15 días útiles (consultar), debido a que todas las áreas de nuestra empresa están integradas y equipadas con tecnología automatizada alemana. </li>

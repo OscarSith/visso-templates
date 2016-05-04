@@ -6,12 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Categoria;
 use App\Marca;
-use Image;
-use File;
 
 class CategoriaController extends Controller
 {
-    private $path_categorias = 'images/categorias/';
     /**
      * Display a listing of the resource.
      *
@@ -55,22 +52,6 @@ class CategoriaController extends Controller
     }
 
     /**
-     * En caso de que el nombre de la categoria esté con linea en medio,
-     * agregado por la funcion str_slug()
-     * @param  string $cat_name
-     * @return string
-     */
-    private function strSlugInverse($cat_name)
-    {
-        $arr = explode('-', $cat_name);
-        if (count($arr) > 1) {
-            $cat_name = implode(' ', $arr);
-        }
-
-        return $cat_name;
-    }
-
-    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -89,20 +70,11 @@ class CategoriaController extends Controller
     public function store(Request $request)
     {
         $isFile = false;
+        $imageName = '';
         if ($request->hasFile('cat_imagen')) {
             $isFile = true;
-            $file = $request->file('cat_imagen');
-            $file_path = $file->path();
-            $originalName = str_replace([' ', '-'], '_', $file->getClientOriginalName());
-            $imageName = strtolower(str_random(4)) . '_' . $originalName;
             try {
-                // Reajusta el tamaño de la imagen
-                Image::make($file_path)->resize(280, null, function($contraint) {
-                    $contraint->aspectRatio();
-                })->save( $this->path_categorias . $imageName, 98);
-                // var_dump(File::isFile($imag));
-                File::delete($this->path_categorias . $request->input('current_cat_image'));
-
+                $imageName = $this->uploadPhoto($request, 'cat_imagen');
             } catch (Exception $ex) {
                 return redirect()->back()->with('error_message', 'Ups... no se puede procesar el archivo subido, intentelo de nuevo, si persiste contacte con el programador');
             }
@@ -128,7 +100,7 @@ class CategoriaController extends Controller
     public function show($marca, $parent_id)
     {
         $categorias = Categoria::getBySub($marca, $parent_id);
-        return view('admin.listado-categorias', ['categorias' => $categorias, 'marca' => $marca]);
+        return view('admin.listado-categorias', compact('categorias', 'marca'));
     }
 
     /**

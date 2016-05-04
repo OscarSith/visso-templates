@@ -52,22 +52,6 @@ class ProductoController extends Controller
     }
 
     /**
-     * En caso de que el nombre de la categoria esté con linea en medio,
-     * agregado por la funcion str_slug()
-     * @param  string $cat_name
-     * @return string
-     */
-    private function strSlugInverse($cat_name)
-    {
-        $arr = explode('-', $cat_name);
-        if (count($arr) > 1) {
-            $cat_name = implode(' ', $arr);
-        }
-
-        return $cat_name;
-    }
-
-    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -125,6 +109,14 @@ class ProductoController extends Controller
         $params = [];
         if ($request->hasFile('pro_imagen_default')) {
             $params = $request->all();
+
+            try {
+                $params['pro_imagen_default'] = $this->uploadPhoto($request, 'pro_imagen_default', 'productos');
+
+            } catch (Exception $ex) {
+                return redirect()->back()->with('error_message', 'Ups... no se puede procesar el archivo subido, intentelo de nuevo, si persiste contacte con el programador');
+            }
+
         } else {
             $params = $request->except('pro_imagen_default');
         }
