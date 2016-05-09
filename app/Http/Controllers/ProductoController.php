@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -16,7 +15,7 @@ class ProductoController extends Controller
     // Niveles necesarios para llegar al listado de productos,
     // $productNivel = 1, primera lista de la categoria
 
-    public function detalleProductoSimple($marca, $id, $productoNombre)
+    public function detalleProductoSimple($marca, $productoNombre, $id)
     {
         $cat_name = '';
         list($productosPorCategoria, $producto) = $this->prepareDetailProduct($id);

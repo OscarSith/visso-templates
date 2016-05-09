@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', 'Contacto')
+
 @section('content')
 <section id="contact" class="contact section-area products">
 	<div class="rotate-box-1"></div>
@@ -40,11 +42,6 @@
 							<label for="telefono" class="sr-only">Teléfono: </label>
 							<input type="text" class="form-control no-border-radius" name="telefono" id="telefono" placeholder="Teléfono">
 						</div>
-						<div class="form-group wow fadeInDown" data-wow-delay="7s">
-							<div class="checkbox">
-								<label><input type="checkbox" name="acepta" value="1" class="fix-checkbox" checked> Acepto recibir newsletter y novedades</label>
-							</div>
-						</div>
 					</div>
 					<div class="col-sm-6 col-xs-12">
 						<div class="form-group wow fadeInDown" data-wow-delay="0.3s">
@@ -52,8 +49,15 @@
 							<textarea class="form-control no-border-radius" rows="12" style="height: 270px" name="mensaje" id="message"  required="required" placeholder="Escriba aqui su mensaje..."></textarea>
 						</div>
 					</div>
-					<div class="col-xs-12 text-center">
-						<input type="submit" class="btn btn-lg btn-secondary" value="Enviar Mensaje">
+					<div class="col-sm-12">
+						<div class="form-group wow fadeInDown" data-wow-delay="0.7s">
+							<div class="checkbox">
+								<label><input type="checkbox" name="acepta" value="1" class="fix-checkbox" checked> Acepto recibir newsletter y novedades</label>
+							</div>
+						</div>
+						<div class="form-group text-center wow fadeInDown" data-wow-delay="0.9s">
+							<input type="submit" class="btn btn-lg btn-secondary" value="Enviar Mensaje">
+						</div>
 					</div>
 				</div>
 			{!! Form::close() !!}

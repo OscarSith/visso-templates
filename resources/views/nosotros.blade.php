@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', 'Nosotros')
+
 @section('content')
 <section id="about-us" class="products section-area">
 	<div class="container" id="visso">

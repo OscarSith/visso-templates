@@ -8,10 +8,11 @@ $currentUri = \Route::current()->uri();
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="En VISSO representamos a 3 grandes marcas incluidas las top italianas: Quadrifoglio y AresLine. VISSO, mobiliario corporativo para oficinas de alta estándar.">
+		<meta name="keywords" content="Visso,Diseño de oficinas,Muebles de oficina,Mobiliario de oficina,Sillas ergonómicas,Mobiliario Corporativo,Mesas de oficina,Archivadores Moviles,Muebles de recepción,Sillas operativas,Escritorios de oficina,Sistemas bench,Sillas Oficina">
+		<meta name="author" content="VISSO">
 
-		<title>Venta de muebles de oficina / VISSO</title>
+		<title>VISSO, @yield('title', 'Mobiliario Corporativo para Oficinas.')</title>
 		<link href="{{ asset('css/style.min.css') }}" rel="stylesheet">
 
 		<!--[if lt IE 9]>

@@ -643,7 +643,8 @@ h2.product-title div {
 }
 .img-size {
 	background-color: #fff;
-	min-height: 500px;
+	min-height: 280px;
+	margin-bottom: 15px;
 }
 .pright-0 {
 	padding-right: 0;

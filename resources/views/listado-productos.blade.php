@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', (!isset($sub_cat_name) || $sub_cat_name == '') ? ucwords($cat_name) : $sub_cat_name)
+
 @section('content')
 <?php
 	$total = $categorias->count();

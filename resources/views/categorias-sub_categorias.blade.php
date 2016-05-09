@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', ucwords($marca))
+
 @section('content')
 <section id="products" class="products section-area">
 	<div class="container">
@@ -18,7 +20,7 @@
 							<div class="thumbnail wow fadeInUp" data-wow-delay="{{ $n/4 }}s">
 								@if ($categoria->cat_detalle)
 									@if ($categoria->cat_sub_nivel == 0)
-									<a href="{{ route('detalleProductoSimple', [$marca, $categoria->product_id, str_slug($categoria->cat_nombre)]) }}" class="fix-list">
+									<a href="{{ route('detalleProductoSimple', [$marca, str_slug($categoria->cat_nombre), $categoria->product_id]) }}" class="fix-list">
 									@else
 									<a href="{{ route('detalleProducto', [$marca, str_slug($categoria->cat_nombre), $categoria->product_id, str_slug($categoria->cat_nombre)]) }}" class="fix-list">
 									@endif

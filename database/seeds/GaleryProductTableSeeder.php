@@ -526,17 +526,17 @@ class GaleryProductTableSeeder extends Seeder
             // DAMA
             ['producto_id' => 78, 'pro_imagen_default' => 'quadri-sillas-direccionales-dama.jpg'],
             ['producto_id' => 78, 'pro_imagen_default' => 'quadri-sillas-direccionales-DAMA_1.jpg'],
-        	['producto_id' => 78, 'pro_imagen_default' => 'quadri-sillas-direccionales-DAMA_3.jpg'],
+      	['producto_id' => 78, 'pro_imagen_default' => 'quadri-sillas-direccionales-DAMA_3.jpg'],
 
             // DINAMICA
             ['producto_id' => 79, 'pro_imagen_default' => 'quadri-sillas-direccionales-dinamica.jpg'],
             ['producto_id' => 79, 'pro_imagen_default' => 'quadri-sillas-direccionales-DINAMICA_2.jpg'],
-        	['producto_id' => 79, 'pro_imagen_default' => 'quadri-sillas-direccionales-DINAMICA_3.jpg'],
+            ['producto_id' => 79, 'pro_imagen_default' => 'quadri-sillas-direccionales-DINAMICA_3.jpg'],
 
             // DIRECTA
-            ['producto_id' => 80, 'pro_imagen_default' => 'quadri-sillas-direccionales-directa-DIRECTA_1.jpg.jpg'],
-            ['producto_id' => 80, 'pro_imagen_default' => 'quadri-sillas-direccionales-directa-DIRECTA_2.jpg.jpg'],
-        	['producto_id' => 80, 'pro_imagen_default' => 'quadri-sillas-direccionales-directa-DIRECTA_3.jpg.jpg'],
+            ['producto_id' => 80, 'pro_imagen_default' => 'quadri-sillas-direccionales-directa-DIRECTA_1.jpg'],
+            ['producto_id' => 80, 'pro_imagen_default' => 'quadri-sillas-direccionales-directa-DIRECTA_2.jpg'],
+      	['producto_id' => 80, 'pro_imagen_default' => 'quadri-sillas-direccionales-directa-DIRECTA_3.jpg'],
 
         	// OLTRE
             ['producto_id' => 81, 'pro_imagen_default' => 'quadri-sillas-op-OLTRE2_S.jpg'],

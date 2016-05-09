@@ -116,6 +116,19 @@ window.fbAsyncInit = function() {
 			slidesToScroll: 1,
 			prevArrow: '<button type="button" data-role="none" class="btn slick-prev"><i class="fa fa-arrow-circle-left fa-lg"></i></button>',
 			nextArrow: '<button type="button" data-role="none" class="btn slick-next"><i class="fa fa-arrow-circle-right fa-lg"></i></button>',
+			responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3
+				},
+			},
+			{
+				breakpoint: 780,
+				settings: {
+					slidesToShow: 2
+				}
+			}]
 		});
 
 		$('.others-products').on('click', '.item-products', function(e) {
@@ -147,6 +160,12 @@ window.fbAsyncInit = function() {
 			slidesToScroll: 1,
 			prevArrow: '<button type="button" data-role="none" class="btn slick-prev"><i class="fa fa-arrow-circle-left fa-lg"></i></button>',
 			nextArrow: '<button type="button" data-role="none" class="btn slick-next"><i class="fa fa-arrow-circle-right fa-lg"></i></button>',
+			responsive: [{
+				breakpoint: 780,
+				settings: {
+					slidesToShow: 2
+				}
+			}]
 		});
 
 		$othersProyects.on('click', '.item-proyects', function(e) {

@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', 'Proyecto ' . $proyecto->proy_nombre)
+
 @section('content')
 <section id="detalle-proyecto" class="products">
 	<div class="container">

@@ -1,4 +1,12 @@
 @extends('layouts.master')
+<?php $title = '' ?>
+@if ((isset($producto) && $cat_name != '') || $marca == 'aresline')
+	<?php $title = ucwords(strtolower($producto->pro_nombre)) ?>
+@else
+	<?php $title = ucwords($sub_cat_name) ?>
+@endif
+
+@section('title', $title)
 
 @section('content')
 <div id="fb-root"></div>
@@ -35,11 +43,11 @@
 					</h2>
 					<div class="col-sm-12">
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-xs-5 col-sm-5">
 								<button class="btn btn-small btn-primary" disabled id="share-fb"><i class="fa fa-facebook"></i> <span>Cargando...</span></button>
 							</div>
-							<div class="col-sm-6 text-right pright-0">
-								<a href="{{ url('contacto') }}" class="btn btn-visso">SOLICITAR COTIZACIÓN</a>
+							<div class="col-xs-7 col-sm-7 text-right pright-0">
+								<a href="{{ url('contacto') }}" class="btn btn-visso"><span class="hidden-xs">SOLICITAR </span>COTIZACIÓN</a>
 							</div>
 						</div>
 						<div class="col-sm-12">
