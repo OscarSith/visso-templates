@@ -285,7 +285,7 @@ class GaleryProductTableSeeder extends Seeder
             ['producto_id' => 44, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio5.jpg'],
 
             // SMART ALUMINIO CABECERA
-            ['producto_id' => 45, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio-cabecera1.jpg'],
+            ['producto_id' => 45, 'pro_imagen_default' => 'visso-silloneria-operativos-smart-b-aluminio-cabecera.jpg'],
             ['producto_id' => 45, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio-cabecera2.jpg'],
             ['producto_id' => 45, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio-cabecera3.jpg'],
             ['producto_id' => 45, 'pro_imagen_default' => 'visso-silloneria-ergonomica-operativos-smart-base-aluminio-cabecera4.jpg'],
